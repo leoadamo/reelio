@@ -2,20 +2,24 @@
 // DEPENDENCIES
 import { computed } from "vue";
 import { useRoute } from "vue-router";
+import { storeToRefs } from "pinia";
+import { useMoviesStore } from "@/stores/movies";
 
 // COMPONENTS
 import MovieRating from "@/components/MovieRating.vue";
 import GenresList from "@/components/GenresList.vue";
 
-// DATA
-import { items as _INITIAL_MOVIES_LIST } from "@/data/movies.json";
-
 // ROUTE
 const route = useRoute();
 
+// REFS
+const store = useMoviesStore();
+
+const { movies } = storeToRefs(store);
+
 // COMPUTED
 const movie = computed(() => {
-  return _INITIAL_MOVIES_LIST.find((movie) => movie.id == route.params.id);
+  return movies.value.find((movie) => movie.id === route.params.id);
 });
 </script>
 

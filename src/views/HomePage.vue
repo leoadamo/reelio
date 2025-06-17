@@ -1,9 +1,8 @@
 <script setup>
-// DATA
-import { items as _INITIAL_MOVIES_LIST } from "@/data/movies.json";
-
 // DEPENDENCIES
 import { ref, computed, defineAsyncComponent } from "vue";
+import { storeToRefs } from "pinia";
+import { useMoviesStore } from "@/stores/movies";
 
 // COMPONENTS
 import AppHeader from "@/components/AppHeader.vue";
@@ -15,9 +14,11 @@ const MovieFormModal = defineAsyncComponent(
 );
 
 // REFS
+const store = useMoviesStore();
+
 const isModalOpen = ref(false);
 
-const movies = ref(_INITIAL_MOVIES_LIST);
+const { movies } = storeToRefs(store);
 
 const movieToEdit = ref(null);
 
