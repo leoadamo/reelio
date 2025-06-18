@@ -1,5 +1,6 @@
 <script setup>
 // DEPENDENCIES
+import { kebabCase } from "lodash-es";
 import { ref, computed, defineAsyncComponent } from "vue";
 import { storeToRefs } from "pinia";
 import { useMoviesStore } from "@/stores/movies";
@@ -77,6 +78,7 @@ function createMovie(movie) {
   const newMovie = {
     ...movie,
     id: crypto.randomUUID(),
+    slug: kebabCase(movie.name),
     rating: null,
   };
 
