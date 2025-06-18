@@ -101,7 +101,10 @@ defineProps({
         </button>
 
         <router-link
-          :to="{ name: 'movie-detail', params: { id: movie.id } }"
+          :to="{
+            name: 'movie-detail',
+            params: { id: movie.id, slug: movie.slug },
+          }"
           class="p-2 rounded-full bg-gray-200 text-gray-500 transition-all hover:text-white hover:bg-blue-500"
         >
           <eye-icon class="w-4 h-4" />

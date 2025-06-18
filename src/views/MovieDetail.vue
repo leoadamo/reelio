@@ -1,7 +1,6 @@
 <script setup>
 // DEPENDENCIES
 import { computed } from "vue";
-import { useRoute } from "vue-router";
 import { storeToRefs } from "pinia";
 import { useMoviesStore } from "@/stores/movies";
 
@@ -9,8 +8,13 @@ import { useMoviesStore } from "@/stores/movies";
 import MovieRating from "@/components/MovieRating.vue";
 import GenresList from "@/components/GenresList.vue";
 
-// ROUTE
-const route = useRoute();
+// PROPS
+const props = defineProps({
+  id: {
+    type: String,
+    required: true,
+  },
+});
 
 // REFS
 const store = useMoviesStore();
@@ -19,7 +23,7 @@ const { movies } = storeToRefs(store);
 
 // COMPUTED
 const movie = computed(() => {
-  return movies.value.find((movie) => movie.id === route.params.id);
+  return movies.value.find((movie) => movie.id === props.id);
 });
 </script>
 
