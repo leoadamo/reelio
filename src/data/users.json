@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "id": "3452cf12-cd4a-4ab8-a667-811c39c37573",
+      "username": "leoadamo",
+      "password": "leoadamo_123",
+      "isAdmin": true
+    },
+    {
+      "id": "304dfc63-2ca6-4057-a102-6927608cfdc2",
+      "username": "nath_garcia",
+      "password": "nath_garcia_123",
+      "isAdmin": true
+    },
+    {
+      "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+      "username": "john_doe",
+      "password": "john_doe_123",
+      "isAdmin": false
+    }
+  ]
+}

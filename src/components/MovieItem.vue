@@ -1,4 +1,7 @@
 <script setup>
+import { useAuthStore } from "@/stores/auth";
+import { storeToRefs } from "pinia";
+
 // COMPONENTS
 import {
   StarIcon,
@@ -19,6 +22,9 @@ defineProps({
     required: true,
   },
 });
+
+// STORE
+const { isAdmin, isAuthenticated } = storeToRefs(useAuthStore());
 </script>
 
 <template>
@@ -70,7 +76,7 @@ defineProps({
             :class="[
               star <= movie.rating ? 'text-yellow-500' : 'text-gray-500',
             ]"
-            :disabled="star === movie.rating"
+            :disabled="!isAuthenticated || star === movie.rating"
             @click="
               $emit('update:rating', {
                 id: movie.id,
@@ -83,6 +89,7 @@ defineProps({
         </div>
 
         <button
+          v-if="isAdmin"
           name="edit-movie"
           class="mr-2 p-2 rounded-full bg-gray-200 text-gray-500 transition-all hover:text-white hover:bg-purple-500"
           @click.prevent="$emit('edit', movie.id)"
@@ -91,6 +98,7 @@ defineProps({
         </button>
 
         <button
+          v-if="isAdmin"
           name="delete-movie"
           class="mr-2 p-2 rounded-full bg-gray-200 text-gray-500 transition-all hover:text-white hover:bg-red-500"
           @click.prevent="$emit('remove', movie.id)"

@@ -11,6 +11,15 @@ const routes = [
     path: "/login",
     name: "login",
     component: () => import("@/views/AppLogin.vue"),
+    beforeEnter: async () => {
+      const store = await import("@/stores/auth");
+
+      const { isAuthenticated } = store.useAuthStore();
+
+      if (isAuthenticated.value) {
+        return { name: "home" };
+      }
+    },
   },
   {
     path: "/movies/:id/:slug",

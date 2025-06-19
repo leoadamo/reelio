@@ -1,6 +1,8 @@
 <script setup>
 // DEPENDENCIES
 import { computed } from "vue";
+import { useAuthStore } from "@/stores/auth";
+import { storeToRefs } from "pinia";
 
 // COMPONENTS
 import { ChevronRightIcon } from "@heroicons/vue/24/solid";
@@ -21,6 +23,13 @@ const props = defineProps({
   },
 });
 
+// STORE
+const store = useAuthStore();
+
+const { logout } = store;
+
+const { user, isAdmin, isAuthenticated } = storeToRefs(store);
+
 // COMPUTED
 const isRemoveRatingsDisabled = computed(() => {
   return props.totalMovies === 0;
@@ -28,46 +37,70 @@ const isRemoveRatingsDisabled = computed(() => {
 </script>
 
 <template>
-  <header class="w-full flex items-center justify-between">
-    <transition mode="out-in" appear>
-      <p
-        :key="`${totalMovies}-${averageRating}`"
-        class="text-lg font-medium text-white"
-      >
-        Total movies: {{ totalMovies }}
-        <span class="m-4">/</span>
-        Average Rating: {{ averageRating }}
-      </p>
-    </transition>
+  <header class="w-full flex flex-col gap-4">
+    <div class="relative flex items-center">
+      <transition name="fade" appear>
+        <h1 v-if="isAuthenticated" class="text-2xl text-white font-bold">
+          Hello, <span>{{ user.username }}</span
+          >!
+        </h1>
+      </transition>
 
-    <div class="flex gap-4">
-      <router-link
-        :to="{ name: 'login' }"
-        class="app-button app-button--primary"
-      >
-        Log In
+      <transition name="fade" mode="out-in" appear>
+        <router-link
+          v-if="!isAuthenticated"
+          :to="{ name: 'login' }"
+          class="app-button app-button--primary ml-auto"
+        >
+          Log In
 
-        <chevron-right-icon class="w-5 h-5" aria-hidden="true" />
-      </router-link>
+          <chevron-right-icon class="w-5 h-5" aria-hidden="true" />
+        </router-link>
 
-      <button
-        class="app-button app-button--primary"
-        :class="{
-          'opacity-50 cursor-not-allowed transition-all':
-            isRemoveRatingsDisabled,
-        }"
-        :disabled="isRemoveRatingsDisabled"
-        @click="$emit('reset-ratings')"
-      >
-        Remove Ratings
-      </button>
+        <button
+          v-else
+          class="app-button app-button--primary ml-auto bg-red-500 hover:bg-red-600"
+          @click="logout"
+        >
+          Log Out
+        </button>
+      </transition>
+    </div>
 
-      <button
-        class="app-button app-button--primary"
-        @click="$emit('add-movie')"
-      >
-        Add Movie
-      </button>
+    <div class="flex items-center justify-between min-h-[42px]">
+      <transition mode="out-in" appear>
+        <p
+          :key="`${totalMovies}-${averageRating}`"
+          class="text-lg font-medium text-white"
+        >
+          Total movies: {{ totalMovies }}
+          <span class="m-4">/</span>
+          Average Rating: {{ averageRating }}
+        </p>
+      </transition>
+
+      <div class="flex gap-4">
+        <template v-if="isAdmin">
+          <button
+            class="app-button app-button--primary"
+            :class="{
+              'opacity-50 cursor-not-allowed transition-all':
+                isRemoveRatingsDisabled,
+            }"
+            :disabled="isRemoveRatingsDisabled"
+            @click="$emit('reset-ratings')"
+          >
+            Clear Ratings
+          </button>
+
+          <button
+            class="app-button app-button--primary"
+            @click="$emit('add-movie')"
+          >
+            Create Movie
+          </button>
+        </template>
+      </div>
     </div>
   </header>
 </template>

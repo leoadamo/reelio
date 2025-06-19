@@ -1,4 +1,8 @@
 <script setup>
+// DEPENDENCIES
+import { useAuthStore } from "@/stores/auth";
+import { storeToRefs } from "pinia";
+
 // COMPONENTS
 import MovieItem from "@/components/MovieItem.vue";
 
@@ -7,6 +11,9 @@ const movies = defineModel("movies");
 
 // EMITS
 const emit = defineEmits(["add-movie", "edit-movie"]);
+
+// STORE
+const { isAdmin } = storeToRefs(useAuthStore());
 
 // METHODS
 /**
@@ -66,7 +73,7 @@ function editMovie(id) {
         Hey, there are no movies to show
       </h1>
 
-      <p class="text-center text-gray-400">
+      <p v-if="isAdmin" class="text-center text-gray-400">
         Try
 
         <button name="add-movie" @click="$emit('add-movie')">
