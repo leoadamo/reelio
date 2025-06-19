@@ -59,7 +59,9 @@ function editMovie(id) {
       </component>
     </transition-group>
 
-    <div v-else class="flex-1 flex items-center justify-center">
+    <div v-else class="flex-1 flex flex-col items-center justify-center gap-6">
+      <img src="/images/empty.png" alt="" width="300" height="300" />
+
       <p class="text-2xl text-white font-bold">
         Hey, there are no movies to show.
       </p>
