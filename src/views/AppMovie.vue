@@ -1,12 +1,15 @@
 <script setup>
 // DEPENDENCIES
-import { computed } from "vue";
+import { computed, defineAsyncComponent } from "vue";
 import { useMoviesStore } from "@/stores/movies";
 
 // COMPONENTS
 import MovieRating from "@/components/MovieRating.vue";
 import GenresList from "@/components/GenresList.vue";
 import BackButton from "@/components/BackButton.vue";
+
+// ASYNC COMPONENTS
+const YoutubePlayer = defineAsyncComponent(() => import("vue3-youtube"));
 
 // PROPS
 const props = defineProps({
@@ -27,7 +30,7 @@ const movie = computed(() => {
 
 <template>
   <div class="flex gap-6 my-auto">
-    <div class="relative w-[400px] h-[600px] shadow-2xl">
+    <div class="relative w-[400px] min-h-[600px] shadow-2xl">
       <div class="absolute top-0 right-0">
         <movie-rating :rating="movie.rating" />
       </div>
@@ -53,6 +56,8 @@ const movie = computed(() => {
       <p class="text-white">{{ movie.description }}</p>
 
       <genres-list :genres="movie.genres" />
+
+      <youtube-player :src="movie.trailer" width="755" />
 
       <back-button class="mt-auto ml-auto" />
     </div>

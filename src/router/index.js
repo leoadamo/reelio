@@ -26,7 +26,9 @@ const routes = [
     path: "/movies/:id/:slug",
     name: "movie",
     component: () => import("@/views/AppMovie.vue"),
-    props: true,
+    props: (route) => ({
+      id: route.params.id,
+    }),
     beforeEnter: async (to) => {
       const store = await import("@/stores/movies");
 

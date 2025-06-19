@@ -1,12 +1,35 @@
 {
   "items": [
     {
+      "id": "a1b2c3d4-e5f6-7g8h-9i0j-k1l2m3n4o5p6",
+      "name": "Lilo & Stitch",
+      "slug": "lilo-and-stitch",
+      "description": "A lonely Hawaiian girl befriends a runaway alien, helping to mend her fragmented family.",
+      "image": "https://m.media-amazon.com/images/M/MV5BYmFmZjM1ZTEtYzQ5ZS00MTRmLTkzMDktYWMxNTg2NGE3YjY4XkEyXkFqcGc@._V1_FMjpg_UX510_.jpg",
+      "trailer": "https://www.youtube.com/watch?v=VWqJifMMgZE&ab_channel=Disney",
+      "rating": 5,
+      "genres": ["animation", "adventure", "comedy"],
+      "inTheaters": true
+    },
+    {
+      "id": "b2c3d4e5-f6g7-8h9i-0j1k-2l3m4n5o6p7q",
+      "name": "How to Train Your Dragon",
+      "slug": "how-to-train-your-dragon",
+      "description": "A young Viking befriends a dragon, leading to a friendship that changes the fate of their village.",
+      "image": "https://m.media-amazon.com/images/M/MV5BODA5Y2M0NjctNWQzMy00ODRhLWE0MzUtYmE1YTAzZjYyYmQyXkEyXkFqcGc@._V1_FMjpg_UY5000_.jpg",
+      "trailer": "https://www.youtube.com/watch?v=22w7z_lT6YM&ab_channel=UniversalPictures",
+      "rating": 5,
+      "genres": ["animation", "action", "adventure"],
+      "inTheaters": true
+    },
+    {
       "id": "c7b4e11f-fc2b-4bf1-a187-b53ff9595f16",
       "name": "The Godfather",
       "slug": "the-godfather",
       "description": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
       "image": "https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_FMjpg_UY1982_.jpg",
-      "rating": 4,
+      "trailer": "https://www.youtube.com/watch?v=UaVTIH8mujA&ab_channel=ParamountPictures",
+      "rating": 5,
       "genres": ["crime", "drama"],
       "inTheaters": false
     },
@@ -16,7 +39,8 @@
       "slug": "the-shawshank-redemption",
       "description": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
       "image": "https://m.media-amazon.com/images/M/MV5BNDE3ODcxYzMtY2YzZC00NmNlLWJiNDMtZDViZWM2MzIxZDYwXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1200_.jpg",
-      "rating": 4,
+      "trailer": "https://www.youtube.com/watch?v=PLl99DlL6b4&ab_channel=WarnerBros.Entertainment",
+      "rating": 2,
       "genres": ["drama"],
       "inTheaters": false
     },
@@ -26,8 +50,20 @@
       "slug": "the-dark-knight",
       "description": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
       "image": "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_FMjpg_UY2048_.jpg",
-      "rating": 3,
+      "trailer": "https://www.youtube.com/watch?v=EXeTwQWrcwY&ab_channel=RottenTomatoesClassicTrailers",
+      "rating": 5,
       "genres": ["action", "crime", "drama"],
+      "inTheaters": false
+    },
+    {
+      "id": "5df8d113-835d-45b6-893c-78f45050f155",
+      "name": "Kung Fu Panda",
+      "slug": "kung-fu-panda",
+      "description": "When the Valley of Peace is threatened, a lazy panda named Po is unexpectedly chosen to fulfill an ancient prophecy and become the Dragon Warrior.",
+      "image": "https://m.media-amazon.com/images/M/MV5BZDU5MDNiMGItYjVmZi00NDUxLTg2OTktNGE0NzNlNzM4NzgyXkEyXkFqcGc@._V1_FMjpg_UY2048_.jpg",
+      "trailer": "https://www.youtube.com/watch?v=NRc-ze7Wrxw&ab_channel=KungFuPanda",
+      "rating": 5,
+      "genres": ["comedy", "action", "adventure"],
       "inTheaters": false
     }
   ]
