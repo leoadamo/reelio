@@ -71,6 +71,7 @@ defineExpose({
     <div
       v-if="shouldRender"
       class="fixed inset-0 grid place-content-center w-full h-full backdrop-blur-sm bg-gray-900/50 z-20"
+      @keyup.esc="unmount"
     >
       <div
         role="alertdialog"
@@ -89,7 +90,7 @@ defineExpose({
 
         <header
           v-if="title || $slots.header"
-          class="text-lg p-3 font-medium bg-gray-900"
+          class="p-3 text-lg font-bold bg-gray-900"
         >
           <slot name="header">
             <h2>{{ title }}</h2>

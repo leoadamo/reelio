@@ -6,7 +6,11 @@ module.exports = {
     "./src/styles/index.css",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        mulish: ["Mulish", "sans-serif"],
+      },
+    },
   },
   plugins: [require("@tailwindcss/forms"), require("@tailwindcss/typography")],
 };

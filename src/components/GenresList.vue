@@ -24,7 +24,7 @@ function formatGenre(genre) {
     <span
       v-for="genre in genres"
       :key="genre"
-      class="text-xs bg-indigo-500 text-white py-0.5 px-2 rounded-full"
+      class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full"
     >
       {{ formatGenre(genre) }}
     </span>

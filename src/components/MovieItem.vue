@@ -46,9 +46,9 @@ defineProps({
       />
     </div>
 
-    <div class="h-56 p-4 flex flex-col items-start justify-start w-full">
-      <div class="h-16 shrink-0 w-full">
-        <h3 class="text-2xl">{{ movie.name }}</h3>
+    <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
+      <div class="w-full flex flex-col gap-2 shrink-0">
+        <h3 class="text-2xl font-bold">{{ movie.name }}</h3>
 
         <genres-list :genres="movie.genres" />
       </div>

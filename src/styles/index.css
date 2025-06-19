@@ -4,7 +4,7 @@
 
 @layer components {
   .app-button {
-    @apply flex gap-2 items-center w-fit h-[42px] px-6 rounded-md text-base leading-none text-white font-medium transition-colors duration-200 ease-in-out;
+    @apply flex gap-2 items-center w-fit h-[42px] px-6 rounded-md text-base text-white font-medium transition-colors duration-200 ease-in-out;
 
     &--primary {
       @apply bg-cyan-500 hover:bg-cyan-600;
