@@ -6,9 +6,9 @@ module.exports = {
   extends: [
     "plugin:vue/vue3-essential",
     "eslint:recommended",
-    "plugin:html/recommended",
     "@vue/eslint-config-prettier",
   ],
+  plugins: ["html"],
   parserOptions: {
     ecmaVersion: "latest",
   },

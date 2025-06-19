@@ -5,14 +5,14 @@ const routes = [
   {
     path: "/",
     name: "home",
-    component: () => import("@/views/HomePage.vue"),
+    component: () => import("@/views/AppHome.vue"),
   },
   {
     path: "/movies/:id/:slug",
-    name: "movie-detail",
-    component: () => import("@/views/MovieDetail.vue"),
+    name: "movie",
+    component: () => import("@/views/AppMovie.vue"),
     props: true,
-    beforeEnter: async (to, from) => {
+    beforeEnter: async (to) => {
       const store = await import("@/stores/movies");
 
       const { getMovieById } = store.useMoviesStore();
