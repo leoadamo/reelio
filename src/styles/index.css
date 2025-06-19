@@ -3,12 +3,16 @@
 @tailwind utilities;
 
 @layer components {
-  .primary-button {
-    @apply p-2 rounded-md text-white bg-cyan-500;
-  }
+  .app-button {
+    @apply flex gap-2 items-center w-fit h-[42px] px-6 rounded-md text-base leading-none text-white font-medium transition-colors duration-200 ease-in-out;
 
-  .secondary-button {
-    @apply p-2 rounded-md text-white bg-gray-500;
+    &--primary {
+      @apply bg-cyan-500 hover:bg-cyan-600;
+    }
+
+    &--secondary {
+      @apply bg-gray-500 hover:bg-gray-600;
+    }
   }
 }
 

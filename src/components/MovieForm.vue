@@ -88,7 +88,13 @@ onMounted(() => {
     <footer class="flex items-center justify-between mt-8">
       <small class="text-xs italic font-medium">*Required fields.</small>
 
-      <button name="submit" type="submit" class="primary-button">Submit</button>
+      <button
+        name="submit"
+        type="submit"
+        class="app-button app-button--primary"
+      >
+        Submit
+      </button>
     </footer>
   </form>
 </template>

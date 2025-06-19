@@ -1,13 +1,11 @@
 <script setup>
-// DEPENDENCIES
+// COMPONENTS
 import {
   StarIcon,
   TrashIcon,
   PencilIcon,
   EyeIcon,
 } from "@heroicons/vue/24/solid";
-
-// COMPONENTS
 import MovieRating from "@/components/MovieRating.vue";
 import GenresList from "@/components/GenresList.vue";
 

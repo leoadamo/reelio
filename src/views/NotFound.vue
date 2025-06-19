@@ -1,3 +1,8 @@
+<script setup>
+// COMPONENTS
+import BackButton from "@/components/BackButton.vue";
+</script>
+
 <template>
   <div class="flex-1 flex flex-col items-center justify-center gap-6">
     <img src="/images/not-found.png" alt="" width="300" height="300" />
@@ -9,8 +14,6 @@
       changed, or is temporarily unavailable.
     </p>
 
-    <router-link :to="{ name: 'home' }" class="primary-button">
-      Go back home
-    </router-link>
+    <back-button />
   </div>
 </template>

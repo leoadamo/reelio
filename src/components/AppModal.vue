@@ -105,7 +105,7 @@ defineExpose({
             <button
               type="button"
               name="cancel"
-              class="secondary-button"
+              class="app-button app-button--secondary"
               @click="unmount"
             >
               {{ closeLabel }}
@@ -114,7 +114,7 @@ defineExpose({
             <button
               type="button"
               name="confirm"
-              class="primary-button"
+              class="app-button app-button--primary"
               @click="$emit('confirm')"
             >
               {{ confirmLabel }}

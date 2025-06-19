@@ -1,6 +1,8 @@
 <script setup>
 // DEPENDENCIES
 import { computed } from "vue";
+
+// COMPONENTS
 import { StarIcon } from "@heroicons/vue/24/solid";
 
 // PROPS

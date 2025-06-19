@@ -2,6 +2,9 @@
 // DEPENDENCIES
 import { computed } from "vue";
 
+// COMPONENTS
+import { ChevronRightIcon } from "@heroicons/vue/24/solid";
+
 // EMITS
 defineEmits(["reset-ratings", "add-movie"]);
 
@@ -38,8 +41,17 @@ const isRemoveRatingsDisabled = computed(() => {
     </transition>
 
     <div class="flex gap-4">
+      <router-link
+        :to="{ name: 'login' }"
+        class="app-button app-button--primary"
+      >
+        Log In
+
+        <chevron-right-icon class="w-5 h-5" aria-hidden="true" />
+      </router-link>
+
       <button
-        class="primary-button"
+        class="app-button app-button--primary"
         :class="{
           'opacity-50 cursor-not-allowed transition-all':
             isRemoveRatingsDisabled,
@@ -50,7 +62,10 @@ const isRemoveRatingsDisabled = computed(() => {
         Remove Ratings
       </button>
 
-      <button class="primary-button" @click="$emit('add-movie')">
+      <button
+        class="app-button app-button--primary"
+        @click="$emit('add-movie')"
+      >
         Add Movie
       </button>
     </div>

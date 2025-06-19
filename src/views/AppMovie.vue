@@ -6,6 +6,7 @@ import { useMoviesStore } from "@/stores/movies";
 // COMPONENTS
 import MovieRating from "@/components/MovieRating.vue";
 import GenresList from "@/components/GenresList.vue";
+import BackButton from "@/components/BackButton.vue";
 
 // PROPS
 const props = defineProps({
@@ -52,6 +53,8 @@ const movie = computed(() => {
       <p class="text-white">{{ movie.description }}</p>
 
       <genres-list :genres="movie.genres" />
+
+      <back-button class="mt-auto ml-auto" />
     </div>
   </div>
 </template>
