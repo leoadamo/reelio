@@ -1,7 +1,6 @@
 <script setup>
 // DEPENDENCIES
 import { computed } from "vue";
-import { storeToRefs } from "pinia";
 import { useMoviesStore } from "@/stores/movies";
 
 // COMPONENTS
@@ -16,14 +15,12 @@ const props = defineProps({
   },
 });
 
-// REFS
-const store = useMoviesStore();
-
-const { movies } = storeToRefs(store);
+// ACTIONS
+const { getMovieById } = useMoviesStore();
 
 // COMPUTED
 const movie = computed(() => {
-  return movies.value.find((movie) => movie.id === props.id);
+  return getMovieById(props.id);
 });
 </script>
 

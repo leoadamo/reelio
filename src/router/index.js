@@ -1,6 +1,5 @@
 // DEPENDENCIES
 import { createRouter, createWebHistory } from "vue-router";
-import { storeToRefs } from "pinia";
 
 const routes = [
   {
@@ -16,9 +15,9 @@ const routes = [
     beforeEnter: async (to, from) => {
       const store = await import("@/stores/movies");
 
-      const { movies } = storeToRefs(store.useMoviesStore());
+      const { getMovieById } = store.useMoviesStore();
 
-      const exists = movies.value.find((movie) => movie.id === to.params.id);
+      const exists = getMovieById(to.params.id);
 
       if (!exists) {
         return {
