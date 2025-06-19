@@ -1,5 +1,6 @@
 // DEPENDENCIES
 import { createRouter, createWebHistory } from "vue-router";
+import { storeToRefs } from "pinia";
 
 const routes = [
   {
@@ -14,7 +15,7 @@ const routes = [
     beforeEnter: async () => {
       const store = await import("@/stores/auth");
 
-      const { isAuthenticated } = store.useAuthStore();
+      const { isAuthenticated } = storeToRefs(store.useAuthStore());
 
       if (isAuthenticated.value) {
         return { name: "home" };
