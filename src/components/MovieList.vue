@@ -6,7 +6,7 @@ import MovieItem from "@/components/MovieItem.vue";
 const movies = defineModel("movies");
 
 // EMITS
-const emit = defineEmits(["edit-movie"]);
+const emit = defineEmits(["add-movie", "edit-movie"]);
 
 // METHODS
 /**
@@ -62,8 +62,16 @@ function editMovie(id) {
     <div v-else class="flex-1 flex flex-col items-center justify-center gap-6">
       <img src="/images/empty.png" alt="" width="300" height="300" />
 
-      <p class="text-2xl text-white font-bold">
-        Hey, there are no movies to show.
+      <h1 class="text-2xl text-white font-bold">
+        Hey, there are no movies to show
+      </h1>
+
+      <p class="text-center text-gray-400">
+        Try
+
+        <button name="add-movie" @click="$emit('add-movie')">
+          <span class="text-blue-500 underline">adding a new one</span>.
+        </button>
       </p>
     </div>
   </transition>

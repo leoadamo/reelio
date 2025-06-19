@@ -76,7 +76,7 @@ defineExpose({
       <div
         role="alertdialog"
         aria-modal="true"
-        class="relative w-[600px] bg-gray-800 text-white overflow-visible"
+        class="relative w-[600px] bg-gray-800 text-white overflow-visible border border-gray-800 shadow-lg"
       >
         <button
           type="button"
