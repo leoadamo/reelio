@@ -22,6 +22,7 @@ const props = defineProps({
       name: "",
       description: "",
       image: "",
+      trailer: "",
       genres: [],
       inTheaters: false,
     }),
@@ -50,6 +51,7 @@ function resetFormFields() {
     name: "",
     description: "",
     image: "",
+    trailer: "",
     genres: [],
     inTheaters: false,
   };

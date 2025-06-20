@@ -58,6 +58,18 @@ onMounted(() => {
     </div>
 
     <div class="flex flex-col gap-1">
+      <label for="trailer">Trailer*</label>
+      <input
+        v-model="movie.trailer"
+        type="text"
+        id="trailer"
+        name="trailer"
+        required
+        class="border rounded border-gray-400 bg-gray-900"
+      />
+    </div>
+
+    <div class="flex flex-col gap-1">
       <label for="genres">Genres*</label>
       <select
         v-model="movie.genres"
@@ -71,6 +83,8 @@ onMounted(() => {
         <option value="crime">Crime</option>
         <option value="action">Action</option>
         <option value="comedy">Comedy</option>
+        <option value="animation">Animation</option>
+        <option value="adventure">Adventure</option>
       </select>
     </div>
 

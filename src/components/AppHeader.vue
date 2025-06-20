@@ -82,7 +82,7 @@ const isRemoveRatingsDisabled = computed(() => {
       <div class="flex gap-4">
         <template v-if="isAdmin">
           <button
-            class="app-button app-button--primary"
+            class="app-button app-button--secondary"
             :class="{
               'opacity-50 cursor-not-allowed transition-all':
                 isRemoveRatingsDisabled,
