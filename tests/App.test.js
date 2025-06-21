@@ -9,7 +9,7 @@ import router from "@/router";
 import App from "@/App.vue";
 
 describe("App.vue", () => {
-  it("Should mount the App", () => {
+  it("Should render the App", () => {
     const wrapper = render(App, {
       global: {
         plugins: [router],

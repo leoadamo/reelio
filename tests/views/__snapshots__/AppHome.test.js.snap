@@ -1,0 +1,1287 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`App Home > should display an welcome message and a logout button when the user is authenticated 1`] = `
+"<div class="flex-1 flex flex-col justify-between" data-testid="app-home">
+  <header data-v-48a13218="" class="w-full flex flex-col gap-4">
+    <div data-v-48a13218="" class="relative flex items-center">
+      <transition-stub data-v-48a13218="" name="fade" appear="true" persisted="false" css="true">
+        <h1 data-v-48a13218="" class="text-2xl text-white font-bold" data-testid="greeting-message"> Hello, user_test! </h1>
+      </transition-stub>
+      <transition-stub data-v-48a13218="" name="fade" mode="out-in" appear="true" persisted="false" css="true"><button data-v-48a13218="" class="app-button app-button--primary ml-auto bg-red-500 hover:bg-red-600" data-testid="logout-button"> Log Out </button></transition-stub>
+    </div>
+    <div data-v-48a13218="" class="flex items-center justify-between min-h-[42px]">
+      <transition-stub data-v-48a13218="" mode="out-in" appear="true" persisted="false" css="true">
+        <p data-v-48a13218="" class="text-lg font-medium text-white"> Total movies: 6 <span data-v-48a13218="" class="m-4">/</span> Average Rating: 4.5</p>
+      </transition-stub>
+      <div data-v-48a13218="" class="flex gap-4">
+        <!--v-if-->
+      </div>
+    </div>
+  </header>
+  <main class="flex min-h-[744px] mt-12">
+    <transition-stub name="fade" mode="out-in" appear="false" persisted="false" css="true" tag="div">
+      <transition-group-stub tag="ul" name="list" appear="false" persisted="false" css="true" class="relative grid grid-cols-3 gap-4 list-none">
+        <li>
+          <div class="w-96 h-auto bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
+            <div class="h-[520px] overflow-hidden w-full relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10"> In Theaters </span>
+              <div class="absolute top-0 right-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-14 w-14 text-yellow-500">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                </svg>
+                <div class="absolute inset-0 flex items-center justify-center text-center"><span class="text-xl text-yellow-800">5</span></div>
+              </div><img class="w-full h-full object-cover object-center" src="https://m.media-amazon.com/images/M/MV5BYmFmZjM1ZTEtYzQ5ZS00MTRmLTkzMDktYWMxNTg2NGE3YjY4XkEyXkFqcGc@._V1_FMjpg_UX510_.jpg" alt="Lilo &amp; Stitch" width="380" height="520">
+            </div>
+            <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
+              <div class="w-full flex flex-col gap-2 shrink-0">
+                <h3 class="text-2xl font-bold">Lilo &amp; Stitch</h3>
+                <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Animation</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Adventure</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Comedy</span></div>
+              </div>
+              <div class="h-24 overflow-auto flex-1">
+                <p class="text-sm">A lonely Hawaiian girl befriends a runaway alien, helping to mend her fragmented family.</p>
+              </div>
+              <div class="w-full flex items-center justify-start h-8 shrink-0"><span class="text-xs mr-2 leading-7"> Rating: (5/5) </span>
+                <div class="items-center justify-start flex flex-1 space-x-1"><button class="rounded-md disabled:cursor-not-allowed text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button></div>
+                <!--v-if-->
+                <!--v-if--><a href="/movies/a1b2c3d4-e5f6-7g8h-9i0j-k1l2m3n4o5p6/lilo-and-stitch" class="p-2 rounded-full bg-gray-200 text-gray-500 transition-all hover:text-white hover:bg-blue-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="w-4 h-4">
+                    <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"></path>
+                    <path fill-rule="evenodd" d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 0 1 0-1.113ZM17.25 12a5.25 5.25 0 1 1-10.5 0 5.25 5.25 0 0 1 10.5 0Z" clip-rule="evenodd"></path>
+                  </svg></a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="w-96 h-auto bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
+            <div class="h-[520px] overflow-hidden w-full relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10"> In Theaters </span>
+              <div class="absolute top-0 right-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-14 w-14 text-yellow-500">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                </svg>
+                <div class="absolute inset-0 flex items-center justify-center text-center"><span class="text-xl text-yellow-800">5</span></div>
+              </div><img class="w-full h-full object-cover object-center" src="https://m.media-amazon.com/images/M/MV5BODA5Y2M0NjctNWQzMy00ODRhLWE0MzUtYmE1YTAzZjYyYmQyXkEyXkFqcGc@._V1_FMjpg_UY5000_.jpg" alt="How to Train Your Dragon" width="380" height="520">
+            </div>
+            <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
+              <div class="w-full flex flex-col gap-2 shrink-0">
+                <h3 class="text-2xl font-bold">How to Train Your Dragon</h3>
+                <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Animation</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Action</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Adventure</span></div>
+              </div>
+              <div class="h-24 overflow-auto flex-1">
+                <p class="text-sm">A young Viking befriends a dragon, leading to a friendship that changes the fate of their village.</p>
+              </div>
+              <div class="w-full flex items-center justify-start h-8 shrink-0"><span class="text-xs mr-2 leading-7"> Rating: (5/5) </span>
+                <div class="items-center justify-start flex flex-1 space-x-1"><button class="rounded-md disabled:cursor-not-allowed text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button></div>
+                <!--v-if-->
+                <!--v-if--><a href="/movies/b2c3d4e5-f6g7-8h9i-0j1k-2l3m4n5o6p7q/how-to-train-your-dragon" class="p-2 rounded-full bg-gray-200 text-gray-500 transition-all hover:text-white hover:bg-blue-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="w-4 h-4">
+                    <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"></path>
+                    <path fill-rule="evenodd" d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 0 1 0-1.113ZM17.25 12a5.25 5.25 0 1 1-10.5 0 5.25 5.25 0 0 1 10.5 0Z" clip-rule="evenodd"></path>
+                  </svg></a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="w-96 h-auto bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
+            <div class="h-[520px] overflow-hidden w-full relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10" style="display: none;"> In Theaters </span>
+              <div class="absolute top-0 right-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-14 w-14 text-yellow-500">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                </svg>
+                <div class="absolute inset-0 flex items-center justify-center text-center"><span class="text-xl text-yellow-800">5</span></div>
+              </div><img class="w-full h-full object-cover object-center" src="https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_FMjpg_UY1982_.jpg" alt="The Godfather" width="380" height="520">
+            </div>
+            <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
+              <div class="w-full flex flex-col gap-2 shrink-0">
+                <h3 class="text-2xl font-bold">The Godfather</h3>
+                <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Crime</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Drama</span></div>
+              </div>
+              <div class="h-24 overflow-auto flex-1">
+                <p class="text-sm">The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.</p>
+              </div>
+              <div class="w-full flex items-center justify-start h-8 shrink-0"><span class="text-xs mr-2 leading-7"> Rating: (5/5) </span>
+                <div class="items-center justify-start flex flex-1 space-x-1"><button class="rounded-md disabled:cursor-not-allowed text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button></div>
+                <!--v-if-->
+                <!--v-if--><a href="/movies/c7b4e11f-fc2b-4bf1-a187-b53ff9595f16/the-godfather" class="p-2 rounded-full bg-gray-200 text-gray-500 transition-all hover:text-white hover:bg-blue-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="w-4 h-4">
+                    <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"></path>
+                    <path fill-rule="evenodd" d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 0 1 0-1.113ZM17.25 12a5.25 5.25 0 1 1-10.5 0 5.25 5.25 0 0 1 10.5 0Z" clip-rule="evenodd"></path>
+                  </svg></a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="w-96 h-auto bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
+            <div class="h-[520px] overflow-hidden w-full relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10" style="display: none;"> In Theaters </span>
+              <div class="absolute top-0 right-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-14 w-14 text-yellow-500">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                </svg>
+                <div class="absolute inset-0 flex items-center justify-center text-center"><span class="text-xl text-yellow-800">2</span></div>
+              </div><img class="w-full h-full object-cover object-center" src="https://m.media-amazon.com/images/M/MV5BNDE3ODcxYzMtY2YzZC00NmNlLWJiNDMtZDViZWM2MzIxZDYwXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1200_.jpg" alt="The Shawshank Redemption" width="380" height="520">
+            </div>
+            <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
+              <div class="w-full flex flex-col gap-2 shrink-0">
+                <h3 class="text-2xl font-bold">The Shawshank Redemption</h3>
+                <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Drama</span></div>
+              </div>
+              <div class="h-24 overflow-auto flex-1">
+                <p class="text-sm">Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.</p>
+              </div>
+              <div class="w-full flex items-center justify-start h-8 shrink-0"><span class="text-xs mr-2 leading-7"> Rating: (2/5) </span>
+                <div class="items-center justify-start flex flex-1 space-x-1"><button class="rounded-md disabled:cursor-not-allowed text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-gray-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-gray-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-gray-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button></div>
+                <!--v-if-->
+                <!--v-if--><a href="/movies/fed6132f-bfe7-46f6-9b41-597feaf48b0d/the-shawshank-redemption" class="p-2 rounded-full bg-gray-200 text-gray-500 transition-all hover:text-white hover:bg-blue-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="w-4 h-4">
+                    <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"></path>
+                    <path fill-rule="evenodd" d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 0 1 0-1.113ZM17.25 12a5.25 5.25 0 1 1-10.5 0 5.25 5.25 0 0 1 10.5 0Z" clip-rule="evenodd"></path>
+                  </svg></a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="w-96 h-auto bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
+            <div class="h-[520px] overflow-hidden w-full relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10" style="display: none;"> In Theaters </span>
+              <div class="absolute top-0 right-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-14 w-14 text-yellow-500">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                </svg>
+                <div class="absolute inset-0 flex items-center justify-center text-center"><span class="text-xl text-yellow-800">5</span></div>
+              </div><img class="w-full h-full object-cover object-center" src="https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_FMjpg_UY2048_.jpg" alt="The Dark Knight" width="380" height="520">
+            </div>
+            <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
+              <div class="w-full flex flex-col gap-2 shrink-0">
+                <h3 class="text-2xl font-bold">The Dark Knight</h3>
+                <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Action</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Crime</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Drama</span></div>
+              </div>
+              <div class="h-24 overflow-auto flex-1">
+                <p class="text-sm">When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.</p>
+              </div>
+              <div class="w-full flex items-center justify-start h-8 shrink-0"><span class="text-xs mr-2 leading-7"> Rating: (5/5) </span>
+                <div class="items-center justify-start flex flex-1 space-x-1"><button class="rounded-md disabled:cursor-not-allowed text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button></div>
+                <!--v-if-->
+                <!--v-if--><a href="/movies/304dfc63-2ca6-4057-a102-6927608cfdc2/the-dark-knight" class="p-2 rounded-full bg-gray-200 text-gray-500 transition-all hover:text-white hover:bg-blue-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="w-4 h-4">
+                    <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"></path>
+                    <path fill-rule="evenodd" d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 0 1 0-1.113ZM17.25 12a5.25 5.25 0 1 1-10.5 0 5.25 5.25 0 0 1 10.5 0Z" clip-rule="evenodd"></path>
+                  </svg></a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="w-96 h-auto bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
+            <div class="h-[520px] overflow-hidden w-full relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10" style="display: none;"> In Theaters </span>
+              <div class="absolute top-0 right-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-14 w-14 text-yellow-500">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                </svg>
+                <div class="absolute inset-0 flex items-center justify-center text-center"><span class="text-xl text-yellow-800">5</span></div>
+              </div><img class="w-full h-full object-cover object-center" src="https://m.media-amazon.com/images/M/MV5BZDU5MDNiMGItYjVmZi00NDUxLTg2OTktNGE0NzNlNzM4NzgyXkEyXkFqcGc@._V1_FMjpg_UY2048_.jpg" alt="Kung Fu Panda" width="380" height="520">
+            </div>
+            <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
+              <div class="w-full flex flex-col gap-2 shrink-0">
+                <h3 class="text-2xl font-bold">Kung Fu Panda</h3>
+                <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Comedy</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Action</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Adventure</span></div>
+              </div>
+              <div class="h-24 overflow-auto flex-1">
+                <p class="text-sm">When the Valley of Peace is threatened, a lazy panda named Po is unexpectedly chosen to fulfill an ancient prophecy and become the Dragon Warrior.</p>
+              </div>
+              <div class="w-full flex items-center justify-start h-8 shrink-0"><span class="text-xs mr-2 leading-7"> Rating: (5/5) </span>
+                <div class="items-center justify-start flex flex-1 space-x-1"><button class="rounded-md disabled:cursor-not-allowed text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button></div>
+                <!--v-if-->
+                <!--v-if--><a href="/movies/5df8d113-835d-45b6-893c-78f45050f155/kung-fu-panda" class="p-2 rounded-full bg-gray-200 text-gray-500 transition-all hover:text-white hover:bg-blue-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="w-4 h-4">
+                    <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"></path>
+                    <path fill-rule="evenodd" d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 0 1 0-1.113ZM17.25 12a5.25 5.25 0 1 1-10.5 0 5.25 5.25 0 0 1 10.5 0Z" clip-rule="evenodd"></path>
+                  </svg></a>
+              </div>
+            </div>
+          </div>
+        </li>
+      </transition-group-stub>
+    </transition-stub>
+  </main>
+  <!--v-if-->
+</div>"
+`;
+
+exports[`App Home > should display the login button when the user is not authenticated 1`] = `
+"<div class="flex-1 flex flex-col justify-between" data-testid="app-home">
+  <header data-v-48a13218="" class="w-full flex flex-col gap-4">
+    <div data-v-48a13218="" class="relative flex items-center">
+      <transition-stub data-v-48a13218="" name="fade" appear="true" persisted="false" css="true">
+        <!--v-if-->
+      </transition-stub>
+      <transition-stub data-v-48a13218="" name="fade" mode="out-in" appear="true" persisted="false" css="true"><a data-v-48a13218="" href="/login" class="app-button app-button--primary ml-auto" data-testid="login-button"> Log In <svg data-v-48a13218="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="w-5 h-5">
+            <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd"></path>
+          </svg></a></transition-stub>
+    </div>
+    <div data-v-48a13218="" class="flex items-center justify-between min-h-[42px]">
+      <transition-stub data-v-48a13218="" mode="out-in" appear="true" persisted="false" css="true">
+        <p data-v-48a13218="" class="text-lg font-medium text-white"> Total movies: 6 <span data-v-48a13218="" class="m-4">/</span> Average Rating: 4.5</p>
+      </transition-stub>
+      <div data-v-48a13218="" class="flex gap-4">
+        <!--v-if-->
+      </div>
+    </div>
+  </header>
+  <main class="flex min-h-[744px] mt-12">
+    <transition-stub name="fade" mode="out-in" appear="false" persisted="false" css="true" tag="div">
+      <transition-group-stub tag="ul" name="list" appear="false" persisted="false" css="true" class="relative grid grid-cols-3 gap-4 list-none">
+        <li>
+          <div class="w-96 h-auto bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
+            <div class="h-[520px] overflow-hidden w-full relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10"> In Theaters </span>
+              <div class="absolute top-0 right-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-14 w-14 text-yellow-500">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                </svg>
+                <div class="absolute inset-0 flex items-center justify-center text-center"><span class="text-xl text-yellow-800">5</span></div>
+              </div><img class="w-full h-full object-cover object-center" src="https://m.media-amazon.com/images/M/MV5BYmFmZjM1ZTEtYzQ5ZS00MTRmLTkzMDktYWMxNTg2NGE3YjY4XkEyXkFqcGc@._V1_FMjpg_UX510_.jpg" alt="Lilo &amp; Stitch" width="380" height="520">
+            </div>
+            <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
+              <div class="w-full flex flex-col gap-2 shrink-0">
+                <h3 class="text-2xl font-bold">Lilo &amp; Stitch</h3>
+                <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Animation</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Adventure</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Comedy</span></div>
+              </div>
+              <div class="h-24 overflow-auto flex-1">
+                <p class="text-sm">A lonely Hawaiian girl befriends a runaway alien, helping to mend her fragmented family.</p>
+              </div>
+              <div class="w-full flex items-center justify-start h-8 shrink-0"><span class="text-xs mr-2 leading-7"> Rating: (5/5) </span>
+                <div class="items-center justify-start flex flex-1 space-x-1"><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button></div>
+                <!--v-if-->
+                <!--v-if--><a href="/movies/a1b2c3d4-e5f6-7g8h-9i0j-k1l2m3n4o5p6/lilo-and-stitch" class="p-2 rounded-full bg-gray-200 text-gray-500 transition-all hover:text-white hover:bg-blue-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="w-4 h-4">
+                    <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"></path>
+                    <path fill-rule="evenodd" d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 0 1 0-1.113ZM17.25 12a5.25 5.25 0 1 1-10.5 0 5.25 5.25 0 0 1 10.5 0Z" clip-rule="evenodd"></path>
+                  </svg></a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="w-96 h-auto bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
+            <div class="h-[520px] overflow-hidden w-full relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10"> In Theaters </span>
+              <div class="absolute top-0 right-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-14 w-14 text-yellow-500">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                </svg>
+                <div class="absolute inset-0 flex items-center justify-center text-center"><span class="text-xl text-yellow-800">5</span></div>
+              </div><img class="w-full h-full object-cover object-center" src="https://m.media-amazon.com/images/M/MV5BODA5Y2M0NjctNWQzMy00ODRhLWE0MzUtYmE1YTAzZjYyYmQyXkEyXkFqcGc@._V1_FMjpg_UY5000_.jpg" alt="How to Train Your Dragon" width="380" height="520">
+            </div>
+            <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
+              <div class="w-full flex flex-col gap-2 shrink-0">
+                <h3 class="text-2xl font-bold">How to Train Your Dragon</h3>
+                <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Animation</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Action</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Adventure</span></div>
+              </div>
+              <div class="h-24 overflow-auto flex-1">
+                <p class="text-sm">A young Viking befriends a dragon, leading to a friendship that changes the fate of their village.</p>
+              </div>
+              <div class="w-full flex items-center justify-start h-8 shrink-0"><span class="text-xs mr-2 leading-7"> Rating: (5/5) </span>
+                <div class="items-center justify-start flex flex-1 space-x-1"><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button></div>
+                <!--v-if-->
+                <!--v-if--><a href="/movies/b2c3d4e5-f6g7-8h9i-0j1k-2l3m4n5o6p7q/how-to-train-your-dragon" class="p-2 rounded-full bg-gray-200 text-gray-500 transition-all hover:text-white hover:bg-blue-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="w-4 h-4">
+                    <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"></path>
+                    <path fill-rule="evenodd" d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 0 1 0-1.113ZM17.25 12a5.25 5.25 0 1 1-10.5 0 5.25 5.25 0 0 1 10.5 0Z" clip-rule="evenodd"></path>
+                  </svg></a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="w-96 h-auto bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
+            <div class="h-[520px] overflow-hidden w-full relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10" style="display: none;"> In Theaters </span>
+              <div class="absolute top-0 right-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-14 w-14 text-yellow-500">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                </svg>
+                <div class="absolute inset-0 flex items-center justify-center text-center"><span class="text-xl text-yellow-800">5</span></div>
+              </div><img class="w-full h-full object-cover object-center" src="https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_FMjpg_UY1982_.jpg" alt="The Godfather" width="380" height="520">
+            </div>
+            <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
+              <div class="w-full flex flex-col gap-2 shrink-0">
+                <h3 class="text-2xl font-bold">The Godfather</h3>
+                <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Crime</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Drama</span></div>
+              </div>
+              <div class="h-24 overflow-auto flex-1">
+                <p class="text-sm">The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.</p>
+              </div>
+              <div class="w-full flex items-center justify-start h-8 shrink-0"><span class="text-xs mr-2 leading-7"> Rating: (5/5) </span>
+                <div class="items-center justify-start flex flex-1 space-x-1"><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button></div>
+                <!--v-if-->
+                <!--v-if--><a href="/movies/c7b4e11f-fc2b-4bf1-a187-b53ff9595f16/the-godfather" class="p-2 rounded-full bg-gray-200 text-gray-500 transition-all hover:text-white hover:bg-blue-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="w-4 h-4">
+                    <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"></path>
+                    <path fill-rule="evenodd" d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 0 1 0-1.113ZM17.25 12a5.25 5.25 0 1 1-10.5 0 5.25 5.25 0 0 1 10.5 0Z" clip-rule="evenodd"></path>
+                  </svg></a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="w-96 h-auto bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
+            <div class="h-[520px] overflow-hidden w-full relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10" style="display: none;"> In Theaters </span>
+              <div class="absolute top-0 right-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-14 w-14 text-yellow-500">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                </svg>
+                <div class="absolute inset-0 flex items-center justify-center text-center"><span class="text-xl text-yellow-800">2</span></div>
+              </div><img class="w-full h-full object-cover object-center" src="https://m.media-amazon.com/images/M/MV5BNDE3ODcxYzMtY2YzZC00NmNlLWJiNDMtZDViZWM2MzIxZDYwXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1200_.jpg" alt="The Shawshank Redemption" width="380" height="520">
+            </div>
+            <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
+              <div class="w-full flex flex-col gap-2 shrink-0">
+                <h3 class="text-2xl font-bold">The Shawshank Redemption</h3>
+                <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Drama</span></div>
+              </div>
+              <div class="h-24 overflow-auto flex-1">
+                <p class="text-sm">Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.</p>
+              </div>
+              <div class="w-full flex items-center justify-start h-8 shrink-0"><span class="text-xs mr-2 leading-7"> Rating: (2/5) </span>
+                <div class="items-center justify-start flex flex-1 space-x-1"><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-gray-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-gray-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-gray-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button></div>
+                <!--v-if-->
+                <!--v-if--><a href="/movies/fed6132f-bfe7-46f6-9b41-597feaf48b0d/the-shawshank-redemption" class="p-2 rounded-full bg-gray-200 text-gray-500 transition-all hover:text-white hover:bg-blue-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="w-4 h-4">
+                    <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"></path>
+                    <path fill-rule="evenodd" d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 0 1 0-1.113ZM17.25 12a5.25 5.25 0 1 1-10.5 0 5.25 5.25 0 0 1 10.5 0Z" clip-rule="evenodd"></path>
+                  </svg></a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="w-96 h-auto bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
+            <div class="h-[520px] overflow-hidden w-full relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10" style="display: none;"> In Theaters </span>
+              <div class="absolute top-0 right-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-14 w-14 text-yellow-500">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                </svg>
+                <div class="absolute inset-0 flex items-center justify-center text-center"><span class="text-xl text-yellow-800">5</span></div>
+              </div><img class="w-full h-full object-cover object-center" src="https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_FMjpg_UY2048_.jpg" alt="The Dark Knight" width="380" height="520">
+            </div>
+            <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
+              <div class="w-full flex flex-col gap-2 shrink-0">
+                <h3 class="text-2xl font-bold">The Dark Knight</h3>
+                <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Action</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Crime</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Drama</span></div>
+              </div>
+              <div class="h-24 overflow-auto flex-1">
+                <p class="text-sm">When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.</p>
+              </div>
+              <div class="w-full flex items-center justify-start h-8 shrink-0"><span class="text-xs mr-2 leading-7"> Rating: (5/5) </span>
+                <div class="items-center justify-start flex flex-1 space-x-1"><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button></div>
+                <!--v-if-->
+                <!--v-if--><a href="/movies/304dfc63-2ca6-4057-a102-6927608cfdc2/the-dark-knight" class="p-2 rounded-full bg-gray-200 text-gray-500 transition-all hover:text-white hover:bg-blue-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="w-4 h-4">
+                    <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"></path>
+                    <path fill-rule="evenodd" d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 0 1 0-1.113ZM17.25 12a5.25 5.25 0 1 1-10.5 0 5.25 5.25 0 0 1 10.5 0Z" clip-rule="evenodd"></path>
+                  </svg></a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="w-96 h-auto bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
+            <div class="h-[520px] overflow-hidden w-full relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10" style="display: none;"> In Theaters </span>
+              <div class="absolute top-0 right-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-14 w-14 text-yellow-500">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                </svg>
+                <div class="absolute inset-0 flex items-center justify-center text-center"><span class="text-xl text-yellow-800">5</span></div>
+              </div><img class="w-full h-full object-cover object-center" src="https://m.media-amazon.com/images/M/MV5BZDU5MDNiMGItYjVmZi00NDUxLTg2OTktNGE0NzNlNzM4NzgyXkEyXkFqcGc@._V1_FMjpg_UY2048_.jpg" alt="Kung Fu Panda" width="380" height="520">
+            </div>
+            <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
+              <div class="w-full flex flex-col gap-2 shrink-0">
+                <h3 class="text-2xl font-bold">Kung Fu Panda</h3>
+                <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Comedy</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Action</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Adventure</span></div>
+              </div>
+              <div class="h-24 overflow-auto flex-1">
+                <p class="text-sm">When the Valley of Peace is threatened, a lazy panda named Po is unexpectedly chosen to fulfill an ancient prophecy and become the Dragon Warrior.</p>
+              </div>
+              <div class="w-full flex items-center justify-start h-8 shrink-0"><span class="text-xs mr-2 leading-7"> Rating: (5/5) </span>
+                <div class="items-center justify-start flex flex-1 space-x-1"><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button></div>
+                <!--v-if-->
+                <!--v-if--><a href="/movies/5df8d113-835d-45b6-893c-78f45050f155/kung-fu-panda" class="p-2 rounded-full bg-gray-200 text-gray-500 transition-all hover:text-white hover:bg-blue-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="w-4 h-4">
+                    <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"></path>
+                    <path fill-rule="evenodd" d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 0 1 0-1.113ZM17.25 12a5.25 5.25 0 1 1-10.5 0 5.25 5.25 0 0 1 10.5 0Z" clip-rule="evenodd"></path>
+                  </svg></a>
+              </div>
+            </div>
+          </div>
+        </li>
+      </transition-group-stub>
+    </transition-stub>
+  </main>
+  <!--v-if-->
+</div>"
+`;
+
+exports[`App Home > should not display the login button when the user is authenticated 1`] = `
+"<div class="flex-1 flex flex-col justify-between" data-testid="app-home">
+  <header data-v-48a13218="" class="w-full flex flex-col gap-4">
+    <div data-v-48a13218="" class="relative flex items-center">
+      <transition-stub data-v-48a13218="" name="fade" appear="true" persisted="false" css="true">
+        <h1 data-v-48a13218="" class="text-2xl text-white font-bold" data-testid="greeting-message"> Hello, user_test! </h1>
+      </transition-stub>
+      <transition-stub data-v-48a13218="" name="fade" mode="out-in" appear="true" persisted="false" css="true"><button data-v-48a13218="" class="app-button app-button--primary ml-auto bg-red-500 hover:bg-red-600" data-testid="logout-button"> Log Out </button></transition-stub>
+    </div>
+    <div data-v-48a13218="" class="flex items-center justify-between min-h-[42px]">
+      <transition-stub data-v-48a13218="" mode="out-in" appear="true" persisted="false" css="true">
+        <p data-v-48a13218="" class="text-lg font-medium text-white"> Total movies: 6 <span data-v-48a13218="" class="m-4">/</span> Average Rating: 4.5</p>
+      </transition-stub>
+      <div data-v-48a13218="" class="flex gap-4">
+        <!--v-if-->
+      </div>
+    </div>
+  </header>
+  <main class="flex min-h-[744px] mt-12">
+    <transition-stub name="fade" mode="out-in" appear="false" persisted="false" css="true" tag="div">
+      <transition-group-stub tag="ul" name="list" appear="false" persisted="false" css="true" class="relative grid grid-cols-3 gap-4 list-none">
+        <li>
+          <div class="w-96 h-auto bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
+            <div class="h-[520px] overflow-hidden w-full relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10"> In Theaters </span>
+              <div class="absolute top-0 right-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-14 w-14 text-yellow-500">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                </svg>
+                <div class="absolute inset-0 flex items-center justify-center text-center"><span class="text-xl text-yellow-800">5</span></div>
+              </div><img class="w-full h-full object-cover object-center" src="https://m.media-amazon.com/images/M/MV5BYmFmZjM1ZTEtYzQ5ZS00MTRmLTkzMDktYWMxNTg2NGE3YjY4XkEyXkFqcGc@._V1_FMjpg_UX510_.jpg" alt="Lilo &amp; Stitch" width="380" height="520">
+            </div>
+            <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
+              <div class="w-full flex flex-col gap-2 shrink-0">
+                <h3 class="text-2xl font-bold">Lilo &amp; Stitch</h3>
+                <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Animation</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Adventure</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Comedy</span></div>
+              </div>
+              <div class="h-24 overflow-auto flex-1">
+                <p class="text-sm">A lonely Hawaiian girl befriends a runaway alien, helping to mend her fragmented family.</p>
+              </div>
+              <div class="w-full flex items-center justify-start h-8 shrink-0"><span class="text-xs mr-2 leading-7"> Rating: (5/5) </span>
+                <div class="items-center justify-start flex flex-1 space-x-1"><button class="rounded-md disabled:cursor-not-allowed text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button></div>
+                <!--v-if-->
+                <!--v-if--><a href="/movies/a1b2c3d4-e5f6-7g8h-9i0j-k1l2m3n4o5p6/lilo-and-stitch" class="p-2 rounded-full bg-gray-200 text-gray-500 transition-all hover:text-white hover:bg-blue-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="w-4 h-4">
+                    <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"></path>
+                    <path fill-rule="evenodd" d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 0 1 0-1.113ZM17.25 12a5.25 5.25 0 1 1-10.5 0 5.25 5.25 0 0 1 10.5 0Z" clip-rule="evenodd"></path>
+                  </svg></a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="w-96 h-auto bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
+            <div class="h-[520px] overflow-hidden w-full relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10"> In Theaters </span>
+              <div class="absolute top-0 right-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-14 w-14 text-yellow-500">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                </svg>
+                <div class="absolute inset-0 flex items-center justify-center text-center"><span class="text-xl text-yellow-800">5</span></div>
+              </div><img class="w-full h-full object-cover object-center" src="https://m.media-amazon.com/images/M/MV5BODA5Y2M0NjctNWQzMy00ODRhLWE0MzUtYmE1YTAzZjYyYmQyXkEyXkFqcGc@._V1_FMjpg_UY5000_.jpg" alt="How to Train Your Dragon" width="380" height="520">
+            </div>
+            <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
+              <div class="w-full flex flex-col gap-2 shrink-0">
+                <h3 class="text-2xl font-bold">How to Train Your Dragon</h3>
+                <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Animation</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Action</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Adventure</span></div>
+              </div>
+              <div class="h-24 overflow-auto flex-1">
+                <p class="text-sm">A young Viking befriends a dragon, leading to a friendship that changes the fate of their village.</p>
+              </div>
+              <div class="w-full flex items-center justify-start h-8 shrink-0"><span class="text-xs mr-2 leading-7"> Rating: (5/5) </span>
+                <div class="items-center justify-start flex flex-1 space-x-1"><button class="rounded-md disabled:cursor-not-allowed text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button></div>
+                <!--v-if-->
+                <!--v-if--><a href="/movies/b2c3d4e5-f6g7-8h9i-0j1k-2l3m4n5o6p7q/how-to-train-your-dragon" class="p-2 rounded-full bg-gray-200 text-gray-500 transition-all hover:text-white hover:bg-blue-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="w-4 h-4">
+                    <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"></path>
+                    <path fill-rule="evenodd" d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 0 1 0-1.113ZM17.25 12a5.25 5.25 0 1 1-10.5 0 5.25 5.25 0 0 1 10.5 0Z" clip-rule="evenodd"></path>
+                  </svg></a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="w-96 h-auto bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
+            <div class="h-[520px] overflow-hidden w-full relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10" style="display: none;"> In Theaters </span>
+              <div class="absolute top-0 right-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-14 w-14 text-yellow-500">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                </svg>
+                <div class="absolute inset-0 flex items-center justify-center text-center"><span class="text-xl text-yellow-800">5</span></div>
+              </div><img class="w-full h-full object-cover object-center" src="https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_FMjpg_UY1982_.jpg" alt="The Godfather" width="380" height="520">
+            </div>
+            <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
+              <div class="w-full flex flex-col gap-2 shrink-0">
+                <h3 class="text-2xl font-bold">The Godfather</h3>
+                <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Crime</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Drama</span></div>
+              </div>
+              <div class="h-24 overflow-auto flex-1">
+                <p class="text-sm">The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.</p>
+              </div>
+              <div class="w-full flex items-center justify-start h-8 shrink-0"><span class="text-xs mr-2 leading-7"> Rating: (5/5) </span>
+                <div class="items-center justify-start flex flex-1 space-x-1"><button class="rounded-md disabled:cursor-not-allowed text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button></div>
+                <!--v-if-->
+                <!--v-if--><a href="/movies/c7b4e11f-fc2b-4bf1-a187-b53ff9595f16/the-godfather" class="p-2 rounded-full bg-gray-200 text-gray-500 transition-all hover:text-white hover:bg-blue-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="w-4 h-4">
+                    <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"></path>
+                    <path fill-rule="evenodd" d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 0 1 0-1.113ZM17.25 12a5.25 5.25 0 1 1-10.5 0 5.25 5.25 0 0 1 10.5 0Z" clip-rule="evenodd"></path>
+                  </svg></a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="w-96 h-auto bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
+            <div class="h-[520px] overflow-hidden w-full relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10" style="display: none;"> In Theaters </span>
+              <div class="absolute top-0 right-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-14 w-14 text-yellow-500">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                </svg>
+                <div class="absolute inset-0 flex items-center justify-center text-center"><span class="text-xl text-yellow-800">2</span></div>
+              </div><img class="w-full h-full object-cover object-center" src="https://m.media-amazon.com/images/M/MV5BNDE3ODcxYzMtY2YzZC00NmNlLWJiNDMtZDViZWM2MzIxZDYwXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1200_.jpg" alt="The Shawshank Redemption" width="380" height="520">
+            </div>
+            <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
+              <div class="w-full flex flex-col gap-2 shrink-0">
+                <h3 class="text-2xl font-bold">The Shawshank Redemption</h3>
+                <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Drama</span></div>
+              </div>
+              <div class="h-24 overflow-auto flex-1">
+                <p class="text-sm">Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.</p>
+              </div>
+              <div class="w-full flex items-center justify-start h-8 shrink-0"><span class="text-xs mr-2 leading-7"> Rating: (2/5) </span>
+                <div class="items-center justify-start flex flex-1 space-x-1"><button class="rounded-md disabled:cursor-not-allowed text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-gray-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-gray-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-gray-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button></div>
+                <!--v-if-->
+                <!--v-if--><a href="/movies/fed6132f-bfe7-46f6-9b41-597feaf48b0d/the-shawshank-redemption" class="p-2 rounded-full bg-gray-200 text-gray-500 transition-all hover:text-white hover:bg-blue-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="w-4 h-4">
+                    <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"></path>
+                    <path fill-rule="evenodd" d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 0 1 0-1.113ZM17.25 12a5.25 5.25 0 1 1-10.5 0 5.25 5.25 0 0 1 10.5 0Z" clip-rule="evenodd"></path>
+                  </svg></a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="w-96 h-auto bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
+            <div class="h-[520px] overflow-hidden w-full relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10" style="display: none;"> In Theaters </span>
+              <div class="absolute top-0 right-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-14 w-14 text-yellow-500">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                </svg>
+                <div class="absolute inset-0 flex items-center justify-center text-center"><span class="text-xl text-yellow-800">5</span></div>
+              </div><img class="w-full h-full object-cover object-center" src="https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_FMjpg_UY2048_.jpg" alt="The Dark Knight" width="380" height="520">
+            </div>
+            <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
+              <div class="w-full flex flex-col gap-2 shrink-0">
+                <h3 class="text-2xl font-bold">The Dark Knight</h3>
+                <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Action</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Crime</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Drama</span></div>
+              </div>
+              <div class="h-24 overflow-auto flex-1">
+                <p class="text-sm">When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.</p>
+              </div>
+              <div class="w-full flex items-center justify-start h-8 shrink-0"><span class="text-xs mr-2 leading-7"> Rating: (5/5) </span>
+                <div class="items-center justify-start flex flex-1 space-x-1"><button class="rounded-md disabled:cursor-not-allowed text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button></div>
+                <!--v-if-->
+                <!--v-if--><a href="/movies/304dfc63-2ca6-4057-a102-6927608cfdc2/the-dark-knight" class="p-2 rounded-full bg-gray-200 text-gray-500 transition-all hover:text-white hover:bg-blue-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="w-4 h-4">
+                    <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"></path>
+                    <path fill-rule="evenodd" d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 0 1 0-1.113ZM17.25 12a5.25 5.25 0 1 1-10.5 0 5.25 5.25 0 0 1 10.5 0Z" clip-rule="evenodd"></path>
+                  </svg></a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="w-96 h-auto bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
+            <div class="h-[520px] overflow-hidden w-full relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10" style="display: none;"> In Theaters </span>
+              <div class="absolute top-0 right-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-14 w-14 text-yellow-500">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                </svg>
+                <div class="absolute inset-0 flex items-center justify-center text-center"><span class="text-xl text-yellow-800">5</span></div>
+              </div><img class="w-full h-full object-cover object-center" src="https://m.media-amazon.com/images/M/MV5BZDU5MDNiMGItYjVmZi00NDUxLTg2OTktNGE0NzNlNzM4NzgyXkEyXkFqcGc@._V1_FMjpg_UY2048_.jpg" alt="Kung Fu Panda" width="380" height="520">
+            </div>
+            <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
+              <div class="w-full flex flex-col gap-2 shrink-0">
+                <h3 class="text-2xl font-bold">Kung Fu Panda</h3>
+                <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Comedy</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Action</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Adventure</span></div>
+              </div>
+              <div class="h-24 overflow-auto flex-1">
+                <p class="text-sm">When the Valley of Peace is threatened, a lazy panda named Po is unexpectedly chosen to fulfill an ancient prophecy and become the Dragon Warrior.</p>
+              </div>
+              <div class="w-full flex items-center justify-start h-8 shrink-0"><span class="text-xs mr-2 leading-7"> Rating: (5/5) </span>
+                <div class="items-center justify-start flex flex-1 space-x-1"><button class="rounded-md disabled:cursor-not-allowed text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button></div>
+                <!--v-if-->
+                <!--v-if--><a href="/movies/5df8d113-835d-45b6-893c-78f45050f155/kung-fu-panda" class="p-2 rounded-full bg-gray-200 text-gray-500 transition-all hover:text-white hover:bg-blue-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="w-4 h-4">
+                    <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"></path>
+                    <path fill-rule="evenodd" d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 0 1 0-1.113ZM17.25 12a5.25 5.25 0 1 1-10.5 0 5.25 5.25 0 0 1 10.5 0Z" clip-rule="evenodd"></path>
+                  </svg></a>
+              </div>
+            </div>
+          </div>
+        </li>
+      </transition-group-stub>
+    </transition-stub>
+  </main>
+  <!--v-if-->
+</div>"
+`;
+
+exports[`App Home > should redirect to the login page when clicking on the login button 1`] = `
+"<div class="flex-1 flex flex-col justify-between" data-testid="app-home">
+  <header data-v-48a13218="" class="w-full flex flex-col gap-4">
+    <div data-v-48a13218="" class="relative flex items-center">
+      <transition-stub data-v-48a13218="" name="fade" appear="true" persisted="false" css="true">
+        <!--v-if-->
+      </transition-stub>
+      <transition-stub data-v-48a13218="" name="fade" mode="out-in" appear="true" persisted="false" css="true"><a data-v-48a13218="" href="/login" class="router-link-active router-link-exact-active app-button app-button--primary ml-auto" data-testid="login-button" aria-current="page"> Log In <svg data-v-48a13218="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="w-5 h-5">
+            <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd"></path>
+          </svg></a></transition-stub>
+    </div>
+    <div data-v-48a13218="" class="flex items-center justify-between min-h-[42px]">
+      <transition-stub data-v-48a13218="" mode="out-in" appear="true" persisted="false" css="true">
+        <p data-v-48a13218="" class="text-lg font-medium text-white"> Total movies: 6 <span data-v-48a13218="" class="m-4">/</span> Average Rating: 4.5</p>
+      </transition-stub>
+      <div data-v-48a13218="" class="flex gap-4">
+        <!--v-if-->
+      </div>
+    </div>
+  </header>
+  <main class="flex min-h-[744px] mt-12">
+    <transition-stub name="fade" mode="out-in" appear="false" persisted="false" css="true" tag="div">
+      <transition-group-stub tag="ul" name="list" appear="false" persisted="false" css="true" class="relative grid grid-cols-3 gap-4 list-none">
+        <li>
+          <div class="w-96 h-auto bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
+            <div class="h-[520px] overflow-hidden w-full relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10"> In Theaters </span>
+              <div class="absolute top-0 right-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-14 w-14 text-yellow-500">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                </svg>
+                <div class="absolute inset-0 flex items-center justify-center text-center"><span class="text-xl text-yellow-800">5</span></div>
+              </div><img class="w-full h-full object-cover object-center" src="https://m.media-amazon.com/images/M/MV5BYmFmZjM1ZTEtYzQ5ZS00MTRmLTkzMDktYWMxNTg2NGE3YjY4XkEyXkFqcGc@._V1_FMjpg_UX510_.jpg" alt="Lilo &amp; Stitch" width="380" height="520">
+            </div>
+            <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
+              <div class="w-full flex flex-col gap-2 shrink-0">
+                <h3 class="text-2xl font-bold">Lilo &amp; Stitch</h3>
+                <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Animation</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Adventure</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Comedy</span></div>
+              </div>
+              <div class="h-24 overflow-auto flex-1">
+                <p class="text-sm">A lonely Hawaiian girl befriends a runaway alien, helping to mend her fragmented family.</p>
+              </div>
+              <div class="w-full flex items-center justify-start h-8 shrink-0"><span class="text-xs mr-2 leading-7"> Rating: (5/5) </span>
+                <div class="items-center justify-start flex flex-1 space-x-1"><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button></div>
+                <!--v-if-->
+                <!--v-if--><a href="/movies/a1b2c3d4-e5f6-7g8h-9i0j-k1l2m3n4o5p6/lilo-and-stitch" class="p-2 rounded-full bg-gray-200 text-gray-500 transition-all hover:text-white hover:bg-blue-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="w-4 h-4">
+                    <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"></path>
+                    <path fill-rule="evenodd" d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 0 1 0-1.113ZM17.25 12a5.25 5.25 0 1 1-10.5 0 5.25 5.25 0 0 1 10.5 0Z" clip-rule="evenodd"></path>
+                  </svg></a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="w-96 h-auto bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
+            <div class="h-[520px] overflow-hidden w-full relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10"> In Theaters </span>
+              <div class="absolute top-0 right-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-14 w-14 text-yellow-500">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                </svg>
+                <div class="absolute inset-0 flex items-center justify-center text-center"><span class="text-xl text-yellow-800">5</span></div>
+              </div><img class="w-full h-full object-cover object-center" src="https://m.media-amazon.com/images/M/MV5BODA5Y2M0NjctNWQzMy00ODRhLWE0MzUtYmE1YTAzZjYyYmQyXkEyXkFqcGc@._V1_FMjpg_UY5000_.jpg" alt="How to Train Your Dragon" width="380" height="520">
+            </div>
+            <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
+              <div class="w-full flex flex-col gap-2 shrink-0">
+                <h3 class="text-2xl font-bold">How to Train Your Dragon</h3>
+                <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Animation</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Action</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Adventure</span></div>
+              </div>
+              <div class="h-24 overflow-auto flex-1">
+                <p class="text-sm">A young Viking befriends a dragon, leading to a friendship that changes the fate of their village.</p>
+              </div>
+              <div class="w-full flex items-center justify-start h-8 shrink-0"><span class="text-xs mr-2 leading-7"> Rating: (5/5) </span>
+                <div class="items-center justify-start flex flex-1 space-x-1"><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button></div>
+                <!--v-if-->
+                <!--v-if--><a href="/movies/b2c3d4e5-f6g7-8h9i-0j1k-2l3m4n5o6p7q/how-to-train-your-dragon" class="p-2 rounded-full bg-gray-200 text-gray-500 transition-all hover:text-white hover:bg-blue-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="w-4 h-4">
+                    <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"></path>
+                    <path fill-rule="evenodd" d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 0 1 0-1.113ZM17.25 12a5.25 5.25 0 1 1-10.5 0 5.25 5.25 0 0 1 10.5 0Z" clip-rule="evenodd"></path>
+                  </svg></a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="w-96 h-auto bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
+            <div class="h-[520px] overflow-hidden w-full relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10" style="display: none;"> In Theaters </span>
+              <div class="absolute top-0 right-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-14 w-14 text-yellow-500">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                </svg>
+                <div class="absolute inset-0 flex items-center justify-center text-center"><span class="text-xl text-yellow-800">5</span></div>
+              </div><img class="w-full h-full object-cover object-center" src="https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_FMjpg_UY1982_.jpg" alt="The Godfather" width="380" height="520">
+            </div>
+            <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
+              <div class="w-full flex flex-col gap-2 shrink-0">
+                <h3 class="text-2xl font-bold">The Godfather</h3>
+                <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Crime</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Drama</span></div>
+              </div>
+              <div class="h-24 overflow-auto flex-1">
+                <p class="text-sm">The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.</p>
+              </div>
+              <div class="w-full flex items-center justify-start h-8 shrink-0"><span class="text-xs mr-2 leading-7"> Rating: (5/5) </span>
+                <div class="items-center justify-start flex flex-1 space-x-1"><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button></div>
+                <!--v-if-->
+                <!--v-if--><a href="/movies/c7b4e11f-fc2b-4bf1-a187-b53ff9595f16/the-godfather" class="p-2 rounded-full bg-gray-200 text-gray-500 transition-all hover:text-white hover:bg-blue-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="w-4 h-4">
+                    <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"></path>
+                    <path fill-rule="evenodd" d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 0 1 0-1.113ZM17.25 12a5.25 5.25 0 1 1-10.5 0 5.25 5.25 0 0 1 10.5 0Z" clip-rule="evenodd"></path>
+                  </svg></a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="w-96 h-auto bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
+            <div class="h-[520px] overflow-hidden w-full relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10" style="display: none;"> In Theaters </span>
+              <div class="absolute top-0 right-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-14 w-14 text-yellow-500">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                </svg>
+                <div class="absolute inset-0 flex items-center justify-center text-center"><span class="text-xl text-yellow-800">2</span></div>
+              </div><img class="w-full h-full object-cover object-center" src="https://m.media-amazon.com/images/M/MV5BNDE3ODcxYzMtY2YzZC00NmNlLWJiNDMtZDViZWM2MzIxZDYwXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1200_.jpg" alt="The Shawshank Redemption" width="380" height="520">
+            </div>
+            <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
+              <div class="w-full flex flex-col gap-2 shrink-0">
+                <h3 class="text-2xl font-bold">The Shawshank Redemption</h3>
+                <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Drama</span></div>
+              </div>
+              <div class="h-24 overflow-auto flex-1">
+                <p class="text-sm">Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.</p>
+              </div>
+              <div class="w-full flex items-center justify-start h-8 shrink-0"><span class="text-xs mr-2 leading-7"> Rating: (2/5) </span>
+                <div class="items-center justify-start flex flex-1 space-x-1"><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-gray-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-gray-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-gray-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button></div>
+                <!--v-if-->
+                <!--v-if--><a href="/movies/fed6132f-bfe7-46f6-9b41-597feaf48b0d/the-shawshank-redemption" class="p-2 rounded-full bg-gray-200 text-gray-500 transition-all hover:text-white hover:bg-blue-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="w-4 h-4">
+                    <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"></path>
+                    <path fill-rule="evenodd" d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 0 1 0-1.113ZM17.25 12a5.25 5.25 0 1 1-10.5 0 5.25 5.25 0 0 1 10.5 0Z" clip-rule="evenodd"></path>
+                  </svg></a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="w-96 h-auto bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
+            <div class="h-[520px] overflow-hidden w-full relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10" style="display: none;"> In Theaters </span>
+              <div class="absolute top-0 right-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-14 w-14 text-yellow-500">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                </svg>
+                <div class="absolute inset-0 flex items-center justify-center text-center"><span class="text-xl text-yellow-800">5</span></div>
+              </div><img class="w-full h-full object-cover object-center" src="https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_FMjpg_UY2048_.jpg" alt="The Dark Knight" width="380" height="520">
+            </div>
+            <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
+              <div class="w-full flex flex-col gap-2 shrink-0">
+                <h3 class="text-2xl font-bold">The Dark Knight</h3>
+                <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Action</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Crime</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Drama</span></div>
+              </div>
+              <div class="h-24 overflow-auto flex-1">
+                <p class="text-sm">When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.</p>
+              </div>
+              <div class="w-full flex items-center justify-start h-8 shrink-0"><span class="text-xs mr-2 leading-7"> Rating: (5/5) </span>
+                <div class="items-center justify-start flex flex-1 space-x-1"><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button></div>
+                <!--v-if-->
+                <!--v-if--><a href="/movies/304dfc63-2ca6-4057-a102-6927608cfdc2/the-dark-knight" class="p-2 rounded-full bg-gray-200 text-gray-500 transition-all hover:text-white hover:bg-blue-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="w-4 h-4">
+                    <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"></path>
+                    <path fill-rule="evenodd" d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 0 1 0-1.113ZM17.25 12a5.25 5.25 0 1 1-10.5 0 5.25 5.25 0 0 1 10.5 0Z" clip-rule="evenodd"></path>
+                  </svg></a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="w-96 h-auto bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
+            <div class="h-[520px] overflow-hidden w-full relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10" style="display: none;"> In Theaters </span>
+              <div class="absolute top-0 right-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-14 w-14 text-yellow-500">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                </svg>
+                <div class="absolute inset-0 flex items-center justify-center text-center"><span class="text-xl text-yellow-800">5</span></div>
+              </div><img class="w-full h-full object-cover object-center" src="https://m.media-amazon.com/images/M/MV5BZDU5MDNiMGItYjVmZi00NDUxLTg2OTktNGE0NzNlNzM4NzgyXkEyXkFqcGc@._V1_FMjpg_UY2048_.jpg" alt="Kung Fu Panda" width="380" height="520">
+            </div>
+            <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
+              <div class="w-full flex flex-col gap-2 shrink-0">
+                <h3 class="text-2xl font-bold">Kung Fu Panda</h3>
+                <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Comedy</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Action</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Adventure</span></div>
+              </div>
+              <div class="h-24 overflow-auto flex-1">
+                <p class="text-sm">When the Valley of Peace is threatened, a lazy panda named Po is unexpectedly chosen to fulfill an ancient prophecy and become the Dragon Warrior.</p>
+              </div>
+              <div class="w-full flex items-center justify-start h-8 shrink-0"><span class="text-xs mr-2 leading-7"> Rating: (5/5) </span>
+                <div class="items-center justify-start flex flex-1 space-x-1"><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button></div>
+                <!--v-if-->
+                <!--v-if--><a href="/movies/5df8d113-835d-45b6-893c-78f45050f155/kung-fu-panda" class="p-2 rounded-full bg-gray-200 text-gray-500 transition-all hover:text-white hover:bg-blue-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="w-4 h-4">
+                    <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"></path>
+                    <path fill-rule="evenodd" d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 0 1 0-1.113ZM17.25 12a5.25 5.25 0 1 1-10.5 0 5.25 5.25 0 0 1 10.5 0Z" clip-rule="evenodd"></path>
+                  </svg></a>
+              </div>
+            </div>
+          </div>
+        </li>
+      </transition-group-stub>
+    </transition-stub>
+  </main>
+  <!--v-if-->
+</div>"
+`;
+
+exports[`App Home > should render the home view 1`] = `
+"<div class="flex-1 flex flex-col justify-between" data-testid="app-home">
+  <header data-v-48a13218="" class="w-full flex flex-col gap-4">
+    <div data-v-48a13218="" class="relative flex items-center">
+      <transition-stub data-v-48a13218="" name="fade" appear="true" persisted="false" css="true">
+        <!--v-if-->
+      </transition-stub>
+      <transition-stub data-v-48a13218="" name="fade" mode="out-in" appear="true" persisted="false" css="true"><a data-v-48a13218="" href="/login" class="app-button app-button--primary ml-auto" data-testid="login-button"> Log In <svg data-v-48a13218="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="w-5 h-5">
+            <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd"></path>
+          </svg></a></transition-stub>
+    </div>
+    <div data-v-48a13218="" class="flex items-center justify-between min-h-[42px]">
+      <transition-stub data-v-48a13218="" mode="out-in" appear="true" persisted="false" css="true">
+        <p data-v-48a13218="" class="text-lg font-medium text-white"> Total movies: 6 <span data-v-48a13218="" class="m-4">/</span> Average Rating: 4.5</p>
+      </transition-stub>
+      <div data-v-48a13218="" class="flex gap-4">
+        <!--v-if-->
+      </div>
+    </div>
+  </header>
+  <main class="flex min-h-[744px] mt-12">
+    <transition-stub name="fade" mode="out-in" appear="false" persisted="false" css="true" tag="div">
+      <transition-group-stub tag="ul" name="list" appear="false" persisted="false" css="true" class="relative grid grid-cols-3 gap-4 list-none">
+        <li>
+          <div class="w-96 h-auto bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
+            <div class="h-[520px] overflow-hidden w-full relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10"> In Theaters </span>
+              <div class="absolute top-0 right-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-14 w-14 text-yellow-500">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                </svg>
+                <div class="absolute inset-0 flex items-center justify-center text-center"><span class="text-xl text-yellow-800">5</span></div>
+              </div><img class="w-full h-full object-cover object-center" src="https://m.media-amazon.com/images/M/MV5BYmFmZjM1ZTEtYzQ5ZS00MTRmLTkzMDktYWMxNTg2NGE3YjY4XkEyXkFqcGc@._V1_FMjpg_UX510_.jpg" alt="Lilo &amp; Stitch" width="380" height="520">
+            </div>
+            <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
+              <div class="w-full flex flex-col gap-2 shrink-0">
+                <h3 class="text-2xl font-bold">Lilo &amp; Stitch</h3>
+                <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Animation</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Adventure</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Comedy</span></div>
+              </div>
+              <div class="h-24 overflow-auto flex-1">
+                <p class="text-sm">A lonely Hawaiian girl befriends a runaway alien, helping to mend her fragmented family.</p>
+              </div>
+              <div class="w-full flex items-center justify-start h-8 shrink-0"><span class="text-xs mr-2 leading-7"> Rating: (5/5) </span>
+                <div class="items-center justify-start flex flex-1 space-x-1"><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button></div>
+                <!--v-if-->
+                <!--v-if--><a href="/movies/a1b2c3d4-e5f6-7g8h-9i0j-k1l2m3n4o5p6/lilo-and-stitch" class="p-2 rounded-full bg-gray-200 text-gray-500 transition-all hover:text-white hover:bg-blue-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="w-4 h-4">
+                    <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"></path>
+                    <path fill-rule="evenodd" d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 0 1 0-1.113ZM17.25 12a5.25 5.25 0 1 1-10.5 0 5.25 5.25 0 0 1 10.5 0Z" clip-rule="evenodd"></path>
+                  </svg></a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="w-96 h-auto bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
+            <div class="h-[520px] overflow-hidden w-full relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10"> In Theaters </span>
+              <div class="absolute top-0 right-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-14 w-14 text-yellow-500">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                </svg>
+                <div class="absolute inset-0 flex items-center justify-center text-center"><span class="text-xl text-yellow-800">5</span></div>
+              </div><img class="w-full h-full object-cover object-center" src="https://m.media-amazon.com/images/M/MV5BODA5Y2M0NjctNWQzMy00ODRhLWE0MzUtYmE1YTAzZjYyYmQyXkEyXkFqcGc@._V1_FMjpg_UY5000_.jpg" alt="How to Train Your Dragon" width="380" height="520">
+            </div>
+            <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
+              <div class="w-full flex flex-col gap-2 shrink-0">
+                <h3 class="text-2xl font-bold">How to Train Your Dragon</h3>
+                <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Animation</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Action</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Adventure</span></div>
+              </div>
+              <div class="h-24 overflow-auto flex-1">
+                <p class="text-sm">A young Viking befriends a dragon, leading to a friendship that changes the fate of their village.</p>
+              </div>
+              <div class="w-full flex items-center justify-start h-8 shrink-0"><span class="text-xs mr-2 leading-7"> Rating: (5/5) </span>
+                <div class="items-center justify-start flex flex-1 space-x-1"><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button></div>
+                <!--v-if-->
+                <!--v-if--><a href="/movies/b2c3d4e5-f6g7-8h9i-0j1k-2l3m4n5o6p7q/how-to-train-your-dragon" class="p-2 rounded-full bg-gray-200 text-gray-500 transition-all hover:text-white hover:bg-blue-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="w-4 h-4">
+                    <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"></path>
+                    <path fill-rule="evenodd" d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 0 1 0-1.113ZM17.25 12a5.25 5.25 0 1 1-10.5 0 5.25 5.25 0 0 1 10.5 0Z" clip-rule="evenodd"></path>
+                  </svg></a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="w-96 h-auto bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
+            <div class="h-[520px] overflow-hidden w-full relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10" style="display: none;"> In Theaters </span>
+              <div class="absolute top-0 right-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-14 w-14 text-yellow-500">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                </svg>
+                <div class="absolute inset-0 flex items-center justify-center text-center"><span class="text-xl text-yellow-800">5</span></div>
+              </div><img class="w-full h-full object-cover object-center" src="https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_FMjpg_UY1982_.jpg" alt="The Godfather" width="380" height="520">
+            </div>
+            <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
+              <div class="w-full flex flex-col gap-2 shrink-0">
+                <h3 class="text-2xl font-bold">The Godfather</h3>
+                <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Crime</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Drama</span></div>
+              </div>
+              <div class="h-24 overflow-auto flex-1">
+                <p class="text-sm">The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.</p>
+              </div>
+              <div class="w-full flex items-center justify-start h-8 shrink-0"><span class="text-xs mr-2 leading-7"> Rating: (5/5) </span>
+                <div class="items-center justify-start flex flex-1 space-x-1"><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button></div>
+                <!--v-if-->
+                <!--v-if--><a href="/movies/c7b4e11f-fc2b-4bf1-a187-b53ff9595f16/the-godfather" class="p-2 rounded-full bg-gray-200 text-gray-500 transition-all hover:text-white hover:bg-blue-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="w-4 h-4">
+                    <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"></path>
+                    <path fill-rule="evenodd" d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 0 1 0-1.113ZM17.25 12a5.25 5.25 0 1 1-10.5 0 5.25 5.25 0 0 1 10.5 0Z" clip-rule="evenodd"></path>
+                  </svg></a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="w-96 h-auto bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
+            <div class="h-[520px] overflow-hidden w-full relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10" style="display: none;"> In Theaters </span>
+              <div class="absolute top-0 right-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-14 w-14 text-yellow-500">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                </svg>
+                <div class="absolute inset-0 flex items-center justify-center text-center"><span class="text-xl text-yellow-800">2</span></div>
+              </div><img class="w-full h-full object-cover object-center" src="https://m.media-amazon.com/images/M/MV5BNDE3ODcxYzMtY2YzZC00NmNlLWJiNDMtZDViZWM2MzIxZDYwXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1200_.jpg" alt="The Shawshank Redemption" width="380" height="520">
+            </div>
+            <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
+              <div class="w-full flex flex-col gap-2 shrink-0">
+                <h3 class="text-2xl font-bold">The Shawshank Redemption</h3>
+                <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Drama</span></div>
+              </div>
+              <div class="h-24 overflow-auto flex-1">
+                <p class="text-sm">Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.</p>
+              </div>
+              <div class="w-full flex items-center justify-start h-8 shrink-0"><span class="text-xs mr-2 leading-7"> Rating: (2/5) </span>
+                <div class="items-center justify-start flex flex-1 space-x-1"><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-gray-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-gray-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-gray-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button></div>
+                <!--v-if-->
+                <!--v-if--><a href="/movies/fed6132f-bfe7-46f6-9b41-597feaf48b0d/the-shawshank-redemption" class="p-2 rounded-full bg-gray-200 text-gray-500 transition-all hover:text-white hover:bg-blue-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="w-4 h-4">
+                    <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"></path>
+                    <path fill-rule="evenodd" d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 0 1 0-1.113ZM17.25 12a5.25 5.25 0 1 1-10.5 0 5.25 5.25 0 0 1 10.5 0Z" clip-rule="evenodd"></path>
+                  </svg></a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="w-96 h-auto bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
+            <div class="h-[520px] overflow-hidden w-full relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10" style="display: none;"> In Theaters </span>
+              <div class="absolute top-0 right-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-14 w-14 text-yellow-500">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                </svg>
+                <div class="absolute inset-0 flex items-center justify-center text-center"><span class="text-xl text-yellow-800">5</span></div>
+              </div><img class="w-full h-full object-cover object-center" src="https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_FMjpg_UY2048_.jpg" alt="The Dark Knight" width="380" height="520">
+            </div>
+            <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
+              <div class="w-full flex flex-col gap-2 shrink-0">
+                <h3 class="text-2xl font-bold">The Dark Knight</h3>
+                <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Action</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Crime</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Drama</span></div>
+              </div>
+              <div class="h-24 overflow-auto flex-1">
+                <p class="text-sm">When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.</p>
+              </div>
+              <div class="w-full flex items-center justify-start h-8 shrink-0"><span class="text-xs mr-2 leading-7"> Rating: (5/5) </span>
+                <div class="items-center justify-start flex flex-1 space-x-1"><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button></div>
+                <!--v-if-->
+                <!--v-if--><a href="/movies/304dfc63-2ca6-4057-a102-6927608cfdc2/the-dark-knight" class="p-2 rounded-full bg-gray-200 text-gray-500 transition-all hover:text-white hover:bg-blue-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="w-4 h-4">
+                    <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"></path>
+                    <path fill-rule="evenodd" d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 0 1 0-1.113ZM17.25 12a5.25 5.25 0 1 1-10.5 0 5.25 5.25 0 0 1 10.5 0Z" clip-rule="evenodd"></path>
+                  </svg></a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="w-96 h-auto bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
+            <div class="h-[520px] overflow-hidden w-full relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10" style="display: none;"> In Theaters </span>
+              <div class="absolute top-0 right-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-14 w-14 text-yellow-500">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                </svg>
+                <div class="absolute inset-0 flex items-center justify-center text-center"><span class="text-xl text-yellow-800">5</span></div>
+              </div><img class="w-full h-full object-cover object-center" src="https://m.media-amazon.com/images/M/MV5BZDU5MDNiMGItYjVmZi00NDUxLTg2OTktNGE0NzNlNzM4NzgyXkEyXkFqcGc@._V1_FMjpg_UY2048_.jpg" alt="Kung Fu Panda" width="380" height="520">
+            </div>
+            <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
+              <div class="w-full flex flex-col gap-2 shrink-0">
+                <h3 class="text-2xl font-bold">Kung Fu Panda</h3>
+                <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Comedy</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Action</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Adventure</span></div>
+              </div>
+              <div class="h-24 overflow-auto flex-1">
+                <p class="text-sm">When the Valley of Peace is threatened, a lazy panda named Po is unexpectedly chosen to fulfill an ancient prophecy and become the Dragon Warrior.</p>
+              </div>
+              <div class="w-full flex items-center justify-start h-8 shrink-0"><span class="text-xs mr-2 leading-7"> Rating: (5/5) </span>
+                <div class="items-center justify-start flex flex-1 space-x-1"><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
+                    </svg></button></div>
+                <!--v-if-->
+                <!--v-if--><a href="/movies/5df8d113-835d-45b6-893c-78f45050f155/kung-fu-panda" class="p-2 rounded-full bg-gray-200 text-gray-500 transition-all hover:text-white hover:bg-blue-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="w-4 h-4">
+                    <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"></path>
+                    <path fill-rule="evenodd" d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 0 1 0-1.113ZM17.25 12a5.25 5.25 0 1 1-10.5 0 5.25 5.25 0 0 1 10.5 0Z" clip-rule="evenodd"></path>
+                  </svg></a>
+              </div>
+            </div>
+          </div>
+        </li>
+      </transition-group-stub>
+    </transition-stub>
+  </main>
+  <!--v-if-->
+</div>"
+`;

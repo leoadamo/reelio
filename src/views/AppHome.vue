@@ -107,7 +107,7 @@ function resetMovieRatings() {
 </script>
 
 <template>
-  <div class="flex-1 flex flex-col justify-between">
+  <div class="flex-1 flex flex-col justify-between" data-testid="app-home">
     <app-header
       :total-movies="movies.length"
       :average-rating="moviesAverageRating"

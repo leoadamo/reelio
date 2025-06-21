@@ -40,9 +40,12 @@ const isRemoveRatingsDisabled = computed(() => {
   <header class="w-full flex flex-col gap-4">
     <div class="relative flex items-center">
       <transition name="fade" appear>
-        <h1 v-if="isAuthenticated" class="text-2xl text-white font-bold">
-          Hello, <span>{{ user.username }}</span
-          >!
+        <h1
+          v-if="isAuthenticated"
+          class="text-2xl text-white font-bold"
+          data-testid="greeting-message"
+        >
+          Hello, {{ user.username }}!
         </h1>
       </transition>
 
@@ -51,6 +54,7 @@ const isRemoveRatingsDisabled = computed(() => {
           v-if="!isAuthenticated"
           :to="{ name: 'login' }"
           class="app-button app-button--primary ml-auto"
+          data-testid="login-button"
         >
           Log In
 
@@ -60,6 +64,7 @@ const isRemoveRatingsDisabled = computed(() => {
         <button
           v-else
           class="app-button app-button--primary ml-auto bg-red-500 hover:bg-red-600"
+          data-testid="logout-button"
           @click="logout"
         >
           Log Out
