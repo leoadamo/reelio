@@ -1,0 +1,21 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`App Login > should render the login view 1`] = `
+"<div class="w-full max-w-[400px] m-auto grid grid-cols-1 gap-8 p-8 text-white bg-gray-800 rounded-lg shadow-lg" data-testid="app-login">
+  <div class="flex flex-col gap-1">
+    <h1 class="text-2xl font-bold">Log In</h1>
+    <p>Please, inform your credentials to continue.</p>
+  </div>
+  <form class="grid grid-cols-1 gap-5">
+    <div class="relative grid grid-cols-1 gap-8 pb-5">
+      <div class="flex flex-col gap-1"><label for="username">Username:</label><input id="username" type="text" data-testid="username-input" class="border rounded border-gray-400 bg-gray-900" autocomplete="off" required=""></div>
+      <div class="flex flex-col gap-1"><label for="password">Password:</label><input id="password" type="password" class="border rounded border-gray-400 bg-gray-900" autocomplete="off" required=""></div>
+      <transition-stub name="fade" appear="false" persisted="false" css="true">
+        <!--v-if-->
+      </transition-stub>
+    </div><button type="submit" class="app-button app-button--primary ml-auto"> Continue <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="w-5 h-5">
+        <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd"></path>
+      </svg></button>
+  </form>
+</div>"
+`;

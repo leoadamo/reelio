@@ -58,6 +58,7 @@ onMounted(() => {
 <template>
   <div
     class="w-full max-w-[400px] m-auto grid grid-cols-1 gap-8 p-8 text-white bg-gray-800 rounded-lg shadow-lg"
+    data-testid="app-login"
   >
     <div class="flex flex-col gap-1">
       <h1 class="text-2xl font-bold">Log In</h1>
