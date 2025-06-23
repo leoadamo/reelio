@@ -11,8 +11,8 @@ export default defineConfig({
     },
   },
   test: {
-    environment: "jsdom",
     globals: true,
+    environment: "happy-dom",
     setupFiles: ["./tests/setup.js"],
   },
 });

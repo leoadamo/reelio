@@ -1,9 +1,0 @@
-// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
-
-exports[`App.vue > Should mount the App 1`] = `
-"<div class="w-[1180px] max-w-full min-h-screen py-8 mx-auto flex flex-col" data-testid="app">
-  <transition-stub name="fade" mode="out-in" appear="true" persisted="false" css="true">
-    <!---->
-  </transition-stub>
-</div>"
-`;
