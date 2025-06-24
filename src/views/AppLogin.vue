@@ -36,7 +36,7 @@ function handleLogin() {
     });
   } catch (error) {
     // Handle login error
-    loginError.value = error.message || "Login failed. Please try again.";
+    loginError.value = error.message;
     // Clear the password field for security reasons
     reset();
     // Focus on the username input field for better UX
@@ -73,7 +73,9 @@ onMounted(() => {
             v-model="form.username"
             ref="username-input"
             id="username"
+            name="username"
             type="text"
+            data-testid="username-input"
             class="border rounded border-gray-400 bg-gray-900"
             autocomplete="off"
             required
@@ -85,7 +87,9 @@ onMounted(() => {
           <input
             v-model="form.password"
             id="password"
+            name="password"
             type="password"
+            data-testid="password-input"
             class="border rounded border-gray-400 bg-gray-900"
             autocomplete="off"
             required
@@ -95,6 +99,7 @@ onMounted(() => {
         <transition name="fade">
           <small
             v-if="loginError"
+            data-testid="error-message"
             class="absolute left-0 bottom-0 text-red-500 text-xs"
           >
             {{ loginError }}
@@ -102,7 +107,11 @@ onMounted(() => {
         </transition>
       </div>
 
-      <button type="submit" class="app-button app-button--primary ml-auto">
+      <button
+        type="submit"
+        class="app-button app-button--primary ml-auto"
+        data-testid="submit-button"
+      >
         Continue
 
         <chevron-right-icon class="w-5 h-5" aria-hidden="true" />

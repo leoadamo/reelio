@@ -122,7 +122,7 @@ describe("App Home", () => {
 
     expect(greetingMessage).toBeTruthy();
     expect(greetingMessage).toBeInTheDocument();
-    expect(greetingMessage.textContent).toContain("Hello, user_test!");
+    expect(greetingMessage).toHaveTextContent("Hello, user_test!");
     expect(logoutButton).toBeTruthy();
     expect(logoutButton).toBeInTheDocument();
     expect(wrapper.html()).toMatchSnapshot();

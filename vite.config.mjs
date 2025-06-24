@@ -12,7 +12,7 @@ export default defineConfig({
   },
   test: {
     globals: true,
-    environment: "happy-dom",
-    setupFiles: ["./tests/setup.js"],
+    environment: "jsdom",
+    setupFiles: "./tests/setup.js",
   },
 });
