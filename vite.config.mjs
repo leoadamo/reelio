@@ -1,6 +1,7 @@
 // DEPENDENCIES
 import { fileURLToPath, URL } from "node:url";
 import { defineConfig } from "vite";
+import { configDefaults } from "vitest/config";
 import vue from "@vitejs/plugin-vue";
 
 export default defineConfig({
@@ -14,5 +15,13 @@ export default defineConfig({
     globals: true,
     environment: "jsdom",
     setupFiles: "./tests/setup.js",
+    coverage: {
+      include: ["src/**/*.{js,vue}"],
+      exclude: [
+        ...configDefaults.exclude,
+        "src/main.js",
+        "src/router/index.js",
+      ],
+    },
   },
 });
