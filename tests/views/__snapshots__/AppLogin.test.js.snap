@@ -6,7 +6,7 @@ exports[`App Login > should display an error message when login fails 1`] = `
     <h1 class="text-2xl font-bold">Log In</h1>
     <p>Please, inform your credentials to continue.</p>
   </div>
-  <form class="grid grid-cols-1 gap-5" data-testid="login-form">
+  <form class="grid grid-cols-1 gap-5">
     <div class="relative grid grid-cols-1 gap-8 pb-5">
       <div class="flex flex-col gap-1"><label for="username">Username:</label><input id="username" name="username" type="text" data-testid="username-input" class="border rounded border-gray-400 bg-gray-900" autocomplete="off" required=""></div>
       <div class="flex flex-col gap-1"><label for="password">Password:</label><input id="password" name="password" type="password" data-testid="password-input" class="border rounded border-gray-400 bg-gray-900" autocomplete="off" required=""></div>
@@ -24,7 +24,7 @@ exports[`App Login > should log-in successfully and then redirect to the home pa
     <h1 class="text-2xl font-bold">Log In</h1>
     <p>Please, inform your credentials to continue.</p>
   </div>
-  <form class="grid grid-cols-1 gap-5" data-testid="login-form">
+  <form class="grid grid-cols-1 gap-5">
     <div class="relative grid grid-cols-1 gap-8 pb-5">
       <div class="flex flex-col gap-1"><label for="username">Username:</label><input id="username" name="username" type="text" data-testid="username-input" class="border rounded border-gray-400 bg-gray-900" autocomplete="off" required=""></div>
       <div class="flex flex-col gap-1"><label for="password">Password:</label><input id="password" name="password" type="password" data-testid="password-input" class="border rounded border-gray-400 bg-gray-900" autocomplete="off" required=""></div>
@@ -44,7 +44,7 @@ exports[`App Login > should not log-in when missing required fields 1`] = `
     <h1 class="text-2xl font-bold">Log In</h1>
     <p>Please, inform your credentials to continue.</p>
   </div>
-  <form class="grid grid-cols-1 gap-5" data-testid="login-form">
+  <form class="grid grid-cols-1 gap-5">
     <div class="relative grid grid-cols-1 gap-8 pb-5">
       <div class="flex flex-col gap-1"><label for="username">Username:</label><input id="username" name="username" type="text" data-testid="username-input" class="border rounded border-gray-400 bg-gray-900" autocomplete="off" required=""></div>
       <div class="flex flex-col gap-1"><label for="password">Password:</label><input id="password" name="password" type="password" data-testid="password-input" class="border rounded border-gray-400 bg-gray-900" autocomplete="off" required=""></div>
@@ -64,7 +64,7 @@ exports[`App Login > should render the login view 1`] = `
     <h1 class="text-2xl font-bold">Log In</h1>
     <p>Please, inform your credentials to continue.</p>
   </div>
-  <form class="grid grid-cols-1 gap-5" data-testid="login-form">
+  <form class="grid grid-cols-1 gap-5">
     <div class="relative grid grid-cols-1 gap-8 pb-5">
       <div class="flex flex-col gap-1"><label for="username">Username:</label><input id="username" name="username" type="text" data-testid="username-input" class="border rounded border-gray-400 bg-gray-900" autocomplete="off" required=""></div>
       <div class="flex flex-col gap-1"><label for="password">Password:</label><input id="password" name="password" type="password" data-testid="password-input" class="border rounded border-gray-400 bg-gray-900" autocomplete="off" required=""></div>
@@ -84,7 +84,7 @@ exports[`App Login > should throw an error when trying to log-in 1`] = `
     <h1 class="text-2xl font-bold">Log In</h1>
     <p>Please, inform your credentials to continue.</p>
   </div>
-  <form class="grid grid-cols-1 gap-5" data-testid="login-form">
+  <form class="grid grid-cols-1 gap-5">
     <div class="relative grid grid-cols-1 gap-8 pb-5">
       <div class="flex flex-col gap-1"><label for="username">Username:</label><input id="username" name="username" type="text" data-testid="username-input" class="border rounded border-gray-400 bg-gray-900" autocomplete="off" required=""></div>
       <div class="flex flex-col gap-1"><label for="password">Password:</label><input id="password" name="password" type="password" data-testid="password-input" class="border rounded border-gray-400 bg-gray-900" autocomplete="off" required=""></div>
