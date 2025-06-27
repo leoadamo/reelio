@@ -54,7 +54,7 @@ function editMovie(id) {
       v-if="movies.length > 0"
       tag="ul"
       name="list"
-      class="relative grid grid-cols-3 gap-4 list-none"
+      class="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 list-none p-4"
     >
       <component v-for="movie in movies" :key="movie.id" :is="'li'">
         <movie-item

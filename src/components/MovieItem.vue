@@ -29,9 +29,9 @@ const { isAdmin, isAuthenticated } = storeToRefs(useAuthStore());
 
 <template>
   <div
-    class="w-96 h-auto bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl"
+    class="w-full bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl"
   >
-    <div class="h-[520px] overflow-hidden w-full relative">
+    <div class="w-full h-[520px] overflow-hidden relative">
       <span
         v-show="movie.inTheaters"
         class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10"
@@ -54,7 +54,9 @@ const { isAdmin, isAuthenticated } = storeToRefs(useAuthStore());
 
     <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
       <div class="w-full flex flex-col gap-2 shrink-0">
-        <h3 class="text-2xl font-bold">{{ movie.name }}</h3>
+        <h3 class="text-xl sm:text-2xl font-bold line-clamp-2">
+          {{ movie.name }}
+        </h3>
 
         <genres-list :genres="movie.genres" />
       </div>
@@ -63,8 +65,10 @@ const { isAdmin, isAuthenticated } = storeToRefs(useAuthStore());
         <p class="text-sm">{{ movie.description }}</p>
       </div>
 
-      <div class="w-full flex items-center justify-start h-8 shrink-0">
-        <span class="text-xs mr-2 leading-7">
+      <div
+        class="w-full flex flex-wrap sm:flex-nowrap items-center justify-start h-auto sm:h-8 gap-2 sm:gap-0 shrink-0"
+      >
+        <span class="text-xs mr-2 leading-7 hidden sm:inline">
           Rating: ({{ movie.rating || 0 }}/5)
         </span>
 

@@ -37,15 +37,22 @@ const isRemoveRatingsDisabled = computed(() => {
 </script>
 
 <template>
-  <header class="w-full flex flex-col gap-4">
-    <div class="relative flex items-center">
+  <header class="w-full flex flex-col gap-4 p-4">
+    <div class="relative flex justify-between items-center gap-4">
       <transition name="fade" appear>
         <h1
           v-if="isAuthenticated"
-          class="text-2xl text-white font-bold"
+          class="text-xl sm:text-2xl text-white font-bold"
           data-testid="greeting-message"
         >
           Hello, {{ user.username }}!
+        </h1>
+        <h1
+          v-else
+          class="text-xl sm:text-2xl text-white font-bold"
+          data-testid="greeting-message"
+        >
+          Welcome to the Movie Ratings App!
         </h1>
       </transition>
 
@@ -53,7 +60,7 @@ const isRemoveRatingsDisabled = computed(() => {
         <router-link
           v-if="!isAuthenticated"
           :to="{ name: 'login' }"
-          class="app-button app-button--primary ml-auto"
+          class="app-button app-button--primary sm:w-auto"
           data-testid="login-button"
         >
           Log In
@@ -63,7 +70,7 @@ const isRemoveRatingsDisabled = computed(() => {
 
         <button
           v-else
-          class="app-button app-button--primary ml-auto bg-red-500 hover:bg-red-600"
+          class="app-button app-button--primary sm:w-auto bg-red-500 hover:bg-red-600"
           data-testid="logout-button"
           @click="logout"
         >
@@ -72,22 +79,24 @@ const isRemoveRatingsDisabled = computed(() => {
       </transition>
     </div>
 
-    <div class="flex items-center justify-between min-h-[42px]">
+    <div
+      class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 sm:gap-0 min-h-[42px]"
+    >
       <transition mode="out-in" appear>
         <p
           :key="`${totalMovies}-${averageRating}`"
-          class="text-lg font-medium text-white"
+          class="text-base sm:text-lg font-medium text-white"
         >
           Total movies: {{ totalMovies }}
-          <span class="m-4">/</span>
+          <span class="mx-2 sm:m-4">/</span>
           Average Rating: {{ averageRating }}
         </p>
       </transition>
 
-      <div class="flex gap-4">
+      <div class="flex flex-col sm:flex-row gap-2 sm:gap-4 w-full sm:w-auto">
         <template v-if="isAdmin">
           <button
-            class="app-button app-button--secondary"
+            class="app-button app-button--secondary w-full sm:w-auto"
             :class="{
               'opacity-50 cursor-not-allowed transition-all':
                 isRemoveRatingsDisabled,
@@ -99,7 +108,7 @@ const isRemoveRatingsDisabled = computed(() => {
           </button>
 
           <button
-            class="app-button app-button--primary"
+            class="app-button app-button--primary w-full sm:w-auto"
             @click="$emit('add-movie')"
           >
             Create Movie
