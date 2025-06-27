@@ -14,7 +14,7 @@ import { routes } from "@/router";
 import AppLogin from "@/views/AppLogin.vue";
 
 // MOCKS
-const userMock = {
+const credentialsMock = {
   username: "test_user",
   password: "test_user_123",
 };
@@ -85,12 +85,15 @@ describe("App Login", () => {
     const passwordInput = wrapper.queryByTestId("password-input");
     const submitButton = wrapper.queryByTestId("submit-button");
 
-    await fireEvent.update(usernameInput, userMock.username);
-    await fireEvent.update(passwordInput, userMock.password);
+    await fireEvent.update(usernameInput, credentialsMock.username);
+    await fireEvent.update(passwordInput, credentialsMock.password);
     await fireEvent.click(submitButton);
 
     expect(loginSpy).toHaveBeenCalledOnce();
-    expect(loginSpy).toHaveBeenCalledWith(userMock.username, userMock.password);
+    expect(loginSpy).toHaveBeenCalledWith(
+      credentialsMock.username,
+      credentialsMock.password,
+    );
     expect(loginSpy).not.throws();
     expect(routerSpy).toHaveBeenCalledOnce();
     expect(routerSpy).toHaveBeenCalledWith({ name: "home" });
@@ -116,12 +119,15 @@ describe("App Login", () => {
     const passwordInput = wrapper.queryByTestId("password-input");
     const loginButton = wrapper.queryByTestId("submit-button");
 
-    await fireEvent.update(usernameInput, userMock.username);
-    await fireEvent.update(passwordInput, userMock.password);
+    await fireEvent.update(usernameInput, credentialsMock.username);
+    await fireEvent.update(passwordInput, credentialsMock.password);
     await fireEvent.click(loginButton);
 
     expect(loginSpy).toHaveBeenCalledOnce();
-    expect(loginSpy).toHaveBeenCalledWith(userMock.username, userMock.password);
+    expect(loginSpy).toHaveBeenCalledWith(
+      credentialsMock.username,
+      credentialsMock.password,
+    );
     expect(loginSpy).toThrowError(
       "Invalid username or password, please try again.",
     );
@@ -147,8 +153,8 @@ describe("App Login", () => {
     const passwordInput = wrapper.queryByTestId("password-input");
     const loginButton = wrapper.queryByTestId("submit-button");
 
-    await fireEvent.update(usernameInput, userMock.username);
-    await fireEvent.update(passwordInput, userMock.password);
+    await fireEvent.update(usernameInput, credentialsMock.username);
+    await fireEvent.update(passwordInput, credentialsMock.password);
     await fireEvent.click(loginButton);
 
     const errorMessage = wrapper.queryByTestId("error-message");
