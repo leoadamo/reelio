@@ -2,28 +2,28 @@
 
 exports[`App Home > should display an welcome message and a logout button when the user is authenticated 1`] = `
 "<div class="flex-1 flex flex-col justify-between" data-testid="app-home">
-  <header data-v-48a13218="" class="w-full flex flex-col gap-4">
-    <div data-v-48a13218="" class="relative flex items-center">
-      <transition-stub data-v-48a13218="" name="fade" appear="true" persisted="false" css="true">
-        <h1 data-v-48a13218="" class="text-2xl text-white font-bold" data-testid="greeting-message"> Hello, user_test! </h1>
+  <header data-v-48a13218="" class="w-full flex flex-col gap-4 p-4">
+    <div data-v-48a13218="" class="relative flex justify-between items-center gap-4">
+      <transition-stub data-v-48a13218="" name="fade" mode="out-in" appear="true" persisted="false" css="true">
+        <h1 data-v-48a13218="" class="text-xl sm:text-2xl text-white font-bold" data-testid="greeting-message">Hello, user_test!</h1>
       </transition-stub>
-      <transition-stub data-v-48a13218="" name="fade" mode="out-in" appear="true" persisted="false" css="true"><button data-v-48a13218="" class="app-button app-button--primary ml-auto bg-red-500 hover:bg-red-600" data-testid="logout-button"> Log Out </button></transition-stub>
+      <transition-stub data-v-48a13218="" name="fade" mode="out-in" appear="true" persisted="false" css="true"><button data-v-48a13218="" class="app-button app-button--primary ml-auto sm:w-auto bg-red-500 hover:bg-red-600" data-testid="logout-button"> Log Out </button></transition-stub>
     </div>
-    <div data-v-48a13218="" class="flex items-center justify-between min-h-[42px]">
+    <div data-v-48a13218="" class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 sm:gap-0 min-h-[42px]">
       <transition-stub data-v-48a13218="" mode="out-in" appear="true" persisted="false" css="true">
-        <p data-v-48a13218="" class="text-lg font-medium text-white"> Total movies: 6 <span data-v-48a13218="" class="m-4">/</span> Average Rating: 4.5</p>
+        <p data-v-48a13218="" class="text-base sm:text-lg font-medium text-white"> Total movies: 6 <span data-v-48a13218="" class="mx-2 sm:m-4">/</span> Average Rating: 4.5</p>
       </transition-stub>
-      <div data-v-48a13218="" class="flex gap-4">
+      <div data-v-48a13218="" class="flex flex-col sm:flex-row gap-2 sm:gap-4 w-full sm:w-auto">
         <!--v-if-->
       </div>
     </div>
   </header>
   <main class="flex min-h-[744px] mt-12">
     <transition-stub name="fade" mode="out-in" appear="false" persisted="false" css="true" tag="div">
-      <transition-group-stub tag="ul" name="list" appear="false" persisted="false" css="true" class="relative grid grid-cols-3 gap-4 list-none">
+      <transition-group-stub tag="ul" name="list" appear="false" persisted="false" css="true" class="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 list-none p-4">
         <li>
-          <div class="w-96 h-auto bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
-            <div class="h-[520px] overflow-hidden w-full relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10"> In Theaters </span>
+          <div class="w-full bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
+            <div class="w-full h-[520px] overflow-hidden relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10"> In Theaters </span>
               <div class="absolute top-0 right-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-14 w-14 text-yellow-500">
                   <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
                 </svg>
@@ -32,13 +32,13 @@ exports[`App Home > should display an welcome message and a logout button when t
             </div>
             <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
               <div class="w-full flex flex-col gap-2 shrink-0">
-                <h3 class="text-2xl font-bold">Lilo &amp; Stitch</h3>
+                <h3 class="text-xl sm:text-2xl font-bold line-clamp-2">Lilo &amp; Stitch</h3>
                 <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Animation</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Adventure</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Comedy</span></div>
               </div>
               <div class="h-24 overflow-auto flex-1">
                 <p class="text-sm">A lonely Hawaiian girl befriends a runaway alien, helping to mend her fragmented family.</p>
               </div>
-              <div class="w-full flex items-center justify-start h-8 shrink-0"><span class="text-xs mr-2 leading-7"> Rating: (5/5) </span>
+              <div class="w-full flex flex-wrap sm:flex-nowrap items-center justify-start h-auto sm:h-8 gap-2 sm:gap-0 shrink-0"><span class="text-xs mr-2 leading-7 hidden sm:inline"> Rating: (5/5) </span>
                 <div class="items-center justify-start flex flex-1 space-x-1"><button class="rounded-md disabled:cursor-not-allowed text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
                       <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
                     </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
@@ -60,8 +60,8 @@ exports[`App Home > should display an welcome message and a logout button when t
           </div>
         </li>
         <li>
-          <div class="w-96 h-auto bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
-            <div class="h-[520px] overflow-hidden w-full relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10"> In Theaters </span>
+          <div class="w-full bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
+            <div class="w-full h-[520px] overflow-hidden relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10"> In Theaters </span>
               <div class="absolute top-0 right-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-14 w-14 text-yellow-500">
                   <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
                 </svg>
@@ -70,13 +70,13 @@ exports[`App Home > should display an welcome message and a logout button when t
             </div>
             <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
               <div class="w-full flex flex-col gap-2 shrink-0">
-                <h3 class="text-2xl font-bold">How to Train Your Dragon</h3>
+                <h3 class="text-xl sm:text-2xl font-bold line-clamp-2">How to Train Your Dragon</h3>
                 <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Animation</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Action</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Adventure</span></div>
               </div>
               <div class="h-24 overflow-auto flex-1">
                 <p class="text-sm">A young Viking befriends a dragon, leading to a friendship that changes the fate of their village.</p>
               </div>
-              <div class="w-full flex items-center justify-start h-8 shrink-0"><span class="text-xs mr-2 leading-7"> Rating: (5/5) </span>
+              <div class="w-full flex flex-wrap sm:flex-nowrap items-center justify-start h-auto sm:h-8 gap-2 sm:gap-0 shrink-0"><span class="text-xs mr-2 leading-7 hidden sm:inline"> Rating: (5/5) </span>
                 <div class="items-center justify-start flex flex-1 space-x-1"><button class="rounded-md disabled:cursor-not-allowed text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
                       <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
                     </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
@@ -98,8 +98,8 @@ exports[`App Home > should display an welcome message and a logout button when t
           </div>
         </li>
         <li>
-          <div class="w-96 h-auto bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
-            <div class="h-[520px] overflow-hidden w-full relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10" style="display: none;"> In Theaters </span>
+          <div class="w-full bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
+            <div class="w-full h-[520px] overflow-hidden relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10" style="display: none;"> In Theaters </span>
               <div class="absolute top-0 right-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-14 w-14 text-yellow-500">
                   <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
                 </svg>
@@ -108,13 +108,13 @@ exports[`App Home > should display an welcome message and a logout button when t
             </div>
             <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
               <div class="w-full flex flex-col gap-2 shrink-0">
-                <h3 class="text-2xl font-bold">The Godfather</h3>
+                <h3 class="text-xl sm:text-2xl font-bold line-clamp-2">The Godfather</h3>
                 <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Crime</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Drama</span></div>
               </div>
               <div class="h-24 overflow-auto flex-1">
                 <p class="text-sm">The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.</p>
               </div>
-              <div class="w-full flex items-center justify-start h-8 shrink-0"><span class="text-xs mr-2 leading-7"> Rating: (5/5) </span>
+              <div class="w-full flex flex-wrap sm:flex-nowrap items-center justify-start h-auto sm:h-8 gap-2 sm:gap-0 shrink-0"><span class="text-xs mr-2 leading-7 hidden sm:inline"> Rating: (5/5) </span>
                 <div class="items-center justify-start flex flex-1 space-x-1"><button class="rounded-md disabled:cursor-not-allowed text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
                       <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
                     </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
@@ -136,8 +136,8 @@ exports[`App Home > should display an welcome message and a logout button when t
           </div>
         </li>
         <li>
-          <div class="w-96 h-auto bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
-            <div class="h-[520px] overflow-hidden w-full relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10" style="display: none;"> In Theaters </span>
+          <div class="w-full bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
+            <div class="w-full h-[520px] overflow-hidden relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10" style="display: none;"> In Theaters </span>
               <div class="absolute top-0 right-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-14 w-14 text-yellow-500">
                   <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
                 </svg>
@@ -146,13 +146,13 @@ exports[`App Home > should display an welcome message and a logout button when t
             </div>
             <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
               <div class="w-full flex flex-col gap-2 shrink-0">
-                <h3 class="text-2xl font-bold">The Shawshank Redemption</h3>
+                <h3 class="text-xl sm:text-2xl font-bold line-clamp-2">The Shawshank Redemption</h3>
                 <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Drama</span></div>
               </div>
               <div class="h-24 overflow-auto flex-1">
                 <p class="text-sm">Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.</p>
               </div>
-              <div class="w-full flex items-center justify-start h-8 shrink-0"><span class="text-xs mr-2 leading-7"> Rating: (2/5) </span>
+              <div class="w-full flex flex-wrap sm:flex-nowrap items-center justify-start h-auto sm:h-8 gap-2 sm:gap-0 shrink-0"><span class="text-xs mr-2 leading-7 hidden sm:inline"> Rating: (2/5) </span>
                 <div class="items-center justify-start flex flex-1 space-x-1"><button class="rounded-md disabled:cursor-not-allowed text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
                       <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
                     </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
@@ -174,8 +174,8 @@ exports[`App Home > should display an welcome message and a logout button when t
           </div>
         </li>
         <li>
-          <div class="w-96 h-auto bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
-            <div class="h-[520px] overflow-hidden w-full relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10" style="display: none;"> In Theaters </span>
+          <div class="w-full bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
+            <div class="w-full h-[520px] overflow-hidden relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10" style="display: none;"> In Theaters </span>
               <div class="absolute top-0 right-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-14 w-14 text-yellow-500">
                   <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
                 </svg>
@@ -184,13 +184,13 @@ exports[`App Home > should display an welcome message and a logout button when t
             </div>
             <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
               <div class="w-full flex flex-col gap-2 shrink-0">
-                <h3 class="text-2xl font-bold">The Dark Knight</h3>
+                <h3 class="text-xl sm:text-2xl font-bold line-clamp-2">The Dark Knight</h3>
                 <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Action</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Crime</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Drama</span></div>
               </div>
               <div class="h-24 overflow-auto flex-1">
                 <p class="text-sm">When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.</p>
               </div>
-              <div class="w-full flex items-center justify-start h-8 shrink-0"><span class="text-xs mr-2 leading-7"> Rating: (5/5) </span>
+              <div class="w-full flex flex-wrap sm:flex-nowrap items-center justify-start h-auto sm:h-8 gap-2 sm:gap-0 shrink-0"><span class="text-xs mr-2 leading-7 hidden sm:inline"> Rating: (5/5) </span>
                 <div class="items-center justify-start flex flex-1 space-x-1"><button class="rounded-md disabled:cursor-not-allowed text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
                       <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
                     </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
@@ -212,8 +212,8 @@ exports[`App Home > should display an welcome message and a logout button when t
           </div>
         </li>
         <li>
-          <div class="w-96 h-auto bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
-            <div class="h-[520px] overflow-hidden w-full relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10" style="display: none;"> In Theaters </span>
+          <div class="w-full bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
+            <div class="w-full h-[520px] overflow-hidden relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10" style="display: none;"> In Theaters </span>
               <div class="absolute top-0 right-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-14 w-14 text-yellow-500">
                   <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
                 </svg>
@@ -222,13 +222,13 @@ exports[`App Home > should display an welcome message and a logout button when t
             </div>
             <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
               <div class="w-full flex flex-col gap-2 shrink-0">
-                <h3 class="text-2xl font-bold">Kung Fu Panda</h3>
+                <h3 class="text-xl sm:text-2xl font-bold line-clamp-2">Kung Fu Panda</h3>
                 <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Comedy</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Action</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Adventure</span></div>
               </div>
               <div class="h-24 overflow-auto flex-1">
                 <p class="text-sm">When the Valley of Peace is threatened, a lazy panda named Po is unexpectedly chosen to fulfill an ancient prophecy and become the Dragon Warrior.</p>
               </div>
-              <div class="w-full flex items-center justify-start h-8 shrink-0"><span class="text-xs mr-2 leading-7"> Rating: (5/5) </span>
+              <div class="w-full flex flex-wrap sm:flex-nowrap items-center justify-start h-auto sm:h-8 gap-2 sm:gap-0 shrink-0"><span class="text-xs mr-2 leading-7 hidden sm:inline"> Rating: (5/5) </span>
                 <div class="items-center justify-start flex flex-1 space-x-1"><button class="rounded-md disabled:cursor-not-allowed text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
                       <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
                     </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
@@ -258,30 +258,30 @@ exports[`App Home > should display an welcome message and a logout button when t
 
 exports[`App Home > should display the login button when the user is not authenticated 1`] = `
 "<div class="flex-1 flex flex-col justify-between" data-testid="app-home">
-  <header data-v-48a13218="" class="w-full flex flex-col gap-4">
-    <div data-v-48a13218="" class="relative flex items-center">
-      <transition-stub data-v-48a13218="" name="fade" appear="true" persisted="false" css="true">
-        <!--v-if-->
+  <header data-v-48a13218="" class="w-full flex flex-col gap-4 p-4">
+    <div data-v-48a13218="" class="relative flex justify-between items-center gap-4">
+      <transition-stub data-v-48a13218="" name="fade" mode="out-in" appear="true" persisted="false" css="true">
+        <h1 data-v-48a13218="" class="text-xl sm:text-2xl text-white font-bold" data-testid="greeting-message">Welcome to Reelio!</h1>
       </transition-stub>
-      <transition-stub data-v-48a13218="" name="fade" mode="out-in" appear="true" persisted="false" css="true"><a data-v-48a13218="" href="/login" class="app-button app-button--primary ml-auto" data-testid="login-button"> Log In <svg data-v-48a13218="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="w-5 h-5">
+      <transition-stub data-v-48a13218="" name="fade" mode="out-in" appear="true" persisted="false" css="true"><a data-v-48a13218="" href="/login" class="app-button app-button--primary ml-auto sm:w-auto" data-testid="login-button"> Log In <svg data-v-48a13218="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="w-5 h-5">
             <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd"></path>
           </svg></a></transition-stub>
     </div>
-    <div data-v-48a13218="" class="flex items-center justify-between min-h-[42px]">
+    <div data-v-48a13218="" class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 sm:gap-0 min-h-[42px]">
       <transition-stub data-v-48a13218="" mode="out-in" appear="true" persisted="false" css="true">
-        <p data-v-48a13218="" class="text-lg font-medium text-white"> Total movies: 6 <span data-v-48a13218="" class="m-4">/</span> Average Rating: 4.5</p>
+        <p data-v-48a13218="" class="text-base sm:text-lg font-medium text-white"> Total movies: 6 <span data-v-48a13218="" class="mx-2 sm:m-4">/</span> Average Rating: 4.5</p>
       </transition-stub>
-      <div data-v-48a13218="" class="flex gap-4">
+      <div data-v-48a13218="" class="flex flex-col sm:flex-row gap-2 sm:gap-4 w-full sm:w-auto">
         <!--v-if-->
       </div>
     </div>
   </header>
   <main class="flex min-h-[744px] mt-12">
     <transition-stub name="fade" mode="out-in" appear="false" persisted="false" css="true" tag="div">
-      <transition-group-stub tag="ul" name="list" appear="false" persisted="false" css="true" class="relative grid grid-cols-3 gap-4 list-none">
+      <transition-group-stub tag="ul" name="list" appear="false" persisted="false" css="true" class="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 list-none p-4">
         <li>
-          <div class="w-96 h-auto bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
-            <div class="h-[520px] overflow-hidden w-full relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10"> In Theaters </span>
+          <div class="w-full bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
+            <div class="w-full h-[520px] overflow-hidden relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10"> In Theaters </span>
               <div class="absolute top-0 right-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-14 w-14 text-yellow-500">
                   <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
                 </svg>
@@ -290,13 +290,13 @@ exports[`App Home > should display the login button when the user is not authent
             </div>
             <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
               <div class="w-full flex flex-col gap-2 shrink-0">
-                <h3 class="text-2xl font-bold">Lilo &amp; Stitch</h3>
+                <h3 class="text-xl sm:text-2xl font-bold line-clamp-2">Lilo &amp; Stitch</h3>
                 <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Animation</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Adventure</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Comedy</span></div>
               </div>
               <div class="h-24 overflow-auto flex-1">
                 <p class="text-sm">A lonely Hawaiian girl befriends a runaway alien, helping to mend her fragmented family.</p>
               </div>
-              <div class="w-full flex items-center justify-start h-8 shrink-0"><span class="text-xs mr-2 leading-7"> Rating: (5/5) </span>
+              <div class="w-full flex flex-wrap sm:flex-nowrap items-center justify-start h-auto sm:h-8 gap-2 sm:gap-0 shrink-0"><span class="text-xs mr-2 leading-7 hidden sm:inline"> Rating: (5/5) </span>
                 <div class="items-center justify-start flex flex-1 space-x-1"><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
                       <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
                     </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
@@ -318,8 +318,8 @@ exports[`App Home > should display the login button when the user is not authent
           </div>
         </li>
         <li>
-          <div class="w-96 h-auto bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
-            <div class="h-[520px] overflow-hidden w-full relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10"> In Theaters </span>
+          <div class="w-full bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
+            <div class="w-full h-[520px] overflow-hidden relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10"> In Theaters </span>
               <div class="absolute top-0 right-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-14 w-14 text-yellow-500">
                   <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
                 </svg>
@@ -328,13 +328,13 @@ exports[`App Home > should display the login button when the user is not authent
             </div>
             <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
               <div class="w-full flex flex-col gap-2 shrink-0">
-                <h3 class="text-2xl font-bold">How to Train Your Dragon</h3>
+                <h3 class="text-xl sm:text-2xl font-bold line-clamp-2">How to Train Your Dragon</h3>
                 <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Animation</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Action</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Adventure</span></div>
               </div>
               <div class="h-24 overflow-auto flex-1">
                 <p class="text-sm">A young Viking befriends a dragon, leading to a friendship that changes the fate of their village.</p>
               </div>
-              <div class="w-full flex items-center justify-start h-8 shrink-0"><span class="text-xs mr-2 leading-7"> Rating: (5/5) </span>
+              <div class="w-full flex flex-wrap sm:flex-nowrap items-center justify-start h-auto sm:h-8 gap-2 sm:gap-0 shrink-0"><span class="text-xs mr-2 leading-7 hidden sm:inline"> Rating: (5/5) </span>
                 <div class="items-center justify-start flex flex-1 space-x-1"><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
                       <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
                     </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
@@ -356,8 +356,8 @@ exports[`App Home > should display the login button when the user is not authent
           </div>
         </li>
         <li>
-          <div class="w-96 h-auto bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
-            <div class="h-[520px] overflow-hidden w-full relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10" style="display: none;"> In Theaters </span>
+          <div class="w-full bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
+            <div class="w-full h-[520px] overflow-hidden relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10" style="display: none;"> In Theaters </span>
               <div class="absolute top-0 right-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-14 w-14 text-yellow-500">
                   <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
                 </svg>
@@ -366,13 +366,13 @@ exports[`App Home > should display the login button when the user is not authent
             </div>
             <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
               <div class="w-full flex flex-col gap-2 shrink-0">
-                <h3 class="text-2xl font-bold">The Godfather</h3>
+                <h3 class="text-xl sm:text-2xl font-bold line-clamp-2">The Godfather</h3>
                 <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Crime</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Drama</span></div>
               </div>
               <div class="h-24 overflow-auto flex-1">
                 <p class="text-sm">The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.</p>
               </div>
-              <div class="w-full flex items-center justify-start h-8 shrink-0"><span class="text-xs mr-2 leading-7"> Rating: (5/5) </span>
+              <div class="w-full flex flex-wrap sm:flex-nowrap items-center justify-start h-auto sm:h-8 gap-2 sm:gap-0 shrink-0"><span class="text-xs mr-2 leading-7 hidden sm:inline"> Rating: (5/5) </span>
                 <div class="items-center justify-start flex flex-1 space-x-1"><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
                       <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
                     </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
@@ -394,8 +394,8 @@ exports[`App Home > should display the login button when the user is not authent
           </div>
         </li>
         <li>
-          <div class="w-96 h-auto bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
-            <div class="h-[520px] overflow-hidden w-full relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10" style="display: none;"> In Theaters </span>
+          <div class="w-full bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
+            <div class="w-full h-[520px] overflow-hidden relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10" style="display: none;"> In Theaters </span>
               <div class="absolute top-0 right-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-14 w-14 text-yellow-500">
                   <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
                 </svg>
@@ -404,13 +404,13 @@ exports[`App Home > should display the login button when the user is not authent
             </div>
             <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
               <div class="w-full flex flex-col gap-2 shrink-0">
-                <h3 class="text-2xl font-bold">The Shawshank Redemption</h3>
+                <h3 class="text-xl sm:text-2xl font-bold line-clamp-2">The Shawshank Redemption</h3>
                 <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Drama</span></div>
               </div>
               <div class="h-24 overflow-auto flex-1">
                 <p class="text-sm">Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.</p>
               </div>
-              <div class="w-full flex items-center justify-start h-8 shrink-0"><span class="text-xs mr-2 leading-7"> Rating: (2/5) </span>
+              <div class="w-full flex flex-wrap sm:flex-nowrap items-center justify-start h-auto sm:h-8 gap-2 sm:gap-0 shrink-0"><span class="text-xs mr-2 leading-7 hidden sm:inline"> Rating: (2/5) </span>
                 <div class="items-center justify-start flex flex-1 space-x-1"><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
                       <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
                     </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
@@ -432,8 +432,8 @@ exports[`App Home > should display the login button when the user is not authent
           </div>
         </li>
         <li>
-          <div class="w-96 h-auto bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
-            <div class="h-[520px] overflow-hidden w-full relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10" style="display: none;"> In Theaters </span>
+          <div class="w-full bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
+            <div class="w-full h-[520px] overflow-hidden relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10" style="display: none;"> In Theaters </span>
               <div class="absolute top-0 right-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-14 w-14 text-yellow-500">
                   <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
                 </svg>
@@ -442,13 +442,13 @@ exports[`App Home > should display the login button when the user is not authent
             </div>
             <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
               <div class="w-full flex flex-col gap-2 shrink-0">
-                <h3 class="text-2xl font-bold">The Dark Knight</h3>
+                <h3 class="text-xl sm:text-2xl font-bold line-clamp-2">The Dark Knight</h3>
                 <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Action</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Crime</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Drama</span></div>
               </div>
               <div class="h-24 overflow-auto flex-1">
                 <p class="text-sm">When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.</p>
               </div>
-              <div class="w-full flex items-center justify-start h-8 shrink-0"><span class="text-xs mr-2 leading-7"> Rating: (5/5) </span>
+              <div class="w-full flex flex-wrap sm:flex-nowrap items-center justify-start h-auto sm:h-8 gap-2 sm:gap-0 shrink-0"><span class="text-xs mr-2 leading-7 hidden sm:inline"> Rating: (5/5) </span>
                 <div class="items-center justify-start flex flex-1 space-x-1"><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
                       <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
                     </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
@@ -470,8 +470,8 @@ exports[`App Home > should display the login button when the user is not authent
           </div>
         </li>
         <li>
-          <div class="w-96 h-auto bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
-            <div class="h-[520px] overflow-hidden w-full relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10" style="display: none;"> In Theaters </span>
+          <div class="w-full bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
+            <div class="w-full h-[520px] overflow-hidden relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10" style="display: none;"> In Theaters </span>
               <div class="absolute top-0 right-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-14 w-14 text-yellow-500">
                   <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
                 </svg>
@@ -480,13 +480,13 @@ exports[`App Home > should display the login button when the user is not authent
             </div>
             <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
               <div class="w-full flex flex-col gap-2 shrink-0">
-                <h3 class="text-2xl font-bold">Kung Fu Panda</h3>
+                <h3 class="text-xl sm:text-2xl font-bold line-clamp-2">Kung Fu Panda</h3>
                 <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Comedy</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Action</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Adventure</span></div>
               </div>
               <div class="h-24 overflow-auto flex-1">
                 <p class="text-sm">When the Valley of Peace is threatened, a lazy panda named Po is unexpectedly chosen to fulfill an ancient prophecy and become the Dragon Warrior.</p>
               </div>
-              <div class="w-full flex items-center justify-start h-8 shrink-0"><span class="text-xs mr-2 leading-7"> Rating: (5/5) </span>
+              <div class="w-full flex flex-wrap sm:flex-nowrap items-center justify-start h-auto sm:h-8 gap-2 sm:gap-0 shrink-0"><span class="text-xs mr-2 leading-7 hidden sm:inline"> Rating: (5/5) </span>
                 <div class="items-center justify-start flex flex-1 space-x-1"><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
                       <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
                     </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
@@ -516,28 +516,28 @@ exports[`App Home > should display the login button when the user is not authent
 
 exports[`App Home > should not display the login button when the user is authenticated 1`] = `
 "<div class="flex-1 flex flex-col justify-between" data-testid="app-home">
-  <header data-v-48a13218="" class="w-full flex flex-col gap-4">
-    <div data-v-48a13218="" class="relative flex items-center">
-      <transition-stub data-v-48a13218="" name="fade" appear="true" persisted="false" css="true">
-        <h1 data-v-48a13218="" class="text-2xl text-white font-bold" data-testid="greeting-message"> Hello, user_test! </h1>
+  <header data-v-48a13218="" class="w-full flex flex-col gap-4 p-4">
+    <div data-v-48a13218="" class="relative flex justify-between items-center gap-4">
+      <transition-stub data-v-48a13218="" name="fade" mode="out-in" appear="true" persisted="false" css="true">
+        <h1 data-v-48a13218="" class="text-xl sm:text-2xl text-white font-bold" data-testid="greeting-message">Hello, user_test!</h1>
       </transition-stub>
-      <transition-stub data-v-48a13218="" name="fade" mode="out-in" appear="true" persisted="false" css="true"><button data-v-48a13218="" class="app-button app-button--primary ml-auto bg-red-500 hover:bg-red-600" data-testid="logout-button"> Log Out </button></transition-stub>
+      <transition-stub data-v-48a13218="" name="fade" mode="out-in" appear="true" persisted="false" css="true"><button data-v-48a13218="" class="app-button app-button--primary ml-auto sm:w-auto bg-red-500 hover:bg-red-600" data-testid="logout-button"> Log Out </button></transition-stub>
     </div>
-    <div data-v-48a13218="" class="flex items-center justify-between min-h-[42px]">
+    <div data-v-48a13218="" class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 sm:gap-0 min-h-[42px]">
       <transition-stub data-v-48a13218="" mode="out-in" appear="true" persisted="false" css="true">
-        <p data-v-48a13218="" class="text-lg font-medium text-white"> Total movies: 6 <span data-v-48a13218="" class="m-4">/</span> Average Rating: 4.5</p>
+        <p data-v-48a13218="" class="text-base sm:text-lg font-medium text-white"> Total movies: 6 <span data-v-48a13218="" class="mx-2 sm:m-4">/</span> Average Rating: 4.5</p>
       </transition-stub>
-      <div data-v-48a13218="" class="flex gap-4">
+      <div data-v-48a13218="" class="flex flex-col sm:flex-row gap-2 sm:gap-4 w-full sm:w-auto">
         <!--v-if-->
       </div>
     </div>
   </header>
   <main class="flex min-h-[744px] mt-12">
     <transition-stub name="fade" mode="out-in" appear="false" persisted="false" css="true" tag="div">
-      <transition-group-stub tag="ul" name="list" appear="false" persisted="false" css="true" class="relative grid grid-cols-3 gap-4 list-none">
+      <transition-group-stub tag="ul" name="list" appear="false" persisted="false" css="true" class="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 list-none p-4">
         <li>
-          <div class="w-96 h-auto bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
-            <div class="h-[520px] overflow-hidden w-full relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10"> In Theaters </span>
+          <div class="w-full bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
+            <div class="w-full h-[520px] overflow-hidden relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10"> In Theaters </span>
               <div class="absolute top-0 right-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-14 w-14 text-yellow-500">
                   <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
                 </svg>
@@ -546,13 +546,13 @@ exports[`App Home > should not display the login button when the user is authent
             </div>
             <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
               <div class="w-full flex flex-col gap-2 shrink-0">
-                <h3 class="text-2xl font-bold">Lilo &amp; Stitch</h3>
+                <h3 class="text-xl sm:text-2xl font-bold line-clamp-2">Lilo &amp; Stitch</h3>
                 <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Animation</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Adventure</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Comedy</span></div>
               </div>
               <div class="h-24 overflow-auto flex-1">
                 <p class="text-sm">A lonely Hawaiian girl befriends a runaway alien, helping to mend her fragmented family.</p>
               </div>
-              <div class="w-full flex items-center justify-start h-8 shrink-0"><span class="text-xs mr-2 leading-7"> Rating: (5/5) </span>
+              <div class="w-full flex flex-wrap sm:flex-nowrap items-center justify-start h-auto sm:h-8 gap-2 sm:gap-0 shrink-0"><span class="text-xs mr-2 leading-7 hidden sm:inline"> Rating: (5/5) </span>
                 <div class="items-center justify-start flex flex-1 space-x-1"><button class="rounded-md disabled:cursor-not-allowed text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
                       <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
                     </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
@@ -574,8 +574,8 @@ exports[`App Home > should not display the login button when the user is authent
           </div>
         </li>
         <li>
-          <div class="w-96 h-auto bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
-            <div class="h-[520px] overflow-hidden w-full relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10"> In Theaters </span>
+          <div class="w-full bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
+            <div class="w-full h-[520px] overflow-hidden relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10"> In Theaters </span>
               <div class="absolute top-0 right-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-14 w-14 text-yellow-500">
                   <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
                 </svg>
@@ -584,13 +584,13 @@ exports[`App Home > should not display the login button when the user is authent
             </div>
             <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
               <div class="w-full flex flex-col gap-2 shrink-0">
-                <h3 class="text-2xl font-bold">How to Train Your Dragon</h3>
+                <h3 class="text-xl sm:text-2xl font-bold line-clamp-2">How to Train Your Dragon</h3>
                 <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Animation</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Action</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Adventure</span></div>
               </div>
               <div class="h-24 overflow-auto flex-1">
                 <p class="text-sm">A young Viking befriends a dragon, leading to a friendship that changes the fate of their village.</p>
               </div>
-              <div class="w-full flex items-center justify-start h-8 shrink-0"><span class="text-xs mr-2 leading-7"> Rating: (5/5) </span>
+              <div class="w-full flex flex-wrap sm:flex-nowrap items-center justify-start h-auto sm:h-8 gap-2 sm:gap-0 shrink-0"><span class="text-xs mr-2 leading-7 hidden sm:inline"> Rating: (5/5) </span>
                 <div class="items-center justify-start flex flex-1 space-x-1"><button class="rounded-md disabled:cursor-not-allowed text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
                       <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
                     </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
@@ -612,8 +612,8 @@ exports[`App Home > should not display the login button when the user is authent
           </div>
         </li>
         <li>
-          <div class="w-96 h-auto bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
-            <div class="h-[520px] overflow-hidden w-full relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10" style="display: none;"> In Theaters </span>
+          <div class="w-full bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
+            <div class="w-full h-[520px] overflow-hidden relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10" style="display: none;"> In Theaters </span>
               <div class="absolute top-0 right-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-14 w-14 text-yellow-500">
                   <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
                 </svg>
@@ -622,13 +622,13 @@ exports[`App Home > should not display the login button when the user is authent
             </div>
             <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
               <div class="w-full flex flex-col gap-2 shrink-0">
-                <h3 class="text-2xl font-bold">The Godfather</h3>
+                <h3 class="text-xl sm:text-2xl font-bold line-clamp-2">The Godfather</h3>
                 <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Crime</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Drama</span></div>
               </div>
               <div class="h-24 overflow-auto flex-1">
                 <p class="text-sm">The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.</p>
               </div>
-              <div class="w-full flex items-center justify-start h-8 shrink-0"><span class="text-xs mr-2 leading-7"> Rating: (5/5) </span>
+              <div class="w-full flex flex-wrap sm:flex-nowrap items-center justify-start h-auto sm:h-8 gap-2 sm:gap-0 shrink-0"><span class="text-xs mr-2 leading-7 hidden sm:inline"> Rating: (5/5) </span>
                 <div class="items-center justify-start flex flex-1 space-x-1"><button class="rounded-md disabled:cursor-not-allowed text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
                       <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
                     </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
@@ -650,8 +650,8 @@ exports[`App Home > should not display the login button when the user is authent
           </div>
         </li>
         <li>
-          <div class="w-96 h-auto bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
-            <div class="h-[520px] overflow-hidden w-full relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10" style="display: none;"> In Theaters </span>
+          <div class="w-full bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
+            <div class="w-full h-[520px] overflow-hidden relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10" style="display: none;"> In Theaters </span>
               <div class="absolute top-0 right-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-14 w-14 text-yellow-500">
                   <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
                 </svg>
@@ -660,13 +660,13 @@ exports[`App Home > should not display the login button when the user is authent
             </div>
             <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
               <div class="w-full flex flex-col gap-2 shrink-0">
-                <h3 class="text-2xl font-bold">The Shawshank Redemption</h3>
+                <h3 class="text-xl sm:text-2xl font-bold line-clamp-2">The Shawshank Redemption</h3>
                 <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Drama</span></div>
               </div>
               <div class="h-24 overflow-auto flex-1">
                 <p class="text-sm">Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.</p>
               </div>
-              <div class="w-full flex items-center justify-start h-8 shrink-0"><span class="text-xs mr-2 leading-7"> Rating: (2/5) </span>
+              <div class="w-full flex flex-wrap sm:flex-nowrap items-center justify-start h-auto sm:h-8 gap-2 sm:gap-0 shrink-0"><span class="text-xs mr-2 leading-7 hidden sm:inline"> Rating: (2/5) </span>
                 <div class="items-center justify-start flex flex-1 space-x-1"><button class="rounded-md disabled:cursor-not-allowed text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
                       <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
                     </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
@@ -688,8 +688,8 @@ exports[`App Home > should not display the login button when the user is authent
           </div>
         </li>
         <li>
-          <div class="w-96 h-auto bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
-            <div class="h-[520px] overflow-hidden w-full relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10" style="display: none;"> In Theaters </span>
+          <div class="w-full bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
+            <div class="w-full h-[520px] overflow-hidden relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10" style="display: none;"> In Theaters </span>
               <div class="absolute top-0 right-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-14 w-14 text-yellow-500">
                   <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
                 </svg>
@@ -698,13 +698,13 @@ exports[`App Home > should not display the login button when the user is authent
             </div>
             <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
               <div class="w-full flex flex-col gap-2 shrink-0">
-                <h3 class="text-2xl font-bold">The Dark Knight</h3>
+                <h3 class="text-xl sm:text-2xl font-bold line-clamp-2">The Dark Knight</h3>
                 <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Action</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Crime</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Drama</span></div>
               </div>
               <div class="h-24 overflow-auto flex-1">
                 <p class="text-sm">When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.</p>
               </div>
-              <div class="w-full flex items-center justify-start h-8 shrink-0"><span class="text-xs mr-2 leading-7"> Rating: (5/5) </span>
+              <div class="w-full flex flex-wrap sm:flex-nowrap items-center justify-start h-auto sm:h-8 gap-2 sm:gap-0 shrink-0"><span class="text-xs mr-2 leading-7 hidden sm:inline"> Rating: (5/5) </span>
                 <div class="items-center justify-start flex flex-1 space-x-1"><button class="rounded-md disabled:cursor-not-allowed text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
                       <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
                     </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
@@ -726,8 +726,8 @@ exports[`App Home > should not display the login button when the user is authent
           </div>
         </li>
         <li>
-          <div class="w-96 h-auto bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
-            <div class="h-[520px] overflow-hidden w-full relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10" style="display: none;"> In Theaters </span>
+          <div class="w-full bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
+            <div class="w-full h-[520px] overflow-hidden relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10" style="display: none;"> In Theaters </span>
               <div class="absolute top-0 right-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-14 w-14 text-yellow-500">
                   <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
                 </svg>
@@ -736,13 +736,13 @@ exports[`App Home > should not display the login button when the user is authent
             </div>
             <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
               <div class="w-full flex flex-col gap-2 shrink-0">
-                <h3 class="text-2xl font-bold">Kung Fu Panda</h3>
+                <h3 class="text-xl sm:text-2xl font-bold line-clamp-2">Kung Fu Panda</h3>
                 <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Comedy</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Action</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Adventure</span></div>
               </div>
               <div class="h-24 overflow-auto flex-1">
                 <p class="text-sm">When the Valley of Peace is threatened, a lazy panda named Po is unexpectedly chosen to fulfill an ancient prophecy and become the Dragon Warrior.</p>
               </div>
-              <div class="w-full flex items-center justify-start h-8 shrink-0"><span class="text-xs mr-2 leading-7"> Rating: (5/5) </span>
+              <div class="w-full flex flex-wrap sm:flex-nowrap items-center justify-start h-auto sm:h-8 gap-2 sm:gap-0 shrink-0"><span class="text-xs mr-2 leading-7 hidden sm:inline"> Rating: (5/5) </span>
                 <div class="items-center justify-start flex flex-1 space-x-1"><button class="rounded-md disabled:cursor-not-allowed text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
                       <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
                     </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
@@ -772,30 +772,30 @@ exports[`App Home > should not display the login button when the user is authent
 
 exports[`App Home > should redirect to the login page when clicking on the login button 1`] = `
 "<div class="flex-1 flex flex-col justify-between" data-testid="app-home">
-  <header data-v-48a13218="" class="w-full flex flex-col gap-4">
-    <div data-v-48a13218="" class="relative flex items-center">
-      <transition-stub data-v-48a13218="" name="fade" appear="true" persisted="false" css="true">
-        <!--v-if-->
+  <header data-v-48a13218="" class="w-full flex flex-col gap-4 p-4">
+    <div data-v-48a13218="" class="relative flex justify-between items-center gap-4">
+      <transition-stub data-v-48a13218="" name="fade" mode="out-in" appear="true" persisted="false" css="true">
+        <h1 data-v-48a13218="" class="text-xl sm:text-2xl text-white font-bold" data-testid="greeting-message">Welcome to Reelio!</h1>
       </transition-stub>
-      <transition-stub data-v-48a13218="" name="fade" mode="out-in" appear="true" persisted="false" css="true"><a data-v-48a13218="" href="/login" class="router-link-active router-link-exact-active app-button app-button--primary ml-auto" data-testid="login-button" aria-current="page"> Log In <svg data-v-48a13218="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="w-5 h-5">
+      <transition-stub data-v-48a13218="" name="fade" mode="out-in" appear="true" persisted="false" css="true"><a data-v-48a13218="" href="/login" class="router-link-active router-link-exact-active app-button app-button--primary ml-auto sm:w-auto" data-testid="login-button" aria-current="page"> Log In <svg data-v-48a13218="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="w-5 h-5">
             <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd"></path>
           </svg></a></transition-stub>
     </div>
-    <div data-v-48a13218="" class="flex items-center justify-between min-h-[42px]">
+    <div data-v-48a13218="" class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 sm:gap-0 min-h-[42px]">
       <transition-stub data-v-48a13218="" mode="out-in" appear="true" persisted="false" css="true">
-        <p data-v-48a13218="" class="text-lg font-medium text-white"> Total movies: 6 <span data-v-48a13218="" class="m-4">/</span> Average Rating: 4.5</p>
+        <p data-v-48a13218="" class="text-base sm:text-lg font-medium text-white"> Total movies: 6 <span data-v-48a13218="" class="mx-2 sm:m-4">/</span> Average Rating: 4.5</p>
       </transition-stub>
-      <div data-v-48a13218="" class="flex gap-4">
+      <div data-v-48a13218="" class="flex flex-col sm:flex-row gap-2 sm:gap-4 w-full sm:w-auto">
         <!--v-if-->
       </div>
     </div>
   </header>
   <main class="flex min-h-[744px] mt-12">
     <transition-stub name="fade" mode="out-in" appear="false" persisted="false" css="true" tag="div">
-      <transition-group-stub tag="ul" name="list" appear="false" persisted="false" css="true" class="relative grid grid-cols-3 gap-4 list-none">
+      <transition-group-stub tag="ul" name="list" appear="false" persisted="false" css="true" class="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 list-none p-4">
         <li>
-          <div class="w-96 h-auto bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
-            <div class="h-[520px] overflow-hidden w-full relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10"> In Theaters </span>
+          <div class="w-full bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
+            <div class="w-full h-[520px] overflow-hidden relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10"> In Theaters </span>
               <div class="absolute top-0 right-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-14 w-14 text-yellow-500">
                   <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
                 </svg>
@@ -804,13 +804,13 @@ exports[`App Home > should redirect to the login page when clicking on the login
             </div>
             <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
               <div class="w-full flex flex-col gap-2 shrink-0">
-                <h3 class="text-2xl font-bold">Lilo &amp; Stitch</h3>
+                <h3 class="text-xl sm:text-2xl font-bold line-clamp-2">Lilo &amp; Stitch</h3>
                 <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Animation</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Adventure</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Comedy</span></div>
               </div>
               <div class="h-24 overflow-auto flex-1">
                 <p class="text-sm">A lonely Hawaiian girl befriends a runaway alien, helping to mend her fragmented family.</p>
               </div>
-              <div class="w-full flex items-center justify-start h-8 shrink-0"><span class="text-xs mr-2 leading-7"> Rating: (5/5) </span>
+              <div class="w-full flex flex-wrap sm:flex-nowrap items-center justify-start h-auto sm:h-8 gap-2 sm:gap-0 shrink-0"><span class="text-xs mr-2 leading-7 hidden sm:inline"> Rating: (5/5) </span>
                 <div class="items-center justify-start flex flex-1 space-x-1"><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
                       <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
                     </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
@@ -832,8 +832,8 @@ exports[`App Home > should redirect to the login page when clicking on the login
           </div>
         </li>
         <li>
-          <div class="w-96 h-auto bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
-            <div class="h-[520px] overflow-hidden w-full relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10"> In Theaters </span>
+          <div class="w-full bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
+            <div class="w-full h-[520px] overflow-hidden relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10"> In Theaters </span>
               <div class="absolute top-0 right-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-14 w-14 text-yellow-500">
                   <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
                 </svg>
@@ -842,13 +842,13 @@ exports[`App Home > should redirect to the login page when clicking on the login
             </div>
             <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
               <div class="w-full flex flex-col gap-2 shrink-0">
-                <h3 class="text-2xl font-bold">How to Train Your Dragon</h3>
+                <h3 class="text-xl sm:text-2xl font-bold line-clamp-2">How to Train Your Dragon</h3>
                 <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Animation</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Action</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Adventure</span></div>
               </div>
               <div class="h-24 overflow-auto flex-1">
                 <p class="text-sm">A young Viking befriends a dragon, leading to a friendship that changes the fate of their village.</p>
               </div>
-              <div class="w-full flex items-center justify-start h-8 shrink-0"><span class="text-xs mr-2 leading-7"> Rating: (5/5) </span>
+              <div class="w-full flex flex-wrap sm:flex-nowrap items-center justify-start h-auto sm:h-8 gap-2 sm:gap-0 shrink-0"><span class="text-xs mr-2 leading-7 hidden sm:inline"> Rating: (5/5) </span>
                 <div class="items-center justify-start flex flex-1 space-x-1"><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
                       <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
                     </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
@@ -870,8 +870,8 @@ exports[`App Home > should redirect to the login page when clicking on the login
           </div>
         </li>
         <li>
-          <div class="w-96 h-auto bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
-            <div class="h-[520px] overflow-hidden w-full relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10" style="display: none;"> In Theaters </span>
+          <div class="w-full bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
+            <div class="w-full h-[520px] overflow-hidden relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10" style="display: none;"> In Theaters </span>
               <div class="absolute top-0 right-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-14 w-14 text-yellow-500">
                   <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
                 </svg>
@@ -880,13 +880,13 @@ exports[`App Home > should redirect to the login page when clicking on the login
             </div>
             <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
               <div class="w-full flex flex-col gap-2 shrink-0">
-                <h3 class="text-2xl font-bold">The Godfather</h3>
+                <h3 class="text-xl sm:text-2xl font-bold line-clamp-2">The Godfather</h3>
                 <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Crime</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Drama</span></div>
               </div>
               <div class="h-24 overflow-auto flex-1">
                 <p class="text-sm">The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.</p>
               </div>
-              <div class="w-full flex items-center justify-start h-8 shrink-0"><span class="text-xs mr-2 leading-7"> Rating: (5/5) </span>
+              <div class="w-full flex flex-wrap sm:flex-nowrap items-center justify-start h-auto sm:h-8 gap-2 sm:gap-0 shrink-0"><span class="text-xs mr-2 leading-7 hidden sm:inline"> Rating: (5/5) </span>
                 <div class="items-center justify-start flex flex-1 space-x-1"><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
                       <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
                     </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
@@ -908,8 +908,8 @@ exports[`App Home > should redirect to the login page when clicking on the login
           </div>
         </li>
         <li>
-          <div class="w-96 h-auto bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
-            <div class="h-[520px] overflow-hidden w-full relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10" style="display: none;"> In Theaters </span>
+          <div class="w-full bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
+            <div class="w-full h-[520px] overflow-hidden relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10" style="display: none;"> In Theaters </span>
               <div class="absolute top-0 right-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-14 w-14 text-yellow-500">
                   <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
                 </svg>
@@ -918,13 +918,13 @@ exports[`App Home > should redirect to the login page when clicking on the login
             </div>
             <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
               <div class="w-full flex flex-col gap-2 shrink-0">
-                <h3 class="text-2xl font-bold">The Shawshank Redemption</h3>
+                <h3 class="text-xl sm:text-2xl font-bold line-clamp-2">The Shawshank Redemption</h3>
                 <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Drama</span></div>
               </div>
               <div class="h-24 overflow-auto flex-1">
                 <p class="text-sm">Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.</p>
               </div>
-              <div class="w-full flex items-center justify-start h-8 shrink-0"><span class="text-xs mr-2 leading-7"> Rating: (2/5) </span>
+              <div class="w-full flex flex-wrap sm:flex-nowrap items-center justify-start h-auto sm:h-8 gap-2 sm:gap-0 shrink-0"><span class="text-xs mr-2 leading-7 hidden sm:inline"> Rating: (2/5) </span>
                 <div class="items-center justify-start flex flex-1 space-x-1"><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
                       <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
                     </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
@@ -946,8 +946,8 @@ exports[`App Home > should redirect to the login page when clicking on the login
           </div>
         </li>
         <li>
-          <div class="w-96 h-auto bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
-            <div class="h-[520px] overflow-hidden w-full relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10" style="display: none;"> In Theaters </span>
+          <div class="w-full bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
+            <div class="w-full h-[520px] overflow-hidden relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10" style="display: none;"> In Theaters </span>
               <div class="absolute top-0 right-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-14 w-14 text-yellow-500">
                   <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
                 </svg>
@@ -956,13 +956,13 @@ exports[`App Home > should redirect to the login page when clicking on the login
             </div>
             <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
               <div class="w-full flex flex-col gap-2 shrink-0">
-                <h3 class="text-2xl font-bold">The Dark Knight</h3>
+                <h3 class="text-xl sm:text-2xl font-bold line-clamp-2">The Dark Knight</h3>
                 <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Action</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Crime</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Drama</span></div>
               </div>
               <div class="h-24 overflow-auto flex-1">
                 <p class="text-sm">When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.</p>
               </div>
-              <div class="w-full flex items-center justify-start h-8 shrink-0"><span class="text-xs mr-2 leading-7"> Rating: (5/5) </span>
+              <div class="w-full flex flex-wrap sm:flex-nowrap items-center justify-start h-auto sm:h-8 gap-2 sm:gap-0 shrink-0"><span class="text-xs mr-2 leading-7 hidden sm:inline"> Rating: (5/5) </span>
                 <div class="items-center justify-start flex flex-1 space-x-1"><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
                       <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
                     </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
@@ -984,8 +984,8 @@ exports[`App Home > should redirect to the login page when clicking on the login
           </div>
         </li>
         <li>
-          <div class="w-96 h-auto bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
-            <div class="h-[520px] overflow-hidden w-full relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10" style="display: none;"> In Theaters </span>
+          <div class="w-full bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
+            <div class="w-full h-[520px] overflow-hidden relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10" style="display: none;"> In Theaters </span>
               <div class="absolute top-0 right-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-14 w-14 text-yellow-500">
                   <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
                 </svg>
@@ -994,13 +994,13 @@ exports[`App Home > should redirect to the login page when clicking on the login
             </div>
             <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
               <div class="w-full flex flex-col gap-2 shrink-0">
-                <h3 class="text-2xl font-bold">Kung Fu Panda</h3>
+                <h3 class="text-xl sm:text-2xl font-bold line-clamp-2">Kung Fu Panda</h3>
                 <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Comedy</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Action</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Adventure</span></div>
               </div>
               <div class="h-24 overflow-auto flex-1">
                 <p class="text-sm">When the Valley of Peace is threatened, a lazy panda named Po is unexpectedly chosen to fulfill an ancient prophecy and become the Dragon Warrior.</p>
               </div>
-              <div class="w-full flex items-center justify-start h-8 shrink-0"><span class="text-xs mr-2 leading-7"> Rating: (5/5) </span>
+              <div class="w-full flex flex-wrap sm:flex-nowrap items-center justify-start h-auto sm:h-8 gap-2 sm:gap-0 shrink-0"><span class="text-xs mr-2 leading-7 hidden sm:inline"> Rating: (5/5) </span>
                 <div class="items-center justify-start flex flex-1 space-x-1"><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
                       <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
                     </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
@@ -1030,30 +1030,30 @@ exports[`App Home > should redirect to the login page when clicking on the login
 
 exports[`App Home > should render the home view 1`] = `
 "<div class="flex-1 flex flex-col justify-between" data-testid="app-home">
-  <header data-v-48a13218="" class="w-full flex flex-col gap-4">
-    <div data-v-48a13218="" class="relative flex items-center">
-      <transition-stub data-v-48a13218="" name="fade" appear="true" persisted="false" css="true">
-        <!--v-if-->
+  <header data-v-48a13218="" class="w-full flex flex-col gap-4 p-4">
+    <div data-v-48a13218="" class="relative flex justify-between items-center gap-4">
+      <transition-stub data-v-48a13218="" name="fade" mode="out-in" appear="true" persisted="false" css="true">
+        <h1 data-v-48a13218="" class="text-xl sm:text-2xl text-white font-bold" data-testid="greeting-message">Welcome to Reelio!</h1>
       </transition-stub>
-      <transition-stub data-v-48a13218="" name="fade" mode="out-in" appear="true" persisted="false" css="true"><a data-v-48a13218="" href="/login" class="app-button app-button--primary ml-auto" data-testid="login-button"> Log In <svg data-v-48a13218="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="w-5 h-5">
+      <transition-stub data-v-48a13218="" name="fade" mode="out-in" appear="true" persisted="false" css="true"><a data-v-48a13218="" href="/login" class="app-button app-button--primary ml-auto sm:w-auto" data-testid="login-button"> Log In <svg data-v-48a13218="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="w-5 h-5">
             <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd"></path>
           </svg></a></transition-stub>
     </div>
-    <div data-v-48a13218="" class="flex items-center justify-between min-h-[42px]">
+    <div data-v-48a13218="" class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 sm:gap-0 min-h-[42px]">
       <transition-stub data-v-48a13218="" mode="out-in" appear="true" persisted="false" css="true">
-        <p data-v-48a13218="" class="text-lg font-medium text-white"> Total movies: 6 <span data-v-48a13218="" class="m-4">/</span> Average Rating: 4.5</p>
+        <p data-v-48a13218="" class="text-base sm:text-lg font-medium text-white"> Total movies: 6 <span data-v-48a13218="" class="mx-2 sm:m-4">/</span> Average Rating: 4.5</p>
       </transition-stub>
-      <div data-v-48a13218="" class="flex gap-4">
+      <div data-v-48a13218="" class="flex flex-col sm:flex-row gap-2 sm:gap-4 w-full sm:w-auto">
         <!--v-if-->
       </div>
     </div>
   </header>
   <main class="flex min-h-[744px] mt-12">
     <transition-stub name="fade" mode="out-in" appear="false" persisted="false" css="true" tag="div">
-      <transition-group-stub tag="ul" name="list" appear="false" persisted="false" css="true" class="relative grid grid-cols-3 gap-4 list-none">
+      <transition-group-stub tag="ul" name="list" appear="false" persisted="false" css="true" class="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 list-none p-4">
         <li>
-          <div class="w-96 h-auto bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
-            <div class="h-[520px] overflow-hidden w-full relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10"> In Theaters </span>
+          <div class="w-full bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
+            <div class="w-full h-[520px] overflow-hidden relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10"> In Theaters </span>
               <div class="absolute top-0 right-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-14 w-14 text-yellow-500">
                   <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
                 </svg>
@@ -1062,13 +1062,13 @@ exports[`App Home > should render the home view 1`] = `
             </div>
             <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
               <div class="w-full flex flex-col gap-2 shrink-0">
-                <h3 class="text-2xl font-bold">Lilo &amp; Stitch</h3>
+                <h3 class="text-xl sm:text-2xl font-bold line-clamp-2">Lilo &amp; Stitch</h3>
                 <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Animation</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Adventure</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Comedy</span></div>
               </div>
               <div class="h-24 overflow-auto flex-1">
                 <p class="text-sm">A lonely Hawaiian girl befriends a runaway alien, helping to mend her fragmented family.</p>
               </div>
-              <div class="w-full flex items-center justify-start h-8 shrink-0"><span class="text-xs mr-2 leading-7"> Rating: (5/5) </span>
+              <div class="w-full flex flex-wrap sm:flex-nowrap items-center justify-start h-auto sm:h-8 gap-2 sm:gap-0 shrink-0"><span class="text-xs mr-2 leading-7 hidden sm:inline"> Rating: (5/5) </span>
                 <div class="items-center justify-start flex flex-1 space-x-1"><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
                       <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
                     </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
@@ -1090,8 +1090,8 @@ exports[`App Home > should render the home view 1`] = `
           </div>
         </li>
         <li>
-          <div class="w-96 h-auto bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
-            <div class="h-[520px] overflow-hidden w-full relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10"> In Theaters </span>
+          <div class="w-full bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
+            <div class="w-full h-[520px] overflow-hidden relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10"> In Theaters </span>
               <div class="absolute top-0 right-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-14 w-14 text-yellow-500">
                   <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
                 </svg>
@@ -1100,13 +1100,13 @@ exports[`App Home > should render the home view 1`] = `
             </div>
             <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
               <div class="w-full flex flex-col gap-2 shrink-0">
-                <h3 class="text-2xl font-bold">How to Train Your Dragon</h3>
+                <h3 class="text-xl sm:text-2xl font-bold line-clamp-2">How to Train Your Dragon</h3>
                 <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Animation</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Action</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Adventure</span></div>
               </div>
               <div class="h-24 overflow-auto flex-1">
                 <p class="text-sm">A young Viking befriends a dragon, leading to a friendship that changes the fate of their village.</p>
               </div>
-              <div class="w-full flex items-center justify-start h-8 shrink-0"><span class="text-xs mr-2 leading-7"> Rating: (5/5) </span>
+              <div class="w-full flex flex-wrap sm:flex-nowrap items-center justify-start h-auto sm:h-8 gap-2 sm:gap-0 shrink-0"><span class="text-xs mr-2 leading-7 hidden sm:inline"> Rating: (5/5) </span>
                 <div class="items-center justify-start flex flex-1 space-x-1"><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
                       <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
                     </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
@@ -1128,8 +1128,8 @@ exports[`App Home > should render the home view 1`] = `
           </div>
         </li>
         <li>
-          <div class="w-96 h-auto bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
-            <div class="h-[520px] overflow-hidden w-full relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10" style="display: none;"> In Theaters </span>
+          <div class="w-full bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
+            <div class="w-full h-[520px] overflow-hidden relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10" style="display: none;"> In Theaters </span>
               <div class="absolute top-0 right-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-14 w-14 text-yellow-500">
                   <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
                 </svg>
@@ -1138,13 +1138,13 @@ exports[`App Home > should render the home view 1`] = `
             </div>
             <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
               <div class="w-full flex flex-col gap-2 shrink-0">
-                <h3 class="text-2xl font-bold">The Godfather</h3>
+                <h3 class="text-xl sm:text-2xl font-bold line-clamp-2">The Godfather</h3>
                 <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Crime</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Drama</span></div>
               </div>
               <div class="h-24 overflow-auto flex-1">
                 <p class="text-sm">The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.</p>
               </div>
-              <div class="w-full flex items-center justify-start h-8 shrink-0"><span class="text-xs mr-2 leading-7"> Rating: (5/5) </span>
+              <div class="w-full flex flex-wrap sm:flex-nowrap items-center justify-start h-auto sm:h-8 gap-2 sm:gap-0 shrink-0"><span class="text-xs mr-2 leading-7 hidden sm:inline"> Rating: (5/5) </span>
                 <div class="items-center justify-start flex flex-1 space-x-1"><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
                       <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
                     </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
@@ -1166,8 +1166,8 @@ exports[`App Home > should render the home view 1`] = `
           </div>
         </li>
         <li>
-          <div class="w-96 h-auto bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
-            <div class="h-[520px] overflow-hidden w-full relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10" style="display: none;"> In Theaters </span>
+          <div class="w-full bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
+            <div class="w-full h-[520px] overflow-hidden relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10" style="display: none;"> In Theaters </span>
               <div class="absolute top-0 right-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-14 w-14 text-yellow-500">
                   <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
                 </svg>
@@ -1176,13 +1176,13 @@ exports[`App Home > should render the home view 1`] = `
             </div>
             <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
               <div class="w-full flex flex-col gap-2 shrink-0">
-                <h3 class="text-2xl font-bold">The Shawshank Redemption</h3>
+                <h3 class="text-xl sm:text-2xl font-bold line-clamp-2">The Shawshank Redemption</h3>
                 <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Drama</span></div>
               </div>
               <div class="h-24 overflow-auto flex-1">
                 <p class="text-sm">Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.</p>
               </div>
-              <div class="w-full flex items-center justify-start h-8 shrink-0"><span class="text-xs mr-2 leading-7"> Rating: (2/5) </span>
+              <div class="w-full flex flex-wrap sm:flex-nowrap items-center justify-start h-auto sm:h-8 gap-2 sm:gap-0 shrink-0"><span class="text-xs mr-2 leading-7 hidden sm:inline"> Rating: (2/5) </span>
                 <div class="items-center justify-start flex flex-1 space-x-1"><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
                       <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
                     </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
@@ -1204,8 +1204,8 @@ exports[`App Home > should render the home view 1`] = `
           </div>
         </li>
         <li>
-          <div class="w-96 h-auto bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
-            <div class="h-[520px] overflow-hidden w-full relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10" style="display: none;"> In Theaters </span>
+          <div class="w-full bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
+            <div class="w-full h-[520px] overflow-hidden relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10" style="display: none;"> In Theaters </span>
               <div class="absolute top-0 right-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-14 w-14 text-yellow-500">
                   <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
                 </svg>
@@ -1214,13 +1214,13 @@ exports[`App Home > should render the home view 1`] = `
             </div>
             <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
               <div class="w-full flex flex-col gap-2 shrink-0">
-                <h3 class="text-2xl font-bold">The Dark Knight</h3>
+                <h3 class="text-xl sm:text-2xl font-bold line-clamp-2">The Dark Knight</h3>
                 <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Action</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Crime</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Drama</span></div>
               </div>
               <div class="h-24 overflow-auto flex-1">
                 <p class="text-sm">When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.</p>
               </div>
-              <div class="w-full flex items-center justify-start h-8 shrink-0"><span class="text-xs mr-2 leading-7"> Rating: (5/5) </span>
+              <div class="w-full flex flex-wrap sm:flex-nowrap items-center justify-start h-auto sm:h-8 gap-2 sm:gap-0 shrink-0"><span class="text-xs mr-2 leading-7 hidden sm:inline"> Rating: (5/5) </span>
                 <div class="items-center justify-start flex flex-1 space-x-1"><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
                       <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
                     </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
@@ -1242,8 +1242,8 @@ exports[`App Home > should render the home view 1`] = `
           </div>
         </li>
         <li>
-          <div class="w-96 h-auto bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
-            <div class="h-[520px] overflow-hidden w-full relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10" style="display: none;"> In Theaters </span>
+          <div class="w-full bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
+            <div class="w-full h-[520px] overflow-hidden relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10" style="display: none;"> In Theaters </span>
               <div class="absolute top-0 right-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-14 w-14 text-yellow-500">
                   <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
                 </svg>
@@ -1252,13 +1252,13 @@ exports[`App Home > should render the home view 1`] = `
             </div>
             <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
               <div class="w-full flex flex-col gap-2 shrink-0">
-                <h3 class="text-2xl font-bold">Kung Fu Panda</h3>
+                <h3 class="text-xl sm:text-2xl font-bold line-clamp-2">Kung Fu Panda</h3>
                 <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Comedy</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Action</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Adventure</span></div>
               </div>
               <div class="h-24 overflow-auto flex-1">
                 <p class="text-sm">When the Valley of Peace is threatened, a lazy panda named Po is unexpectedly chosen to fulfill an ancient prophecy and become the Dragon Warrior.</p>
               </div>
-              <div class="w-full flex items-center justify-start h-8 shrink-0"><span class="text-xs mr-2 leading-7"> Rating: (5/5) </span>
+              <div class="w-full flex flex-wrap sm:flex-nowrap items-center justify-start h-auto sm:h-8 gap-2 sm:gap-0 shrink-0"><span class="text-xs mr-2 leading-7 hidden sm:inline"> Rating: (5/5) </span>
                 <div class="items-center justify-start flex flex-1 space-x-1"><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">
                       <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path>
                     </svg></button><button class="rounded-md disabled:cursor-not-allowed text-yellow-500" disabled=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5">

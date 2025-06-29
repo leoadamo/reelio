@@ -1,5 +1,6 @@
 <script setup>
 // DEPENDENCIES
+import { kebabCase } from "lodash-es";
 import { computed } from "vue";
 import { useAuthStore } from "@/stores/auth";
 import { storeToRefs } from "pinia";
@@ -34,25 +35,24 @@ const { user, isAdmin, isAuthenticated } = storeToRefs(store);
 const isRemoveRatingsDisabled = computed(() => {
   return props.totalMovies === 0;
 });
+
+const greetingMessage = computed(() => {
+  return isAuthenticated.value
+    ? `Hello, ${user.value.username}!`
+    : "Welcome to Reelio!";
+});
 </script>
 
 <template>
   <header class="w-full flex flex-col gap-4 p-4">
     <div class="relative flex justify-between items-center gap-4">
-      <transition name="fade" appear>
+      <transition name="fade" mode="out-in" appear>
         <h1
-          v-if="isAuthenticated"
+          :key="kebabCase(greetingMessage)"
           class="text-xl sm:text-2xl text-white font-bold"
           data-testid="greeting-message"
         >
-          Hello, {{ user.username }}!
-        </h1>
-        <h1
-          v-else
-          class="text-xl sm:text-2xl text-white font-bold"
-          data-testid="greeting-message"
-        >
-          Welcome to Reelio!
+          {{ greetingMessage }}
         </h1>
       </transition>
 
@@ -60,7 +60,7 @@ const isRemoveRatingsDisabled = computed(() => {
         <router-link
           v-if="!isAuthenticated"
           :to="{ name: 'login' }"
-          class="app-button app-button--primary sm:w-auto"
+          class="app-button app-button--primary ml-auto sm:w-auto"
           data-testid="login-button"
         >
           Log In
@@ -70,7 +70,7 @@ const isRemoveRatingsDisabled = computed(() => {
 
         <button
           v-else
-          class="app-button app-button--primary sm:w-auto bg-red-500 hover:bg-red-600"
+          class="app-button app-button--primary ml-auto sm:w-auto bg-red-500 hover:bg-red-600"
           data-testid="logout-button"
           @click="logout"
         >
