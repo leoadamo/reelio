@@ -52,7 +52,7 @@ const isRemoveRatingsDisabled = computed(() => {
           class="text-xl sm:text-2xl text-white font-bold"
           data-testid="greeting-message"
         >
-          Welcome to the Movie Ratings App!
+          Welcome to Reelio!
         </h1>
       </transition>
 

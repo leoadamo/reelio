@@ -1,4 +1,4 @@
-# Catálogo de Filmes 🎬
+# Reelio 🎬
 
 ## Sobre o Projeto
 
