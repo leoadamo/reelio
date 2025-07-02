@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-[1180px] max-w-full min-h-screen px-4 py-8 mx-auto flex flex-col items-center justify-center"
+    class="w-[1180px] max-w-full min-h-svh px-4 py-8 mx-auto flex flex-col items-center justify-center"
     data-testid="app"
   >
     <router-view v-slot="{ Component }">
