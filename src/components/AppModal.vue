@@ -70,18 +70,18 @@ defineExpose({
   <transition>
     <div
       v-if="shouldRender"
-      class="fixed inset-0 grid place-content-center w-full h-full backdrop-blur-sm bg-gray-900/50 z-20"
+      class="fixed inset-0 grid grid-cols-1 place-content-center w-full h-full backdrop-blur-sm bg-gray-900/50 z-20"
       @keyup.esc="unmount"
     >
       <div
         role="alertdialog"
         aria-modal="true"
-        class="relative w-[600px] bg-gray-800 text-white overflow-visible border border-gray-800 shadow-lg"
+        class="relative w-11/12 max-w-[600px] m-auto bg-gray-800 text-white overflow-visible border border-gray-800 shadow-lg"
       >
         <button
           type="button"
           name="close"
-          class="absolute -top-1 -right-9 transition-colors hover:text-red-500"
+          class="absolute top-3 right-2 sm:-top-1 sm:-right-9 transition-colors hover:text-red-500"
           @click="unmount"
         >
           <span class="sr-only">Close</span>

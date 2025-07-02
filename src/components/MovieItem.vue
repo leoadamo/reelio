@@ -29,7 +29,7 @@ const { isAdmin, isAuthenticated } = storeToRefs(useAuthStore());
 
 <template>
   <div
-    class="w-full bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl"
+    class="w-full max-w-[400px] bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl"
   >
     <div class="w-full h-[520px] overflow-hidden relative">
       <span
@@ -54,7 +54,7 @@ const { isAdmin, isAuthenticated } = storeToRefs(useAuthStore());
 
     <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
       <div class="w-full flex flex-col gap-2 shrink-0">
-        <h3 class="text-xl sm:text-2xl font-bold line-clamp-2">
+        <h3 class="text-2xl sm:text-xl font-bold line-clamp-2">
           {{ movie.name }}
         </h3>
 

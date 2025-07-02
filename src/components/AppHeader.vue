@@ -44,7 +44,7 @@ const greetingMessage = computed(() => {
 </script>
 
 <template>
-  <header class="w-full flex flex-col gap-4 p-4">
+  <header class="w-full flex flex-col gap-8">
     <div class="relative flex justify-between items-center gap-4">
       <transition name="fade" mode="out-in" appear>
         <h1
@@ -60,7 +60,7 @@ const greetingMessage = computed(() => {
         <router-link
           v-if="!isAuthenticated"
           :to="{ name: 'login' }"
-          class="app-button app-button--primary ml-auto sm:w-auto"
+          class="app-button app-button--primary"
           data-testid="login-button"
         >
           Log In
@@ -70,7 +70,7 @@ const greetingMessage = computed(() => {
 
         <button
           v-else
-          class="app-button app-button--primary ml-auto sm:w-auto bg-red-500 hover:bg-red-600"
+          class="app-button app-button--primary bg-red-500 hover:bg-red-600"
           data-testid="logout-button"
           @click="logout"
         >
@@ -80,7 +80,7 @@ const greetingMessage = computed(() => {
     </div>
 
     <div
-      class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 sm:gap-0 min-h-[42px]"
+      class="flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between min-h-[42px]"
     >
       <transition mode="out-in" appear>
         <p
@@ -88,15 +88,15 @@ const greetingMessage = computed(() => {
           class="text-base sm:text-lg font-medium text-white"
         >
           Total movies: {{ totalMovies }}
-          <span class="mx-2 sm:m-4">/</span>
+          <span class="m-2">/</span>
           Average Rating: {{ averageRating }}
         </p>
       </transition>
 
-      <div class="flex flex-col sm:flex-row gap-2 sm:gap-4 w-full sm:w-auto">
-        <template v-if="isAdmin">
+      <transition name="fade">
+        <div v-if="isAdmin" class="w-full sm:w-auto flex flex-row gap-4">
           <button
-            class="app-button app-button--secondary w-full sm:w-auto"
+            class="app-button app-button--secondary grow"
             :class="{
               'opacity-50 cursor-not-allowed transition-all':
                 isRemoveRatingsDisabled,
@@ -108,13 +108,13 @@ const greetingMessage = computed(() => {
           </button>
 
           <button
-            class="app-button app-button--primary w-full sm:w-auto"
+            class="app-button app-button--primary grow"
             @click="$emit('add-movie')"
           >
             Create Movie
           </button>
-        </template>
-      </div>
+        </div>
+      </transition>
     </div>
   </header>
 </template>

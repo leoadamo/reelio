@@ -56,8 +56,8 @@ onMounted(() => {
 </script>
 
 <template>
-  <div
-    class="w-full max-w-[400px] m-auto grid grid-cols-1 gap-8 p-8 text-white bg-gray-800 rounded-lg shadow-lg"
+  <main
+    class="w-full max-w-[400px] grid grid-cols-1 gap-8 p-8 text-white bg-gray-800 rounded-lg shadow-lg"
     data-testid="app-login"
   >
     <div class="flex flex-col gap-1">
@@ -117,5 +117,5 @@ onMounted(() => {
         <chevron-right-icon class="w-5 h-5" aria-hidden="true" />
       </button>
     </form>
-  </div>
+  </main>
 </template>
