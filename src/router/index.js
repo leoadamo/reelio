@@ -56,7 +56,7 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(),
   routes,
-  async scrollBehavior() {
+  scrollBehavior() {
     return new Promise((resolve) => {
       setTimeout(() => {
         resolve({
