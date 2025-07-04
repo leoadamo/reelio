@@ -1,13 +1,13 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`App Login > should display an error message when login fails 1`] = `
-"<div class="w-full max-w-[400px] m-auto grid grid-cols-1 gap-8 p-8 text-white bg-gray-800 rounded-lg shadow-lg" data-testid="app-login">
+"<main class="w-full max-w-[400px] flex flex-col gap-8 p-8 text-white bg-gray-800 rounded-lg shadow-lg" data-testid="app-login">
   <div class="flex flex-col gap-1">
     <h1 class="text-2xl font-bold">Log In</h1>
     <p>Please, inform your credentials to continue.</p>
   </div>
-  <form class="grid grid-cols-1 gap-5">
-    <div class="relative grid grid-cols-1 gap-8 pb-5">
+  <form class="flex flex-col gap-5">
+    <div class="relative flex flex-col gap-8 pb-5">
       <div class="flex flex-col gap-1"><label for="username">Username:</label><input id="username" name="username" type="text" data-testid="username-input" class="border rounded border-gray-400 bg-gray-900" autocomplete="off" required=""></div>
       <div class="flex flex-col gap-1"><label for="password">Password:</label><input id="password" name="password" type="password" data-testid="password-input" class="border rounded border-gray-400 bg-gray-900" autocomplete="off" required=""></div>
       <transition-stub name="fade" appear="false" persisted="false" css="true"><small data-testid="error-message" class="absolute left-0 bottom-0 text-red-500 text-xs">Invalid username or password, please try again.</small></transition-stub>
@@ -15,17 +15,17 @@ exports[`App Login > should display an error message when login fails 1`] = `
         <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd"></path>
       </svg></button>
   </form>
-</div>"
+</main>"
 `;
 
 exports[`App Login > should log-in successfully and then redirect to the home page 1`] = `
-"<div class="w-full max-w-[400px] m-auto grid grid-cols-1 gap-8 p-8 text-white bg-gray-800 rounded-lg shadow-lg" data-testid="app-login">
+"<main class="w-full max-w-[400px] flex flex-col gap-8 p-8 text-white bg-gray-800 rounded-lg shadow-lg" data-testid="app-login">
   <div class="flex flex-col gap-1">
     <h1 class="text-2xl font-bold">Log In</h1>
     <p>Please, inform your credentials to continue.</p>
   </div>
-  <form class="grid grid-cols-1 gap-5">
-    <div class="relative grid grid-cols-1 gap-8 pb-5">
+  <form class="flex flex-col gap-5">
+    <div class="relative flex flex-col gap-8 pb-5">
       <div class="flex flex-col gap-1"><label for="username">Username:</label><input id="username" name="username" type="text" data-testid="username-input" class="border rounded border-gray-400 bg-gray-900" autocomplete="off" required=""></div>
       <div class="flex flex-col gap-1"><label for="password">Password:</label><input id="password" name="password" type="password" data-testid="password-input" class="border rounded border-gray-400 bg-gray-900" autocomplete="off" required=""></div>
       <transition-stub name="fade" appear="false" persisted="false" css="true">
@@ -35,17 +35,17 @@ exports[`App Login > should log-in successfully and then redirect to the home pa
         <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd"></path>
       </svg></button>
   </form>
-</div>"
+</main>"
 `;
 
 exports[`App Login > should not log-in when missing required fields 1`] = `
-"<div class="w-full max-w-[400px] m-auto grid grid-cols-1 gap-8 p-8 text-white bg-gray-800 rounded-lg shadow-lg" data-testid="app-login">
+"<main class="w-full max-w-[400px] flex flex-col gap-8 p-8 text-white bg-gray-800 rounded-lg shadow-lg" data-testid="app-login">
   <div class="flex flex-col gap-1">
     <h1 class="text-2xl font-bold">Log In</h1>
     <p>Please, inform your credentials to continue.</p>
   </div>
-  <form class="grid grid-cols-1 gap-5">
-    <div class="relative grid grid-cols-1 gap-8 pb-5">
+  <form class="flex flex-col gap-5">
+    <div class="relative flex flex-col gap-8 pb-5">
       <div class="flex flex-col gap-1"><label for="username">Username:</label><input id="username" name="username" type="text" data-testid="username-input" class="border rounded border-gray-400 bg-gray-900" autocomplete="off" required=""></div>
       <div class="flex flex-col gap-1"><label for="password">Password:</label><input id="password" name="password" type="password" data-testid="password-input" class="border rounded border-gray-400 bg-gray-900" autocomplete="off" required=""></div>
       <transition-stub name="fade" appear="false" persisted="false" css="true">
@@ -55,17 +55,17 @@ exports[`App Login > should not log-in when missing required fields 1`] = `
         <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd"></path>
       </svg></button>
   </form>
-</div>"
+</main>"
 `;
 
 exports[`App Login > should render the login view 1`] = `
-"<div class="w-full max-w-[400px] m-auto grid grid-cols-1 gap-8 p-8 text-white bg-gray-800 rounded-lg shadow-lg" data-testid="app-login">
+"<main class="w-full max-w-[400px] flex flex-col gap-8 p-8 text-white bg-gray-800 rounded-lg shadow-lg" data-testid="app-login">
   <div class="flex flex-col gap-1">
     <h1 class="text-2xl font-bold">Log In</h1>
     <p>Please, inform your credentials to continue.</p>
   </div>
-  <form class="grid grid-cols-1 gap-5">
-    <div class="relative grid grid-cols-1 gap-8 pb-5">
+  <form class="flex flex-col gap-5">
+    <div class="relative flex flex-col gap-8 pb-5">
       <div class="flex flex-col gap-1"><label for="username">Username:</label><input id="username" name="username" type="text" data-testid="username-input" class="border rounded border-gray-400 bg-gray-900" autocomplete="off" required=""></div>
       <div class="flex flex-col gap-1"><label for="password">Password:</label><input id="password" name="password" type="password" data-testid="password-input" class="border rounded border-gray-400 bg-gray-900" autocomplete="off" required=""></div>
       <transition-stub name="fade" appear="false" persisted="false" css="true">
@@ -75,17 +75,17 @@ exports[`App Login > should render the login view 1`] = `
         <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd"></path>
       </svg></button>
   </form>
-</div>"
+</main>"
 `;
 
 exports[`App Login > should throw an error when trying to log-in 1`] = `
-"<div class="w-full max-w-[400px] m-auto grid grid-cols-1 gap-8 p-8 text-white bg-gray-800 rounded-lg shadow-lg" data-testid="app-login">
+"<main class="w-full max-w-[400px] flex flex-col gap-8 p-8 text-white bg-gray-800 rounded-lg shadow-lg" data-testid="app-login">
   <div class="flex flex-col gap-1">
     <h1 class="text-2xl font-bold">Log In</h1>
     <p>Please, inform your credentials to continue.</p>
   </div>
-  <form class="grid grid-cols-1 gap-5">
-    <div class="relative grid grid-cols-1 gap-8 pb-5">
+  <form class="flex flex-col gap-5">
+    <div class="relative flex flex-col gap-8 pb-5">
       <div class="flex flex-col gap-1"><label for="username">Username:</label><input id="username" name="username" type="text" data-testid="username-input" class="border rounded border-gray-400 bg-gray-900" autocomplete="off" required=""></div>
       <div class="flex flex-col gap-1"><label for="password">Password:</label><input id="password" name="password" type="password" data-testid="password-input" class="border rounded border-gray-400 bg-gray-900" autocomplete="off" required=""></div>
       <transition-stub name="fade" appear="false" persisted="false" css="true"><small data-testid="error-message" class="absolute left-0 bottom-0 text-red-500 text-xs">Invalid username or password, please try again.</small></transition-stub>
@@ -93,5 +93,5 @@ exports[`App Login > should throw an error when trying to log-in 1`] = `
         <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd"></path>
       </svg></button>
   </form>
-</div>"
+</main>"
 `;

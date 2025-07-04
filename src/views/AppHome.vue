@@ -115,7 +115,7 @@ function resetMovieRatings() {
       @add-movie="openModal"
     />
 
-    <main class="flex min-h-[744px]">
+    <main class="flex-1 flex">
       <movie-list
         v-model:movies="movies"
         @add-movie="openModal"

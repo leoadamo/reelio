@@ -29,7 +29,7 @@ const { isAdmin, isAuthenticated } = storeToRefs(useAuthStore());
 
 <template>
   <div
-    class="w-full max-w-[400px] bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl"
+    class="w-full bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl"
   >
     <div class="w-full h-[520px] overflow-hidden relative">
       <span

@@ -46,6 +46,18 @@ function editMovie(id) {
 
   emit("edit-movie", movie);
 }
+
+/**
+ * Fixes the size of the grid item to match its bounding rectangle.
+ *
+ * @param {HTMLElement} el - The grid item element.
+ */
+function fixGridItemSize(el) {
+  const rect = el.getBoundingClientRect();
+
+  el.style.width = `${rect.width}px`;
+  el.style.height = `${rect.height}px`;
+}
 </script>
 
 <template>
@@ -54,7 +66,8 @@ function editMovie(id) {
       v-if="movies.length > 0"
       tag="ul"
       name="list"
-      class="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 list-none"
+      class="relative w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 list-none"
+      @before-leave="fixGridItemSize"
     >
       <component v-for="movie in movies" :key="movie.id" :is="'li'">
         <movie-item
@@ -66,14 +79,17 @@ function editMovie(id) {
       </component>
     </transition-group>
 
-    <div v-else class="flex-1 flex flex-col items-center justify-center gap-6">
+    <div
+      v-else
+      class="flex flex-col items-center justify-center gap-6 m-auto text-center"
+    >
       <img src="/images/empty.png" alt="" width="300" height="300" />
 
       <h1 class="text-2xl text-white font-bold">
         Hey, there are no movies to show
       </h1>
 
-      <p v-if="isAdmin" class="text-center text-gray-400">
+      <p v-if="isAdmin" class="text-gray-400">
         Try
 
         <button name="add-movie" @click="$emit('add-movie')">

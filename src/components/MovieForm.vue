@@ -18,7 +18,7 @@ onMounted(() => {
   <form
     ref="form"
     action="dialog"
-    class="grid grid-cols-1 gap-3"
+    class="flex flex-col gap-3"
     @submit.prevent="$emit('update:movie', movie)"
   >
     <div class="flex flex-col gap-1">

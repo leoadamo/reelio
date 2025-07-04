@@ -57,7 +57,7 @@ onMounted(() => {
 
 <template>
   <main
-    class="w-full max-w-[400px] grid grid-cols-1 gap-8 p-8 text-white bg-gray-800 rounded-lg shadow-lg"
+    class="w-full max-w-[400px] flex flex-col gap-8 p-8 text-white bg-gray-800 rounded-lg shadow-lg"
     data-testid="app-login"
   >
     <div class="flex flex-col gap-1">
@@ -65,8 +65,8 @@ onMounted(() => {
       <p>Please, inform your credentials to continue.</p>
     </div>
 
-    <form class="grid grid-cols-1 gap-5" @submit.prevent="handleLogin">
-      <div class="relative grid grid-cols-1 gap-8 pb-5">
+    <form class="flex flex-col gap-5" @submit.prevent="handleLogin">
+      <div class="relative flex flex-col gap-8 pb-5">
         <div class="flex flex-col gap-1">
           <label for="username">Username:</label>
           <input

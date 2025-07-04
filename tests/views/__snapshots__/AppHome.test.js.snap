@@ -1,26 +1,26 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`App Home > should display an welcome message and a logout button when the user is authenticated 1`] = `
-"<div class="flex-1 flex flex-col justify-between" data-testid="app-home">
-  <header data-v-48a13218="" class="w-full flex flex-col gap-4 p-4">
+"<div class="w-full flex-1 flex flex-col gap-12" data-testid="app-home">
+  <header data-v-48a13218="" class="w-full flex flex-col gap-8">
     <div data-v-48a13218="" class="relative flex justify-between items-center gap-4">
       <transition-stub data-v-48a13218="" name="fade" mode="out-in" appear="true" persisted="false" css="true">
         <h1 data-v-48a13218="" class="text-xl sm:text-2xl text-white font-bold" data-testid="greeting-message">Hello, user_test!</h1>
       </transition-stub>
-      <transition-stub data-v-48a13218="" name="fade" mode="out-in" appear="true" persisted="false" css="true"><button data-v-48a13218="" class="app-button app-button--primary ml-auto sm:w-auto bg-red-500 hover:bg-red-600" data-testid="logout-button"> Log Out </button></transition-stub>
+      <transition-stub data-v-48a13218="" name="fade" mode="out-in" appear="true" persisted="false" css="true"><button data-v-48a13218="" class="app-button app-button--primary bg-red-500 hover:bg-red-600" data-testid="logout-button"> Log Out </button></transition-stub>
     </div>
-    <div data-v-48a13218="" class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 sm:gap-0 min-h-[42px]">
+    <div data-v-48a13218="" class="flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between min-h-[42px]">
       <transition-stub data-v-48a13218="" mode="out-in" appear="true" persisted="false" css="true">
-        <p data-v-48a13218="" class="text-base sm:text-lg font-medium text-white"> Total movies: 6 <span data-v-48a13218="" class="mx-2 sm:m-4">/</span> Average Rating: 4.5</p>
+        <p data-v-48a13218="" class="text-base sm:text-lg font-medium text-white"> Total movies: 6 <span data-v-48a13218="" class="m-2">/</span> Average Rating: 4.5</p>
       </transition-stub>
-      <div data-v-48a13218="" class="flex flex-col sm:flex-row gap-2 sm:gap-4 w-full sm:w-auto">
+      <transition-stub data-v-48a13218="" name="fade" appear="false" persisted="false" css="true">
         <!--v-if-->
-      </div>
+      </transition-stub>
     </div>
   </header>
-  <main class="flex min-h-[744px] mt-12">
+  <main class="flex-1 flex">
     <transition-stub name="fade" mode="out-in" appear="false" persisted="false" css="true" tag="div">
-      <transition-group-stub tag="ul" name="list" appear="false" persisted="false" css="true" class="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 list-none p-4">
+      <transition-group-stub tag="ul" name="list" appear="false" persisted="false" css="true" class="relative w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 list-none">
         <li>
           <div class="w-full bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
             <div class="w-full h-[520px] overflow-hidden relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10"> In Theaters </span>
@@ -32,7 +32,7 @@ exports[`App Home > should display an welcome message and a logout button when t
             </div>
             <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
               <div class="w-full flex flex-col gap-2 shrink-0">
-                <h3 class="text-xl sm:text-2xl font-bold line-clamp-2">Lilo &amp; Stitch</h3>
+                <h3 class="text-2xl sm:text-xl font-bold line-clamp-2">Lilo &amp; Stitch</h3>
                 <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Animation</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Adventure</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Comedy</span></div>
               </div>
               <div class="h-24 overflow-auto flex-1">
@@ -70,7 +70,7 @@ exports[`App Home > should display an welcome message and a logout button when t
             </div>
             <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
               <div class="w-full flex flex-col gap-2 shrink-0">
-                <h3 class="text-xl sm:text-2xl font-bold line-clamp-2">How to Train Your Dragon</h3>
+                <h3 class="text-2xl sm:text-xl font-bold line-clamp-2">How to Train Your Dragon</h3>
                 <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Animation</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Action</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Adventure</span></div>
               </div>
               <div class="h-24 overflow-auto flex-1">
@@ -108,7 +108,7 @@ exports[`App Home > should display an welcome message and a logout button when t
             </div>
             <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
               <div class="w-full flex flex-col gap-2 shrink-0">
-                <h3 class="text-xl sm:text-2xl font-bold line-clamp-2">The Godfather</h3>
+                <h3 class="text-2xl sm:text-xl font-bold line-clamp-2">The Godfather</h3>
                 <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Crime</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Drama</span></div>
               </div>
               <div class="h-24 overflow-auto flex-1">
@@ -146,7 +146,7 @@ exports[`App Home > should display an welcome message and a logout button when t
             </div>
             <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
               <div class="w-full flex flex-col gap-2 shrink-0">
-                <h3 class="text-xl sm:text-2xl font-bold line-clamp-2">The Shawshank Redemption</h3>
+                <h3 class="text-2xl sm:text-xl font-bold line-clamp-2">The Shawshank Redemption</h3>
                 <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Drama</span></div>
               </div>
               <div class="h-24 overflow-auto flex-1">
@@ -184,7 +184,7 @@ exports[`App Home > should display an welcome message and a logout button when t
             </div>
             <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
               <div class="w-full flex flex-col gap-2 shrink-0">
-                <h3 class="text-xl sm:text-2xl font-bold line-clamp-2">The Dark Knight</h3>
+                <h3 class="text-2xl sm:text-xl font-bold line-clamp-2">The Dark Knight</h3>
                 <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Action</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Crime</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Drama</span></div>
               </div>
               <div class="h-24 overflow-auto flex-1">
@@ -222,7 +222,7 @@ exports[`App Home > should display an welcome message and a logout button when t
             </div>
             <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
               <div class="w-full flex flex-col gap-2 shrink-0">
-                <h3 class="text-xl sm:text-2xl font-bold line-clamp-2">Kung Fu Panda</h3>
+                <h3 class="text-2xl sm:text-xl font-bold line-clamp-2">Kung Fu Panda</h3>
                 <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Comedy</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Action</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Adventure</span></div>
               </div>
               <div class="h-24 overflow-auto flex-1">
@@ -257,28 +257,28 @@ exports[`App Home > should display an welcome message and a logout button when t
 `;
 
 exports[`App Home > should display the login button when the user is not authenticated 1`] = `
-"<div class="flex-1 flex flex-col justify-between" data-testid="app-home">
-  <header data-v-48a13218="" class="w-full flex flex-col gap-4 p-4">
+"<div class="w-full flex-1 flex flex-col gap-12" data-testid="app-home">
+  <header data-v-48a13218="" class="w-full flex flex-col gap-8">
     <div data-v-48a13218="" class="relative flex justify-between items-center gap-4">
       <transition-stub data-v-48a13218="" name="fade" mode="out-in" appear="true" persisted="false" css="true">
         <h1 data-v-48a13218="" class="text-xl sm:text-2xl text-white font-bold" data-testid="greeting-message">Welcome to Reelio!</h1>
       </transition-stub>
-      <transition-stub data-v-48a13218="" name="fade" mode="out-in" appear="true" persisted="false" css="true"><a data-v-48a13218="" href="/login" class="app-button app-button--primary ml-auto sm:w-auto" data-testid="login-button"> Log In <svg data-v-48a13218="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="w-5 h-5">
+      <transition-stub data-v-48a13218="" name="fade" mode="out-in" appear="true" persisted="false" css="true"><a data-v-48a13218="" href="/login" class="app-button app-button--primary" data-testid="login-button"> Log In <svg data-v-48a13218="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="w-5 h-5">
             <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd"></path>
           </svg></a></transition-stub>
     </div>
-    <div data-v-48a13218="" class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 sm:gap-0 min-h-[42px]">
+    <div data-v-48a13218="" class="flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between min-h-[42px]">
       <transition-stub data-v-48a13218="" mode="out-in" appear="true" persisted="false" css="true">
-        <p data-v-48a13218="" class="text-base sm:text-lg font-medium text-white"> Total movies: 6 <span data-v-48a13218="" class="mx-2 sm:m-4">/</span> Average Rating: 4.5</p>
+        <p data-v-48a13218="" class="text-base sm:text-lg font-medium text-white"> Total movies: 6 <span data-v-48a13218="" class="m-2">/</span> Average Rating: 4.5</p>
       </transition-stub>
-      <div data-v-48a13218="" class="flex flex-col sm:flex-row gap-2 sm:gap-4 w-full sm:w-auto">
+      <transition-stub data-v-48a13218="" name="fade" appear="false" persisted="false" css="true">
         <!--v-if-->
-      </div>
+      </transition-stub>
     </div>
   </header>
-  <main class="flex min-h-[744px] mt-12">
+  <main class="flex-1 flex">
     <transition-stub name="fade" mode="out-in" appear="false" persisted="false" css="true" tag="div">
-      <transition-group-stub tag="ul" name="list" appear="false" persisted="false" css="true" class="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 list-none p-4">
+      <transition-group-stub tag="ul" name="list" appear="false" persisted="false" css="true" class="relative w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 list-none">
         <li>
           <div class="w-full bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
             <div class="w-full h-[520px] overflow-hidden relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10"> In Theaters </span>
@@ -290,7 +290,7 @@ exports[`App Home > should display the login button when the user is not authent
             </div>
             <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
               <div class="w-full flex flex-col gap-2 shrink-0">
-                <h3 class="text-xl sm:text-2xl font-bold line-clamp-2">Lilo &amp; Stitch</h3>
+                <h3 class="text-2xl sm:text-xl font-bold line-clamp-2">Lilo &amp; Stitch</h3>
                 <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Animation</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Adventure</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Comedy</span></div>
               </div>
               <div class="h-24 overflow-auto flex-1">
@@ -328,7 +328,7 @@ exports[`App Home > should display the login button when the user is not authent
             </div>
             <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
               <div class="w-full flex flex-col gap-2 shrink-0">
-                <h3 class="text-xl sm:text-2xl font-bold line-clamp-2">How to Train Your Dragon</h3>
+                <h3 class="text-2xl sm:text-xl font-bold line-clamp-2">How to Train Your Dragon</h3>
                 <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Animation</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Action</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Adventure</span></div>
               </div>
               <div class="h-24 overflow-auto flex-1">
@@ -366,7 +366,7 @@ exports[`App Home > should display the login button when the user is not authent
             </div>
             <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
               <div class="w-full flex flex-col gap-2 shrink-0">
-                <h3 class="text-xl sm:text-2xl font-bold line-clamp-2">The Godfather</h3>
+                <h3 class="text-2xl sm:text-xl font-bold line-clamp-2">The Godfather</h3>
                 <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Crime</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Drama</span></div>
               </div>
               <div class="h-24 overflow-auto flex-1">
@@ -404,7 +404,7 @@ exports[`App Home > should display the login button when the user is not authent
             </div>
             <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
               <div class="w-full flex flex-col gap-2 shrink-0">
-                <h3 class="text-xl sm:text-2xl font-bold line-clamp-2">The Shawshank Redemption</h3>
+                <h3 class="text-2xl sm:text-xl font-bold line-clamp-2">The Shawshank Redemption</h3>
                 <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Drama</span></div>
               </div>
               <div class="h-24 overflow-auto flex-1">
@@ -442,7 +442,7 @@ exports[`App Home > should display the login button when the user is not authent
             </div>
             <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
               <div class="w-full flex flex-col gap-2 shrink-0">
-                <h3 class="text-xl sm:text-2xl font-bold line-clamp-2">The Dark Knight</h3>
+                <h3 class="text-2xl sm:text-xl font-bold line-clamp-2">The Dark Knight</h3>
                 <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Action</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Crime</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Drama</span></div>
               </div>
               <div class="h-24 overflow-auto flex-1">
@@ -480,7 +480,7 @@ exports[`App Home > should display the login button when the user is not authent
             </div>
             <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
               <div class="w-full flex flex-col gap-2 shrink-0">
-                <h3 class="text-xl sm:text-2xl font-bold line-clamp-2">Kung Fu Panda</h3>
+                <h3 class="text-2xl sm:text-xl font-bold line-clamp-2">Kung Fu Panda</h3>
                 <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Comedy</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Action</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Adventure</span></div>
               </div>
               <div class="h-24 overflow-auto flex-1">
@@ -515,26 +515,26 @@ exports[`App Home > should display the login button when the user is not authent
 `;
 
 exports[`App Home > should not display the login button when the user is authenticated 1`] = `
-"<div class="flex-1 flex flex-col justify-between" data-testid="app-home">
-  <header data-v-48a13218="" class="w-full flex flex-col gap-4 p-4">
+"<div class="w-full flex-1 flex flex-col gap-12" data-testid="app-home">
+  <header data-v-48a13218="" class="w-full flex flex-col gap-8">
     <div data-v-48a13218="" class="relative flex justify-between items-center gap-4">
       <transition-stub data-v-48a13218="" name="fade" mode="out-in" appear="true" persisted="false" css="true">
         <h1 data-v-48a13218="" class="text-xl sm:text-2xl text-white font-bold" data-testid="greeting-message">Hello, user_test!</h1>
       </transition-stub>
-      <transition-stub data-v-48a13218="" name="fade" mode="out-in" appear="true" persisted="false" css="true"><button data-v-48a13218="" class="app-button app-button--primary ml-auto sm:w-auto bg-red-500 hover:bg-red-600" data-testid="logout-button"> Log Out </button></transition-stub>
+      <transition-stub data-v-48a13218="" name="fade" mode="out-in" appear="true" persisted="false" css="true"><button data-v-48a13218="" class="app-button app-button--primary bg-red-500 hover:bg-red-600" data-testid="logout-button"> Log Out </button></transition-stub>
     </div>
-    <div data-v-48a13218="" class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 sm:gap-0 min-h-[42px]">
+    <div data-v-48a13218="" class="flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between min-h-[42px]">
       <transition-stub data-v-48a13218="" mode="out-in" appear="true" persisted="false" css="true">
-        <p data-v-48a13218="" class="text-base sm:text-lg font-medium text-white"> Total movies: 6 <span data-v-48a13218="" class="mx-2 sm:m-4">/</span> Average Rating: 4.5</p>
+        <p data-v-48a13218="" class="text-base sm:text-lg font-medium text-white"> Total movies: 6 <span data-v-48a13218="" class="m-2">/</span> Average Rating: 4.5</p>
       </transition-stub>
-      <div data-v-48a13218="" class="flex flex-col sm:flex-row gap-2 sm:gap-4 w-full sm:w-auto">
+      <transition-stub data-v-48a13218="" name="fade" appear="false" persisted="false" css="true">
         <!--v-if-->
-      </div>
+      </transition-stub>
     </div>
   </header>
-  <main class="flex min-h-[744px] mt-12">
+  <main class="flex-1 flex">
     <transition-stub name="fade" mode="out-in" appear="false" persisted="false" css="true" tag="div">
-      <transition-group-stub tag="ul" name="list" appear="false" persisted="false" css="true" class="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 list-none p-4">
+      <transition-group-stub tag="ul" name="list" appear="false" persisted="false" css="true" class="relative w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 list-none">
         <li>
           <div class="w-full bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
             <div class="w-full h-[520px] overflow-hidden relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10"> In Theaters </span>
@@ -546,7 +546,7 @@ exports[`App Home > should not display the login button when the user is authent
             </div>
             <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
               <div class="w-full flex flex-col gap-2 shrink-0">
-                <h3 class="text-xl sm:text-2xl font-bold line-clamp-2">Lilo &amp; Stitch</h3>
+                <h3 class="text-2xl sm:text-xl font-bold line-clamp-2">Lilo &amp; Stitch</h3>
                 <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Animation</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Adventure</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Comedy</span></div>
               </div>
               <div class="h-24 overflow-auto flex-1">
@@ -584,7 +584,7 @@ exports[`App Home > should not display the login button when the user is authent
             </div>
             <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
               <div class="w-full flex flex-col gap-2 shrink-0">
-                <h3 class="text-xl sm:text-2xl font-bold line-clamp-2">How to Train Your Dragon</h3>
+                <h3 class="text-2xl sm:text-xl font-bold line-clamp-2">How to Train Your Dragon</h3>
                 <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Animation</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Action</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Adventure</span></div>
               </div>
               <div class="h-24 overflow-auto flex-1">
@@ -622,7 +622,7 @@ exports[`App Home > should not display the login button when the user is authent
             </div>
             <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
               <div class="w-full flex flex-col gap-2 shrink-0">
-                <h3 class="text-xl sm:text-2xl font-bold line-clamp-2">The Godfather</h3>
+                <h3 class="text-2xl sm:text-xl font-bold line-clamp-2">The Godfather</h3>
                 <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Crime</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Drama</span></div>
               </div>
               <div class="h-24 overflow-auto flex-1">
@@ -660,7 +660,7 @@ exports[`App Home > should not display the login button when the user is authent
             </div>
             <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
               <div class="w-full flex flex-col gap-2 shrink-0">
-                <h3 class="text-xl sm:text-2xl font-bold line-clamp-2">The Shawshank Redemption</h3>
+                <h3 class="text-2xl sm:text-xl font-bold line-clamp-2">The Shawshank Redemption</h3>
                 <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Drama</span></div>
               </div>
               <div class="h-24 overflow-auto flex-1">
@@ -698,7 +698,7 @@ exports[`App Home > should not display the login button when the user is authent
             </div>
             <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
               <div class="w-full flex flex-col gap-2 shrink-0">
-                <h3 class="text-xl sm:text-2xl font-bold line-clamp-2">The Dark Knight</h3>
+                <h3 class="text-2xl sm:text-xl font-bold line-clamp-2">The Dark Knight</h3>
                 <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Action</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Crime</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Drama</span></div>
               </div>
               <div class="h-24 overflow-auto flex-1">
@@ -736,7 +736,7 @@ exports[`App Home > should not display the login button when the user is authent
             </div>
             <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
               <div class="w-full flex flex-col gap-2 shrink-0">
-                <h3 class="text-xl sm:text-2xl font-bold line-clamp-2">Kung Fu Panda</h3>
+                <h3 class="text-2xl sm:text-xl font-bold line-clamp-2">Kung Fu Panda</h3>
                 <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Comedy</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Action</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Adventure</span></div>
               </div>
               <div class="h-24 overflow-auto flex-1">
@@ -771,28 +771,28 @@ exports[`App Home > should not display the login button when the user is authent
 `;
 
 exports[`App Home > should redirect to the login page when clicking on the login button 1`] = `
-"<div class="flex-1 flex flex-col justify-between" data-testid="app-home">
-  <header data-v-48a13218="" class="w-full flex flex-col gap-4 p-4">
+"<div class="w-full flex-1 flex flex-col gap-12" data-testid="app-home">
+  <header data-v-48a13218="" class="w-full flex flex-col gap-8">
     <div data-v-48a13218="" class="relative flex justify-between items-center gap-4">
       <transition-stub data-v-48a13218="" name="fade" mode="out-in" appear="true" persisted="false" css="true">
         <h1 data-v-48a13218="" class="text-xl sm:text-2xl text-white font-bold" data-testid="greeting-message">Welcome to Reelio!</h1>
       </transition-stub>
-      <transition-stub data-v-48a13218="" name="fade" mode="out-in" appear="true" persisted="false" css="true"><a data-v-48a13218="" href="/login" class="router-link-active router-link-exact-active app-button app-button--primary ml-auto sm:w-auto" data-testid="login-button" aria-current="page"> Log In <svg data-v-48a13218="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="w-5 h-5">
+      <transition-stub data-v-48a13218="" name="fade" mode="out-in" appear="true" persisted="false" css="true"><a data-v-48a13218="" href="/login" class="router-link-active router-link-exact-active app-button app-button--primary" data-testid="login-button" aria-current="page"> Log In <svg data-v-48a13218="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="w-5 h-5">
             <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd"></path>
           </svg></a></transition-stub>
     </div>
-    <div data-v-48a13218="" class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 sm:gap-0 min-h-[42px]">
+    <div data-v-48a13218="" class="flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between min-h-[42px]">
       <transition-stub data-v-48a13218="" mode="out-in" appear="true" persisted="false" css="true">
-        <p data-v-48a13218="" class="text-base sm:text-lg font-medium text-white"> Total movies: 6 <span data-v-48a13218="" class="mx-2 sm:m-4">/</span> Average Rating: 4.5</p>
+        <p data-v-48a13218="" class="text-base sm:text-lg font-medium text-white"> Total movies: 6 <span data-v-48a13218="" class="m-2">/</span> Average Rating: 4.5</p>
       </transition-stub>
-      <div data-v-48a13218="" class="flex flex-col sm:flex-row gap-2 sm:gap-4 w-full sm:w-auto">
+      <transition-stub data-v-48a13218="" name="fade" appear="false" persisted="false" css="true">
         <!--v-if-->
-      </div>
+      </transition-stub>
     </div>
   </header>
-  <main class="flex min-h-[744px] mt-12">
+  <main class="flex-1 flex">
     <transition-stub name="fade" mode="out-in" appear="false" persisted="false" css="true" tag="div">
-      <transition-group-stub tag="ul" name="list" appear="false" persisted="false" css="true" class="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 list-none p-4">
+      <transition-group-stub tag="ul" name="list" appear="false" persisted="false" css="true" class="relative w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 list-none">
         <li>
           <div class="w-full bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
             <div class="w-full h-[520px] overflow-hidden relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10"> In Theaters </span>
@@ -804,7 +804,7 @@ exports[`App Home > should redirect to the login page when clicking on the login
             </div>
             <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
               <div class="w-full flex flex-col gap-2 shrink-0">
-                <h3 class="text-xl sm:text-2xl font-bold line-clamp-2">Lilo &amp; Stitch</h3>
+                <h3 class="text-2xl sm:text-xl font-bold line-clamp-2">Lilo &amp; Stitch</h3>
                 <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Animation</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Adventure</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Comedy</span></div>
               </div>
               <div class="h-24 overflow-auto flex-1">
@@ -842,7 +842,7 @@ exports[`App Home > should redirect to the login page when clicking on the login
             </div>
             <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
               <div class="w-full flex flex-col gap-2 shrink-0">
-                <h3 class="text-xl sm:text-2xl font-bold line-clamp-2">How to Train Your Dragon</h3>
+                <h3 class="text-2xl sm:text-xl font-bold line-clamp-2">How to Train Your Dragon</h3>
                 <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Animation</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Action</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Adventure</span></div>
               </div>
               <div class="h-24 overflow-auto flex-1">
@@ -880,7 +880,7 @@ exports[`App Home > should redirect to the login page when clicking on the login
             </div>
             <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
               <div class="w-full flex flex-col gap-2 shrink-0">
-                <h3 class="text-xl sm:text-2xl font-bold line-clamp-2">The Godfather</h3>
+                <h3 class="text-2xl sm:text-xl font-bold line-clamp-2">The Godfather</h3>
                 <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Crime</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Drama</span></div>
               </div>
               <div class="h-24 overflow-auto flex-1">
@@ -918,7 +918,7 @@ exports[`App Home > should redirect to the login page when clicking on the login
             </div>
             <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
               <div class="w-full flex flex-col gap-2 shrink-0">
-                <h3 class="text-xl sm:text-2xl font-bold line-clamp-2">The Shawshank Redemption</h3>
+                <h3 class="text-2xl sm:text-xl font-bold line-clamp-2">The Shawshank Redemption</h3>
                 <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Drama</span></div>
               </div>
               <div class="h-24 overflow-auto flex-1">
@@ -956,7 +956,7 @@ exports[`App Home > should redirect to the login page when clicking on the login
             </div>
             <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
               <div class="w-full flex flex-col gap-2 shrink-0">
-                <h3 class="text-xl sm:text-2xl font-bold line-clamp-2">The Dark Knight</h3>
+                <h3 class="text-2xl sm:text-xl font-bold line-clamp-2">The Dark Knight</h3>
                 <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Action</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Crime</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Drama</span></div>
               </div>
               <div class="h-24 overflow-auto flex-1">
@@ -994,7 +994,7 @@ exports[`App Home > should redirect to the login page when clicking on the login
             </div>
             <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
               <div class="w-full flex flex-col gap-2 shrink-0">
-                <h3 class="text-xl sm:text-2xl font-bold line-clamp-2">Kung Fu Panda</h3>
+                <h3 class="text-2xl sm:text-xl font-bold line-clamp-2">Kung Fu Panda</h3>
                 <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Comedy</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Action</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Adventure</span></div>
               </div>
               <div class="h-24 overflow-auto flex-1">
@@ -1029,28 +1029,28 @@ exports[`App Home > should redirect to the login page when clicking on the login
 `;
 
 exports[`App Home > should render the home view 1`] = `
-"<div class="flex-1 flex flex-col justify-between" data-testid="app-home">
-  <header data-v-48a13218="" class="w-full flex flex-col gap-4 p-4">
+"<div class="w-full flex-1 flex flex-col gap-12" data-testid="app-home">
+  <header data-v-48a13218="" class="w-full flex flex-col gap-8">
     <div data-v-48a13218="" class="relative flex justify-between items-center gap-4">
       <transition-stub data-v-48a13218="" name="fade" mode="out-in" appear="true" persisted="false" css="true">
         <h1 data-v-48a13218="" class="text-xl sm:text-2xl text-white font-bold" data-testid="greeting-message">Welcome to Reelio!</h1>
       </transition-stub>
-      <transition-stub data-v-48a13218="" name="fade" mode="out-in" appear="true" persisted="false" css="true"><a data-v-48a13218="" href="/login" class="app-button app-button--primary ml-auto sm:w-auto" data-testid="login-button"> Log In <svg data-v-48a13218="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="w-5 h-5">
+      <transition-stub data-v-48a13218="" name="fade" mode="out-in" appear="true" persisted="false" css="true"><a data-v-48a13218="" href="/login" class="app-button app-button--primary" data-testid="login-button"> Log In <svg data-v-48a13218="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="w-5 h-5">
             <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd"></path>
           </svg></a></transition-stub>
     </div>
-    <div data-v-48a13218="" class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 sm:gap-0 min-h-[42px]">
+    <div data-v-48a13218="" class="flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between min-h-[42px]">
       <transition-stub data-v-48a13218="" mode="out-in" appear="true" persisted="false" css="true">
-        <p data-v-48a13218="" class="text-base sm:text-lg font-medium text-white"> Total movies: 6 <span data-v-48a13218="" class="mx-2 sm:m-4">/</span> Average Rating: 4.5</p>
+        <p data-v-48a13218="" class="text-base sm:text-lg font-medium text-white"> Total movies: 6 <span data-v-48a13218="" class="m-2">/</span> Average Rating: 4.5</p>
       </transition-stub>
-      <div data-v-48a13218="" class="flex flex-col sm:flex-row gap-2 sm:gap-4 w-full sm:w-auto">
+      <transition-stub data-v-48a13218="" name="fade" appear="false" persisted="false" css="true">
         <!--v-if-->
-      </div>
+      </transition-stub>
     </div>
   </header>
-  <main class="flex min-h-[744px] mt-12">
+  <main class="flex-1 flex">
     <transition-stub name="fade" mode="out-in" appear="false" persisted="false" css="true" tag="div">
-      <transition-group-stub tag="ul" name="list" appear="false" persisted="false" css="true" class="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 list-none p-4">
+      <transition-group-stub tag="ul" name="list" appear="false" persisted="false" css="true" class="relative w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 list-none">
         <li>
           <div class="w-full bg-white rounded-md flex flex-col items-center justify-start overflow-hidden shadow-2xl">
             <div class="w-full h-[520px] overflow-hidden relative"><span class="absolute top-0 left-0 bg-indigo-500 text-white py-1 px-2 text-xs rounded-br-md z-10"> In Theaters </span>
@@ -1062,7 +1062,7 @@ exports[`App Home > should render the home view 1`] = `
             </div>
             <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
               <div class="w-full flex flex-col gap-2 shrink-0">
-                <h3 class="text-xl sm:text-2xl font-bold line-clamp-2">Lilo &amp; Stitch</h3>
+                <h3 class="text-2xl sm:text-xl font-bold line-clamp-2">Lilo &amp; Stitch</h3>
                 <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Animation</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Adventure</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Comedy</span></div>
               </div>
               <div class="h-24 overflow-auto flex-1">
@@ -1100,7 +1100,7 @@ exports[`App Home > should render the home view 1`] = `
             </div>
             <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
               <div class="w-full flex flex-col gap-2 shrink-0">
-                <h3 class="text-xl sm:text-2xl font-bold line-clamp-2">How to Train Your Dragon</h3>
+                <h3 class="text-2xl sm:text-xl font-bold line-clamp-2">How to Train Your Dragon</h3>
                 <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Animation</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Action</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Adventure</span></div>
               </div>
               <div class="h-24 overflow-auto flex-1">
@@ -1138,7 +1138,7 @@ exports[`App Home > should render the home view 1`] = `
             </div>
             <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
               <div class="w-full flex flex-col gap-2 shrink-0">
-                <h3 class="text-xl sm:text-2xl font-bold line-clamp-2">The Godfather</h3>
+                <h3 class="text-2xl sm:text-xl font-bold line-clamp-2">The Godfather</h3>
                 <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Crime</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Drama</span></div>
               </div>
               <div class="h-24 overflow-auto flex-1">
@@ -1176,7 +1176,7 @@ exports[`App Home > should render the home view 1`] = `
             </div>
             <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
               <div class="w-full flex flex-col gap-2 shrink-0">
-                <h3 class="text-xl sm:text-2xl font-bold line-clamp-2">The Shawshank Redemption</h3>
+                <h3 class="text-2xl sm:text-xl font-bold line-clamp-2">The Shawshank Redemption</h3>
                 <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Drama</span></div>
               </div>
               <div class="h-24 overflow-auto flex-1">
@@ -1214,7 +1214,7 @@ exports[`App Home > should render the home view 1`] = `
             </div>
             <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
               <div class="w-full flex flex-col gap-2 shrink-0">
-                <h3 class="text-xl sm:text-2xl font-bold line-clamp-2">The Dark Knight</h3>
+                <h3 class="text-2xl sm:text-xl font-bold line-clamp-2">The Dark Knight</h3>
                 <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Action</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Crime</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Drama</span></div>
               </div>
               <div class="h-24 overflow-auto flex-1">
@@ -1252,7 +1252,7 @@ exports[`App Home > should render the home view 1`] = `
             </div>
             <div class="w-full h-56 flex flex-col gap-2 items-start justify-start p-4">
               <div class="w-full flex flex-col gap-2 shrink-0">
-                <h3 class="text-xl sm:text-2xl font-bold line-clamp-2">Kung Fu Panda</h3>
+                <h3 class="text-2xl sm:text-xl font-bold line-clamp-2">Kung Fu Panda</h3>
                 <div class="flex items-center justify-start gap-1"><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Comedy</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Action</span><span class="py-0.5 px-2 text-xs bg-indigo-500 text-white rounded-full">Adventure</span></div>
               </div>
               <div class="h-24 overflow-auto flex-1">

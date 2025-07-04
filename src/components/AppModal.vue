@@ -70,7 +70,7 @@ defineExpose({
   <transition>
     <div
       v-if="shouldRender"
-      class="fixed inset-0 grid grid-cols-1 place-content-center w-full h-full backdrop-blur-sm bg-gray-900/50 z-20"
+      class="fixed inset-0 flex flex-col place-content-center w-full h-full backdrop-blur-sm bg-gray-900/50 z-20"
       @keyup.esc="unmount"
     >
       <div
