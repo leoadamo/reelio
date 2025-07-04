@@ -66,59 +66,61 @@ const { isAdmin, isAuthenticated } = storeToRefs(useAuthStore());
       </div>
 
       <div
-        class="w-full flex flex-wrap sm:flex-nowrap items-center justify-start h-auto sm:h-8 gap-2 sm:gap-0 shrink-0"
+        class="w-full h-auto flex flex-wrap sm:flex-nowrap items-center justify-between gap-2 sm:gap-0 shrink-0"
       >
-        <span class="text-xs mr-2 leading-7 hidden sm:inline">
-          Rating: ({{ movie.rating || 0 }}/5)
-        </span>
+        <div class="flex flex-col gap-1">
+          <span class="text-xs"> Rating: ({{ movie.rating || 0 }}/5) </span>
 
-        <div class="items-center justify-start flex flex-1 space-x-1">
-          <button
-            v-for="star in 5"
-            :key="star"
-            class="rounded-md disabled:cursor-not-allowed"
-            :class="[
-              star <= movie.rating ? 'text-yellow-500' : 'text-gray-500',
-            ]"
-            :disabled="!isAuthenticated || star === movie.rating"
-            @click="
-              $emit('update:rating', {
-                id: movie.id,
-                rating: star,
-              })
-            "
-          >
-            <star-icon class="h-5 w-5" />
-          </button>
+          <div class="flex-1 flex items-center justify-start space-x-1">
+            <button
+              v-for="star in 5"
+              :key="star"
+              class="rounded-md disabled:cursor-not-allowed"
+              :class="[
+                star <= movie.rating ? 'text-yellow-500' : 'text-gray-500',
+              ]"
+              :disabled="!isAuthenticated || star === movie.rating"
+              @click="
+                $emit('update:rating', {
+                  id: movie.id,
+                  rating: star,
+                })
+              "
+            >
+              <star-icon class="h-5 w-5" />
+            </button>
+          </div>
         </div>
 
-        <button
-          v-if="isAdmin"
-          name="edit-movie"
-          class="mr-2 p-2 rounded-full bg-gray-200 text-gray-500 transition-all hover:text-white hover:bg-purple-500"
-          @click.prevent="$emit('edit', movie.id)"
-        >
-          <pencil-icon class="w-4 h-4" />
-        </button>
+        <div class="flex items-center justify-start gap-2">
+          <button
+            v-if="isAdmin"
+            name="edit-movie"
+            class="p-2 rounded-full bg-gray-200 text-gray-500 transition-all hover:text-white hover:bg-purple-500"
+            @click.prevent="$emit('edit', movie.id)"
+          >
+            <pencil-icon class="w-4 h-4" />
+          </button>
 
-        <button
-          v-if="isAdmin"
-          name="delete-movie"
-          class="mr-2 p-2 rounded-full bg-gray-200 text-gray-500 transition-all hover:text-white hover:bg-red-500"
-          @click.prevent="$emit('remove', movie.id)"
-        >
-          <trash-icon class="w-4 h-4" />
-        </button>
+          <button
+            v-if="isAdmin"
+            name="delete-movie"
+            class="p-2 rounded-full bg-gray-200 text-gray-500 transition-all hover:text-white hover:bg-red-500"
+            @click.prevent="$emit('remove', movie.id)"
+          >
+            <trash-icon class="w-4 h-4" />
+          </button>
 
-        <router-link
-          :to="{
-            name: 'movie',
-            params: { id: movie.id, slug: movie.slug },
-          }"
-          class="p-2 rounded-full bg-gray-200 text-gray-500 transition-all hover:text-white hover:bg-blue-500"
-        >
-          <eye-icon class="w-4 h-4" />
-        </router-link>
+          <router-link
+            :to="{
+              name: 'movie',
+              params: { id: movie.id, slug: movie.slug },
+            }"
+            class="p-2 rounded-full bg-gray-200 text-gray-500 transition-all hover:text-white hover:bg-blue-500"
+          >
+            <eye-icon class="w-4 h-4" />
+          </router-link>
+        </div>
       </div>
     </div>
   </div>
