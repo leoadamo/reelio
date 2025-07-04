@@ -5,7 +5,7 @@ import BackButton from "@/components/BackButton.vue";
 
 <template>
   <div
-    class="flex-1 flex flex-col items-center justify-center gap-6 w-full max-w-[500px] m-auto"
+    class="flex flex-col items-center justify-center gap-6 w-full max-w-[500px] m-auto"
     data-testid="not-found"
   >
     <img src="/images/not-found.png" alt="" width="300" height="300" />
