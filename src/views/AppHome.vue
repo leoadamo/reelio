@@ -107,10 +107,7 @@ function resetMovieRatings() {
 </script>
 
 <template>
-  <div
-    class="w-full flex-1 flex flex-col justify-between"
-    data-testid="app-home"
-  >
+  <div class="w-full flex-1 flex flex-col gap-12" data-testid="app-home">
     <app-header
       :total-movies="movies.length"
       :average-rating="moviesAverageRating"
@@ -118,7 +115,7 @@ function resetMovieRatings() {
       @add-movie="openModal"
     />
 
-    <main class="flex min-h-[744px] mt-12">
+    <main class="flex min-h-[744px]">
       <movie-list
         v-model:movies="movies"
         @add-movie="openModal"
