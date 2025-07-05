@@ -29,7 +29,7 @@ const movie = computed(() => {
 </script>
 
 <template>
-  <div class="flex flex-col sm:flex-row gap-6">
+  <div class="w-full flex flex-col sm:flex-row gap-6">
     <div class="relative w-full max-w-[400px] shadow-2xl">
       <div class="absolute top-0 right-0">
         <movie-rating :rating="movie.rating" />
